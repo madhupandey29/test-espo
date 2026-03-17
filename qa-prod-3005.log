@@ -1,0 +1,10 @@
+
+> shofy-next-js@0.1.0 start
+> next start --port 3005
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3005
+- Network:       http://192.168.1.8:3005
+
+✓ Starting...
+✓ Ready in 6.5s

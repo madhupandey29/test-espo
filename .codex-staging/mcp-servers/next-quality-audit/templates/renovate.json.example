@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch"],
+      "groupName": "safe patch upgrades"
+    },
+    {
+      "matchUpdateTypes": ["minor"],
+      "groupName": "safe minor upgrades"
+    },
+    {
+      "matchPackageNames": ["next", "react", "react-dom", "typescript", "eslint"],
+      "labels": ["framework-review"],
+      "automerge": false
+    }
+  ]
+}

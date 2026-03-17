@@ -1,0 +1,17 @@
+{
+  "name": "next-quality-audit-local",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local MCP server and CLI for safe React and Next.js quality audits.",
+  "bin": {
+    "next-quality-audit": "./cli.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node cli.js",
+    "check": "node --check server.js && node --check cli.js && node --check lib/exec.js && node --check lib/project-intel.js && node --check lib/report.js && node --check lib/audits.js"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3"
+  }
+}

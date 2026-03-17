@@ -1,0 +1,11 @@
+
+> shofy-next-js@0.1.0 start
+> next start --port 3001
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3001
+- Network:       http://192.168.1.8:3001
+
+✓ Starting...
+✓ Ready in 2.4s
+Terminate batch job (Y/N)? 

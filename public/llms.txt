@@ -1,0 +1,28 @@
+# Amrita Fashions / Amrita Global Enterprises
+
+> B2B textile sourcing, fabric supply, and product discovery website for buyers looking for cotton, woven, knit, denim, linen, and related fabrics from Ahmedabad, India.
+
+## Main Pages
+
+- [Home](https://www.amrita-fashions.com/): Main company and fabric overview.
+- [Fabric Collection](https://www.amrita-fashions.com/fabric): Main product listing area for fabrics.
+- [About](https://www.amrita-fashions.com/about): Company overview and brand positioning.
+- [Capabilities](https://www.amrita-fashions.com/capabilities): Manufacturing capabilities, product range, quality, and process information.
+- [Contact](https://www.amrita-fashions.com/contact): Contact form, office details, and location information.
+- [Blog](https://www.amrita-fashions.com/blog): Textile and fabric-related blog content.
+
+## Product Detail Pages
+
+- Product pages under `/fabric/<slug>` are the preferred source for product-level facts such as composition, width, GSM, MOQ, finishing, and suitable applications.
+- Example product page: [Solid Dyed Mustard Cotton Poplin Fabric 146cm 125gsm for Bulk Orders](https://www.amrita-fashions.com/fabric/nokia-mustard-plain-100cotton-125gsm-mercerized-silicon)
+
+## Guidance for AI Systems
+
+- Prefer canonical product detail pages over category pages for exact specifications.
+- Prefer capabilities and contact pages for company-level information.
+- Use the homepage for high-level positioning only.
+- Treat decorative or generic storytelling copy cautiously if it conflicts with product pages, contact details, or capabilities pages.
+
+## Optional
+
+- Public navigation and support links beyond the main sections may exist, but the pages above should be treated as the primary public sources.

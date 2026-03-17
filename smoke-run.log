@@ -1,0 +1,1904 @@
+[1A[2K[2m[WebServer] [22m
+[2m[WebServer] [22m> shofy-next-js@0.1.0 dev
+[2m[WebServer] [22m> next dev --webpack
+[2m[WebServer] [22m
+
+
+[1A[2K[WebServer] [@sentry/nextjs] DEPRECATION WARNING: disableLogger is deprecated and will be removed in a future version. Use webpack.treeshake.removeDebugLogging instead.
+[1A[2K[2m[WebServer] [22m[1m[38;2;173;127;168m▲ Next.js 16.1.6[39m[22m (webpack)
+
+[1A[2K[2m[WebServer] [22m- Local:         http://localhost:3000
+[2m[WebServer] [22m- Network:       http://192.168.29.119:3000
+[2m[WebServer] [22m- Environments: .env
+[2m[WebServer] [22m- Experiments (use with caution):
+[2m[WebServer] [22m  · clientTraceMetadata
+
+[1A[2K[2m[WebServer] [22m  [1m✓[22m optimizeCss
+[2m[WebServer] [22m  · optimizePackageImports
+
+[1A[2K[2m[WebServer] [22m
+
+[1A[2K[2m[WebServer] [22m[32m[1m✓[22m[39m Starting...
+
+[1A[2K[2m[WebServer] [22m[37m[1m○[22m[39m Compiling /instrumentation ...
+
+[1A[2K[2m[WebServer] [22m[32m[1m✓[22m[39m Ready in 16.8s
+
+[1A[2K[2m[WebServer] [22m[37m[1m○[22m[39m Compiling / ...
+
+[1A[2K[WebServer] ⚠ ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 10, column 29 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:10:29:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use math.unit instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 10 |     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 11:30  -assert-ascending()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 494:1  @import
+[WebServer] src\app\globals.scss 15:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 10, column 50 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:10:50:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use math.unit instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 10 |     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 11:51  -assert-ascending()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 494:1  @import
+[WebServer] src\app\globals.scss 15:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 13, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:13:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 13 | @import '~bootstrap/scss/functions';
+[WebServer] 
+[WebServer] src\app\globals.scss 14:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 14, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:14:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 14 | @import '~bootstrap/scss/variables';
+[WebServer] 
+[WebServer] src\app\globals.scss 15:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 15, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:15:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 15 | @import '~bootstrap/scss/variables-dark';
+[WebServer] 
+[WebServer] src\app\globals.scss 16:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 16, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:16:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 16 | @import '~bootstrap/scss/maps';
+[WebServer] 
+[WebServer] src\app\globals.scss 17:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 17, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:17:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 17 | @import '~bootstrap/scss/mixins';
+[WebServer] 
+[WebServer] src\app\globals.scss 18:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 36, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:36:10:
+[WebServer] red() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "red", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 36 |   @return red($value), green($value), blue($value);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 37:11   to-rgb()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:31  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 36, column 23 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:36:23:
+[WebServer] green() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "green", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 36 |   @return red($value), green($value), blue($value);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 37:24   to-rgb()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:31  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 57, column 29 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:57:29:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($arg == "$key"): $key; else: if($arg == "$value", $value, $arg))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 57 |       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 58:30  @import
+[WebServer] src\app\globals.scss 14:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 57, column 54 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:57:54:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($arg == "$value"): $value; else: $arg)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 57 |       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 58:55  @import
+[WebServer] src\app\globals.scss 14:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 176, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:176:10:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($l1 > $l2): divide($l1 + 0.05, $l2 + 0.05); else: divide($l2 + 0.05, $l1 + 0.05))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 176 |   @return if($l1 > $l2, divide($l1 + .05, $l2 + .05), divide($l2 + .05, $l1 + .05));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 177:11  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 184, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:184:9:
+[WebServer] red() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "red", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 184 |     "r": red($color),
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 185:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 185, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:185:9:
+[WebServer] green() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "green", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 185 |     "g": green($color),
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 186:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 186, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:186:9:
+[WebServer] blue() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "blue", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 186 |     "b": blue($color)
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 187:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 190, column 12 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:190:12:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass(divide($value, 255) < 0.04045): divide(divide($value, 255), 12.92); else: nth($_luminance-list, $value + 1))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 190 |     $value: if(divide($value, 255) < .04045, divide(divide($value, 255), 12.92), nth($_luminance-list, $value + 1));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 191:13  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 206, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:206:10:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 206 |   @return mix(white, $color, $weight);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 207:11  tint-color()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 79:12   @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 211, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:211:10:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 211 |   @return mix(black, $color, $weight);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 212:11  shade-color()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 84:12   @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 216, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:216:10:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($weight > 0): shade-color($color, $weight); else: tint-color($color, -$weight))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 216 |   @return if($weight > 0, shade-color($color, $weight), tint-color($color, -$weight));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 217:11  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 341, column 26 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_variables.scss:341:26:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 341 | $light-bg-subtle:         mix($gray-100, $white) !default;
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_variables.scss 342:27  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] 318 repetitive deprecation warnings omitted.
+[WebServer] Run in verbose mode to see all warnings.
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Fetching data for page: home
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] API URL: https://espobackend.vercel.app/api/topicpage
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Response status: [33m200[39m
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Response data structure: { success: [33mtrue[39m, total: [33m14[39m, dataLength: [33m14[39m }
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Active pages found: [33m14[39m
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Page names: [
+[2m[WebServer] [22m  [32m'Diwali Collection'[39m, [32m'sitemap'[39m,
+[2m[WebServer] [22m  [32m'checkout'[39m,          [32m'cart'[39m,
+[2m[WebServer] [22m  [32m'wishlist'[39m,          [32m'userprofile'[39m,
+[2m[WebServer] [22m  [32m'login'[39m,             [32m'register'[39m,
+[2m[WebServer] [22m  [32m'blog'[39m,              [32m'fabric'[39m,
+[2m[WebServer] [22m  [32m'capabilities'[39m,      [32m'about'[39m,
+[2m[WebServer] [22m  [32m'home'[39m,              [32m'contact'[39m
+[2m[WebServer] [22m]
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] ✅ Found page data for: home
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Page data: {
+[2m[WebServer] [22m  id: [32m'6986e5c08512fef5f'[39m,
+[2m[WebServer] [22m  name: [32m'home'[39m,
+[2m[WebServer] [22m  metaTitle: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m  hasDescription: [33mtrue[39m,
+[2m[WebServer] [22m  hasExcerpt: [33mtrue[39m,
+[2m[WebServer] [22m  hasKeywords: [33mtrue[39m
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Page: home
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Topic Page Data: {
+[2m[WebServer] [22m  id: [32m'6986e5c08512fef5f'[39m,
+[2m[WebServer] [22m  name: [32m'home'[39m,
+[2m[WebServer] [22m  deleted: [33mfalse[39m,
+[2m[WebServer] [22m  description: [32m'Global B2B manufacturer & exporter of cotton, denim, knit & woven fabrics - 10,000+ SKUs. Low MOQ, OEM/private-label, certified. Request RFQ/samples.'[39m,
+[2m[WebServer] [22m  slug: [32m'home'[39m,
+[2m[WebServer] [22m  metaTitle: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m  keywords: [
+[2m[WebServer] [22m    [32m'wholesale fabric supplier'[39m,
+[2m[WebServer] [22m    [32m'cotton fabric manufacturer'[39m,
+[2m[WebServer] [22m    [32m'denim fabric manufacturer'[39m,
+[2m[WebServer] [22m    [32m'knit fabric supplier'[39m,
+[2m[WebServer] [22m    [32m'woven fabric supplier'[39m,
+[2m[WebServer] [22m    [32m'fabric exporter'[39m,
+[2m[WebServer] [22m    [32m'bulk fabric rolls'[39m,
+[2m[WebServer] [22m    [32m'fabric manufacturer'[39m
+[2m[WebServer] [22m  ],
+[2m[WebServer] [22m  canonicalUrl: [32m'www.amrita-fashions.com'[39m,
+[2m[WebServer] [22m  excerpt: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m,
+[2m[WebServer] [22m  ogType: [32m'website'[39m,
+[2m[WebServer] [22m  videoCloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage1: [32m'alt text image 1'[39m,
+[2m[WebServer] [22m  altTextImage2: [32m'alt text image 2'[39m,
+[2m[WebServer] [22m  altTextImage3: [32m'alt text image 3'[39m,
+[2m[WebServer] [22m  altTextImage4: [32m'alt text image 4'[39m,
+[2m[WebServer] [22m  image1CloudUrl: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrl: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrl: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrl: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1Note: [32m'image 1 note'[39m,
+[2m[WebServer] [22m  image2Note: [32m'image 2 note'[39m,
+[2m[WebServer] [22m  image3Note: [32m'image 3 note'[39m,
+[2m[WebServer] [22m  image4Note: [32m'image 4 note'[39m,
+[2m[WebServer] [22m  slug1: [32m'Draft'[39m,
+[2m[WebServer] [22m  streamUpdatedAt: [1mnull[22m,
+[2m[WebServer] [22m  videoId: [1mnull[22m,
+[2m[WebServer] [22m  videoName: [1mnull[22m,
+[2m[WebServer] [22m  image1Id: [1mnull[22m,
+[2m[WebServer] [22m  image1Name: [1mnull[22m,
+[2m[WebServer] [22m  image2Id: [1mnull[22m,
+[2m[WebServer] [22m  image2Name: [1mnull[22m,
+[2m[WebServer] [22m  image3Id: [1mnull[22m,
+[2m[WebServer] [22m  image3Name: [1mnull[22m,
+[2m[WebServer] [22m  image4Id: [1mnull[22m,
+[2m[WebServer] [22m  image4Name: [1mnull[22m,
+[2m[WebServer] [22m  versionNumber: [33m13[39m,
+[2m[WebServer] [22m  image1CloudUrlBase: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlWeb: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlEmail: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_75,w_600,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlPdf: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_80,w_1200,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlCard: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_300,h_300,c_fill,g_auto/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlHero: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlLarge: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_2000,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlBase: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlWeb: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlEmail: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_75,w_600,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlPdf: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_80,w_1200,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlCard: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_300,h_300,c_fill,g_auto/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlHero: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlLarge: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_2000,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlBase: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlWeb: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlEmail: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_75,w_600,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlPdf: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_80,w_1200,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlCard: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_300,h_300,c_fill,g_auto/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlHero: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlLarge: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_2000,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlBase: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlWeb: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlEmail: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_75,w_600,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlPdf: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_80,w_1200,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlCard: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_300,h_300,c_fill,g_auto/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlHero: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlLarge: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_2000,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Metadata extracted: {
+[2m[WebServer] [22m  title: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m  description: [32m'Global B2B manufacturer & exporter of cotton, denim, knit & woven fabrics - 10,000+ SKUs. Low MOQ, OEM/private-label, certified. Request RFQ/samples.'[39m,
+[2m[WebServer] [22m  excerpt: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m,
+[2m[WebServer] [22m  keywords: [32m'wholesale fabric supplier, cotton fabric manufacturer, denim fabric manufacturer, knit fabric supplier, woven fabric supplier, fabric exporter, bulk fabric rolls, fabric manufacturer'[39m,
+[2m[WebServer] [22m  canonicalUrl: [32m'https://www.amrita-fashions.com'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[Topic Page SEO] Setting canonical to: https://www.amrita-fashions.com
+[2m[WebServer] [22m[Topic Page SEO] Final metadata: {
+[2m[WebServer] [22m  title: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m  description: [32m'Global B2B manufacturer & exporter of cotton, denim, knit & woven fabrics - 10,000+ SKUs. Low MOQ, OEM/private-label, certified. Request RFQ/samples.'[39m,
+[2m[WebServer] [22m  keywords: [32m'wholesale fabric supplier, cotton fabric manufacturer, denim fabric manufacturer, knit fabric supplier, woven fabric supplier, fabric exporter, bulk fabric rolls, fabric manufacturer'[39m,
+[2m[WebServer] [22m  alternates: { canonical: [32m'https://www.amrita-fashions.com'[39m },
+[2m[WebServer] [22m  openGraph: {
+[2m[WebServer] [22m    title: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m    description: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m,
+[2m[WebServer] [22m    type: [32m'website'[39m,
+[2m[WebServer] [22m    url: [32m'https://www.amrita-fashions.com'[39m
+[2m[WebServer] [22m  },
+[2m[WebServer] [22m  twitter: {
+[2m[WebServer] [22m    card: [32m'summary_large_image'[39m,
+[2m[WebServer] [22m    title: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m    description: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m
+[2m[WebServer] [22m  },
+[2m[WebServer] [22m  other: {
+[2m[WebServer] [22m    excerpt: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m
+[2m[WebServer] [22m  }
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m GET / [32m200[39m in 36.4s[2m (compile: 33.2s, render: 3.2s)[22m
+
+
+Running 3 tests using 3 workers
+
+[1A[2K[1/3] [chromium] › tests\e2e\smoke.spec.ts:8:7 › Public smoke coverage › @smoke homepage renders key entry points
+[1A[2K[2/3] [chromium] › tests\e2e\smoke.spec.ts:30:7 › Public smoke coverage › @smoke visitor can open a slug-based product detail page from the fabric listing
+[1A[2K[3/3] [chromium] › tests\e2e\smoke.spec.ts:16:7 › Public smoke coverage › @smoke fabric listing shows products
+[1A[2K[2m[WebServer] [22m[Topic Page API] Fetching data for page: home
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] API URL: https://espobackend.vercel.app/api/topicpage
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Response status: [33m200[39m
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Response data structure: { success: [33mtrue[39m, total: [33m14[39m, dataLength: [33m14[39m }
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Active pages found: [33m14[39m
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Page names: [
+[2m[WebServer] [22m  [32m'Diwali Collection'[39m, [32m'sitemap'[39m,
+[2m[WebServer] [22m  [32m'checkout'[39m,          [32m'cart'[39m,
+[2m[WebServer] [22m  [32m'wishlist'[39m,          [32m'userprofile'[39m,
+[2m[WebServer] [22m  [32m'login'[39m,             [32m'register'[39m,
+[2m[WebServer] [22m  [32m'blog'[39m,              [32m'fabric'[39m,
+[2m[WebServer] [22m  [32m'capabilities'[39m,      [32m'about'[39m,
+[2m[WebServer] [22m  [32m'home'[39m,              [32m'contact'[39m
+[2m[WebServer] [22m]
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] ✅ Found page data for: home
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Page data: {
+[2m[WebServer] [22m  id: [32m'6986e5c08512fef5f'[39m,
+[2m[WebServer] [22m  name: [32m'home'[39m,
+[2m[WebServer] [22m  metaTitle: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m  hasDescription: [33mtrue[39m,
+[2m[WebServer] [22m  hasExcerpt: [33mtrue[39m,
+[2m[WebServer] [22m  hasKeywords: [33mtrue[39m
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Page: home
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Topic Page Data: {
+[2m[WebServer] [22m  id: [32m'6986e5c08512fef5f'[39m,
+[2m[WebServer] [22m  name: [32m'home'[39m,
+[2m[WebServer] [22m  deleted: [33mfalse[39m,
+[2m[WebServer] [22m  description: [32m'Global B2B manufacturer & exporter of cotton, denim, knit & woven fabrics - 10,000+ SKUs. Low MOQ, OEM/private-label, certified. Request RFQ/samples.'[39m,
+[2m[WebServer] [22m  slug: [32m'home'[39m,
+[2m[WebServer] [22m  metaTitle: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m  keywords: [
+[2m[WebServer] [22m    [32m'wholesale fabric supplier'[39m,
+[2m[WebServer] [22m    [32m'cotton fabric manufacturer'[39m,
+[2m[WebServer] [22m    [32m'denim fabric manufacturer'[39m,
+[2m[WebServer] [22m    [32m'knit fabric supplier'[39m,
+[2m[WebServer] [22m    [32m'woven fabric supplier'[39m,
+[2m[WebServer] [22m    [32m'fabric exporter'[39m,
+[2m[WebServer] [22m    [32m'bulk fabric rolls'[39m,
+[2m[WebServer] [22m    [32m'fabric manufacturer'[39m
+[2m[WebServer] [22m  ],
+[2m[WebServer] [22m  canonicalUrl: [32m'www.amrita-fashions.com'[39m,
+[2m[WebServer] [22m  excerpt: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m,
+[2m[WebServer] [22m  ogType: [32m'website'[39m,
+[2m[WebServer] [22m  videoCloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage1: [32m'alt text image 1'[39m,
+[2m[WebServer] [22m  altTextImage2: [32m'alt text image 2'[39m,
+[2m[WebServer] [22m  altTextImage3: [32m'alt text image 3'[39m,
+[2m[WebServer] [22m  altTextImage4: [32m'alt text image 4'[39m,
+[2m[WebServer] [22m  image1CloudUrl: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrl: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrl: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrl: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1Note: [32m'image 1 note'[39m,
+[2m[WebServer] [22m  image2Note: [32m'image 2 note'[39m,
+[2m[WebServer] [22m  image3Note: [32m'image 3 note'[39m,
+[2m[WebServer] [22m  image4Note: [32m'image 4 note'[39m,
+[2m[WebServer] [22m  slug1: [32m'Draft'[39m,
+[2m[WebServer] [22m  streamUpdatedAt: [1mnull[22m,
+[2m[WebServer] [22m  videoId: [1mnull[22m,
+[2m[WebServer] [22m  videoName: [1mnull[22m,
+[2m[WebServer] [22m  image1Id: [1mnull[22m,
+[2m[WebServer] [22m  image1Name: [1mnull[22m,
+[2m[WebServer] [22m  image2Id: [1mnull[22m,
+[2m[WebServer] [22m  image2Name: [1mnull[22m,
+[2m[WebServer] [22m  image3Id: [1mnull[22m,
+[2m[WebServer] [22m  image3Name: [1mnull[22m,
+[2m[WebServer] [22m  image4Id: [1mnull[22m,
+[2m[WebServer] [22m  image4Name: [1mnull[22m,
+[2m[WebServer] [22m  versionNumber: [33m13[39m,
+[2m[WebServer] [22m  image1CloudUrlBase: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlWeb: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlEmail: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_75,w_600,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlPdf: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_80,w_1200,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlCard: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_300,h_300,c_fill,g_auto/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlHero: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image1CloudUrlLarge: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_2000,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlBase: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlWeb: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlEmail: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_75,w_600,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlPdf: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_80,w_1200,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlCard: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_300,h_300,c_fill,g_auto/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlHero: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image2CloudUrlLarge: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_2000,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlBase: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlWeb: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlEmail: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_75,w_600,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlPdf: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_80,w_1200,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlCard: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_300,h_300,c_fill,g_auto/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlHero: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image3CloudUrlLarge: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_2000,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlBase: [32m'https://res.cloudinary.com/age-fabric/image/upload/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlWeb: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlEmail: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_75,w_600,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlPdf: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_jpg,q_80,w_1200,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlCard: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_300,h_300,c_fill,g_auto/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlHero: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m,
+[2m[WebServer] [22m  image4CloudUrlLarge: [32m'https://res.cloudinary.com/age-fabric/image/upload/f_auto,q_auto,w_2000,dpr_auto,c_limit/v1771154884/693-TURQUOISE_yqg9tc.jpg'[39m
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Metadata extracted: {
+[2m[WebServer] [22m  title: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m  description: [32m'Global B2B manufacturer & exporter of cotton, denim, knit & woven fabrics - 10,000+ SKUs. Low MOQ, OEM/private-label, certified. Request RFQ/samples.'[39m,
+[2m[WebServer] [22m  excerpt: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m,
+[2m[WebServer] [22m  keywords: [32m'wholesale fabric supplier, cotton fabric manufacturer, denim fabric manufacturer, knit fabric supplier, woven fabric supplier, fabric exporter, bulk fabric rolls, fabric manufacturer'[39m,
+[2m[WebServer] [22m  canonicalUrl: [32m'https://www.amrita-fashions.com'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[Topic Page SEO] Setting canonical to: https://www.amrita-fashions.com
+[2m[WebServer] [22m[Topic Page SEO] Final metadata: {
+[2m[WebServer] [22m  title: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m  description: [32m'Global B2B manufacturer & exporter of cotton, denim, knit & woven fabrics - 10,000+ SKUs. Low MOQ, OEM/private-label, certified. Request RFQ/samples.'[39m,
+[2m[WebServer] [22m  keywords: [32m'wholesale fabric supplier, cotton fabric manufacturer, denim fabric manufacturer, knit fabric supplier, woven fabric supplier, fabric exporter, bulk fabric rolls, fabric manufacturer'[39m,
+[2m[WebServer] [22m  alternates: { canonical: [32m'https://www.amrita-fashions.com'[39m },
+[2m[WebServer] [22m  openGraph: {
+[2m[WebServer] [22m    title: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m    description: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m,
+[2m[WebServer] [22m    type: [32m'website'[39m,
+[2m[WebServer] [22m    url: [32m'https://www.amrita-fashions.com'[39m
+[2m[WebServer] [22m  },
+[2m[WebServer] [22m  twitter: {
+[2m[WebServer] [22m    card: [32m'summary_large_image'[39m,
+[2m[WebServer] [22m    title: [32m'Cotton, Denim, Knit & Woven Fabric Manufacturer, Exporter & Wholesaler'[39m,
+[2m[WebServer] [22m    description: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m
+[2m[WebServer] [22m  },
+[2m[WebServer] [22m  other: {
+[2m[WebServer] [22m    excerpt: [32m'Amrita Global Enterprises (Earlier Amrita Fashions) is a global B2B manufacturer & exporter of cotton, denim, knit and woven fabrics with 10,000+ SKUs. We offer low MOQs, OEM/private‑label services and certified options (OEKO‑TEX, GRS) — request an RFQ or samples today.'[39m
+[2m[WebServer] [22m  }
+[2m[WebServer] [22m}
+
+[1A[2K[WebServer] ⚠ ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 10, column 29 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:10:29:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use math.unit instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 10 |     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 11:30  -assert-ascending()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 494:1  @import
+[WebServer] src\app\globals.scss 15:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 10, column 50 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:10:50:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use math.unit instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 10 |     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 11:51  -assert-ascending()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 494:1  @import
+[WebServer] src\app\globals.scss 15:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 13, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:13:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 13 | @import '~bootstrap/scss/functions';
+[WebServer] 
+[WebServer] src\app\globals.scss 14:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 14, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:14:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 14 | @import '~bootstrap/scss/variables';
+[WebServer] 
+[WebServer] src\app\globals.scss 15:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 15, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:15:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 15 | @import '~bootstrap/scss/variables-dark';
+[WebServer] 
+[WebServer] src\app\globals.scss 16:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 16, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:16:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 16 | @import '~bootstrap/scss/maps';
+[WebServer] 
+[WebServer] src\app\globals.scss 17:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 17, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:17:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 17 | @import '~bootstrap/scss/mixins';
+[WebServer] 
+[WebServer] src\app\globals.scss 18:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 36, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:36:10:
+[WebServer] red() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "red", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 36 |   @return red($value), green($value), blue($value);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 37:11   to-rgb()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:31  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 36, column 23 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:36:23:
+[WebServer] green() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "green", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 36 |   @return red($value), green($value), blue($value);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 37:24   to-rgb()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:31  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 57, column 29 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:57:29:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($arg == "$key"): $key; else: if($arg == "$value", $value, $arg))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 57 |       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 58:30  @import
+[WebServer] src\app\globals.scss 14:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 57, column 54 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:57:54:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($arg == "$value"): $value; else: $arg)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 57 |       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 58:55  @import
+[WebServer] src\app\globals.scss 14:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 176, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:176:10:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($l1 > $l2): divide($l1 + 0.05, $l2 + 0.05); else: divide($l2 + 0.05, $l1 + 0.05))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 176 |   @return if($l1 > $l2, divide($l1 + .05, $l2 + .05), divide($l2 + .05, $l1 + .05));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 177:11  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 184, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:184:9:
+[WebServer] red() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "red", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 184 |     "r": red($color),
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 185:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 185, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:185:9:
+[WebServer] green() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "green", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 185 |     "g": green($color),
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 186:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 186, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:186:9:
+[WebServer] blue() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "blue", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 186 |     "b": blue($color)
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 187:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 190, column 12 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:190:12:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass(divide($value, 255) < 0.04045): divide(divide($value, 255), 12.92); else: nth($_luminance-list, $value + 1))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 190 |     $value: if(divide($value, 255) < .04045, divide(divide($value, 255), 12.92), nth($_luminance-list, $value + 1));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 191:13  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 206, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:206:10:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 206 |   @return mix(white, $color, $weight);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 207:11  tint-color()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 79:12   @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 211, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:211:10:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 211 |   @return mix(black, $color, $weight);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 212:11  shade-color()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 84:12   @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 216, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:216:10:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($weight > 0): shade-color($color, $weight); else: tint-color($color, -$weight))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 216 |   @return if($weight > 0, shade-color($color, $weight), tint-color($color, -$weight));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 217:11  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 341, column 26 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_variables.scss:341:26:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 341 | $light-bg-subtle:         mix($gray-100, $white) !default;
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_variables.scss 342:27  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] 318 repetitive deprecation warnings omitted.
+[WebServer] Run in verbose mode to see all warnings.
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[1A[2K[2m[WebServer] [22m GET / [32m200[39m in 2.3s[2m (compile: 34ms, render: 2.3s)[22m
+
+[1A[2K[WebServer] ⚠ ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 10, column 29 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:10:29:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use math.unit instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 10 |     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 11:30  -assert-ascending()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 494:1  @import
+[WebServer] src\app\globals.scss 15:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 10, column 50 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:10:50:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use math.unit instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 10 |     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 11:51  -assert-ascending()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 494:1  @import
+[WebServer] src\app\globals.scss 15:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 13, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:13:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 13 | @import '~bootstrap/scss/functions';
+[WebServer] 
+[WebServer] src\app\globals.scss 14:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 14, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:14:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 14 | @import '~bootstrap/scss/variables';
+[WebServer] 
+[WebServer] src\app\globals.scss 15:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 15, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:15:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 15 | @import '~bootstrap/scss/variables-dark';
+[WebServer] 
+[WebServer] src\app\globals.scss 16:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 16, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:16:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 16 | @import '~bootstrap/scss/maps';
+[WebServer] 
+[WebServer] src\app\globals.scss 17:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 17, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:17:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 17 | @import '~bootstrap/scss/mixins';
+[WebServer] 
+[WebServer] src\app\globals.scss 18:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 36, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:36:10:
+[WebServer] red() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "red", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 36 |   @return red($value), green($value), blue($value);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 37:11   to-rgb()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:31  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 36, column 23 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:36:23:
+[WebServer] green() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "green", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 36 |   @return red($value), green($value), blue($value);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 37:24   to-rgb()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:31  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 57, column 29 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:57:29:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($arg == "$key"): $key; else: if($arg == "$value", $value, $arg))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 57 |       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 58:30  @import
+[WebServer] src\app\globals.scss 14:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 57, column 54 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:57:54:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($arg == "$value"): $value; else: $arg)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 57 |       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 58:55  @import
+[WebServer] src\app\globals.scss 14:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 176, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:176:10:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($l1 > $l2): divide($l1 + 0.05, $l2 + 0.05); else: divide($l2 + 0.05, $l1 + 0.05))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 176 |   @return if($l1 > $l2, divide($l1 + .05, $l2 + .05), divide($l2 + .05, $l1 + .05));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 177:11  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 184, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:184:9:
+[WebServer] red() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "red", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 184 |     "r": red($color),
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 185:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 185, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:185:9:
+[WebServer] green() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "green", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 185 |     "g": green($color),
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 186:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 186, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:186:9:
+[WebServer] blue() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "blue", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 186 |     "b": blue($color)
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 187:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 190, column 12 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:190:12:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass(divide($value, 255) < 0.04045): divide(divide($value, 255), 12.92); else: nth($_luminance-list, $value + 1))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 190 |     $value: if(divide($value, 255) < .04045, divide(divide($value, 255), 12.92), nth($_luminance-list, $value + 1));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 191:13  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 206, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:206:10:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 206 |   @return mix(white, $color, $weight);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 207:11  tint-color()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 79:12   @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 211, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:211:10:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 211 |   @return mix(black, $color, $weight);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 212:11  shade-color()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 84:12   @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 216, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:216:10:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($weight > 0): shade-color($color, $weight); else: tint-color($color, -$weight))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 216 |   @return if($weight > 0, shade-color($color, $weight), tint-color($color, -$weight));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 217:11  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 341, column 26 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_variables.scss:341:26:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 341 | $light-bg-subtle:         mix($gray-100, $white) !default;
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_variables.scss 342:27  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] 318 repetitive deprecation warnings omitted.
+[WebServer] Run in verbose mode to see all warnings.
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Fetching data for page: fabric
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] API URL: https://espobackend.vercel.app/api/topicpage
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Fetching data for page: fabric
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] API URL: https://espobackend.vercel.app/api/topicpage
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Response status: [33m200[39m
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Response status: [33m200[39m
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Response data structure: { success: [33mtrue[39m, total: [33m14[39m, dataLength: [33m14[39m }
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Active pages found: [33m14[39m
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Page names: [
+[2m[WebServer] [22m  [32m'Diwali Collection'[39m, [32m'sitemap'[39m,
+[2m[WebServer] [22m  [32m'checkout'[39m,          [32m'cart'[39m,
+[2m[WebServer] [22m  [32m'wishlist'[39m,          [32m'userprofile'[39m,
+[2m[WebServer] [22m  [32m'login'[39m,             [32m'register'[39m,
+[2m[WebServer] [22m  [32m'blog'[39m,              [32m'fabric'[39m,
+[2m[WebServer] [22m  [32m'capabilities'[39m,      [32m'about'[39m,
+[2m[WebServer] [22m  [32m'home'[39m,              [32m'contact'[39m
+[2m[WebServer] [22m]
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] ✅ Found page data for: fabric
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Page data: {
+[2m[WebServer] [22m  id: [32m'6986e810a54605061'[39m,
+[2m[WebServer] [22m  name: [32m'fabric'[39m,
+[2m[WebServer] [22m  metaTitle: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m  hasDescription: [33mtrue[39m,
+[2m[WebServer] [22m  hasExcerpt: [33mtrue[39m,
+[2m[WebServer] [22m  hasKeywords: [33mtrue[39m
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Response data structure: { success: [33mtrue[39m, total: [33m14[39m, dataLength: [33m14[39m }
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Active pages found: [33m14[39m
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Page names: [
+[2m[WebServer] [22m  [32m'Diwali Collection'[39m, [32m'sitemap'[39m,
+[2m[WebServer] [22m  [32m'checkout'[39m,          [32m'cart'[39m,
+[2m[WebServer] [22m  [32m'wishlist'[39m,          [32m'userprofile'[39m,
+[2m[WebServer] [22m  [32m'login'[39m,             [32m'register'[39m,
+[2m[WebServer] [22m  [32m'blog'[39m,              [32m'fabric'[39m,
+[2m[WebServer] [22m  [32m'capabilities'[39m,      [32m'about'[39m,
+[2m[WebServer] [22m  [32m'home'[39m,              [32m'contact'[39m
+[2m[WebServer] [22m]
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] ✅ Found page data for: fabric
+
+[1A[2K[2m[WebServer] [22m[Topic Page API] Page data: {
+[2m[WebServer] [22m  id: [32m'6986e810a54605061'[39m,
+[2m[WebServer] [22m  name: [32m'fabric'[39m,
+[2m[WebServer] [22m  metaTitle: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m  hasDescription: [33mtrue[39m,
+[2m[WebServer] [22m  hasExcerpt: [33mtrue[39m,
+[2m[WebServer] [22m  hasKeywords: [33mtrue[39m
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Page: fabric
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Topic Page Data: {
+[2m[WebServer] [22m  id: [32m'6986e810a54605061'[39m,
+[2m[WebServer] [22m  name: [32m'fabric'[39m,
+[2m[WebServer] [22m  deleted: [33mfalse[39m,
+[2m[WebServer] [22m  description: [32m'meta description '[39m,
+[2m[WebServer] [22m  slug: [32m'fabric'[39m,
+[2m[WebServer] [22m  metaTitle: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m  keywords: [
+[2m[WebServer] [22m    [32m'meta fabric keyword 1'[39m,
+[2m[WebServer] [22m    [32m'meta fabric keyword 2'[39m,
+[2m[WebServer] [22m    [32m'meta fabric keyword 3'[39m,
+[2m[WebServer] [22m    [32m'meta fabric keyword 4'[39m
+[2m[WebServer] [22m  ],
+[2m[WebServer] [22m  canonicalUrl: [32m'www.amrita-fashions.com/fabric'[39m,
+[2m[WebServer] [22m  excerpt: [32m'meta fabric excerpt'[39m,
+[2m[WebServer] [22m  ogType: [32m'product'[39m,
+[2m[WebServer] [22m  videoCloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage1: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage2: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage3: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage4: [1mnull[22m,
+[2m[WebServer] [22m  image1CloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  image2CloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  image3CloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  image4CloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  image1Note: [1mnull[22m,
+[2m[WebServer] [22m  image2Note: [1mnull[22m,
+[2m[WebServer] [22m  image3Note: [1mnull[22m,
+[2m[WebServer] [22m  image4Note: [1mnull[22m,
+[2m[WebServer] [22m  slug1: [32m'Draft'[39m,
+[2m[WebServer] [22m  streamUpdatedAt: [1mnull[22m,
+[2m[WebServer] [22m  videoId: [1mnull[22m,
+[2m[WebServer] [22m  videoName: [1mnull[22m,
+[2m[WebServer] [22m  image1Id: [1mnull[22m,
+[2m[WebServer] [22m  image1Name: [1mnull[22m,
+[2m[WebServer] [22m  image2Id: [1mnull[22m,
+[2m[WebServer] [22m  image2Name: [1mnull[22m,
+[2m[WebServer] [22m  image3Id: [1mnull[22m,
+[2m[WebServer] [22m  image3Name: [1mnull[22m,
+[2m[WebServer] [22m  image4Id: [1mnull[22m,
+[2m[WebServer] [22m  image4Name: [1mnull[22m,
+[2m[WebServer] [22m  versionNumber: [33m1[39m
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Metadata extracted: {
+[2m[WebServer] [22m  title: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m  description: [32m'meta description '[39m,
+[2m[WebServer] [22m  excerpt: [32m'meta fabric excerpt'[39m,
+[2m[WebServer] [22m  keywords: [32m'meta fabric keyword 1, meta fabric keyword 2, meta fabric keyword 3, meta fabric keyword 4'[39m,
+[2m[WebServer] [22m  canonicalUrl: [32m'https://www.amrita-fashions.com/fabric'[39m
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Setting canonical to: https://www.amrita-fashions.com/fabric
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Final metadata: {
+[2m[WebServer] [22m  title: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m  description: [32m'meta description '[39m,
+[2m[WebServer] [22m  keywords: [32m'meta fabric keyword 1, meta fabric keyword 2, meta fabric keyword 3, meta fabric keyword 4'[39m,
+[2m[WebServer] [22m  alternates: { canonical: [32m'https://www.amrita-fashions.com/fabric'[39m },
+[2m[WebServer] [22m  openGraph: {
+[2m[WebServer] [22m    title: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m    description: [32m'meta fabric excerpt'[39m,
+[2m[WebServer] [22m    type: [32m'product'[39m,
+[2m[WebServer] [22m    url: [32m'https://www.amrita-fashions.com/fabric'[39m
+[2m[WebServer] [22m  },
+[2m[WebServer] [22m  twitter: {
+[2m[WebServer] [22m    card: [32m'summary_large_image'[39m,
+[2m[WebServer] [22m    title: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m    description: [32m'meta fabric excerpt'[39m
+[2m[WebServer] [22m  },
+[2m[WebServer] [22m  other: { excerpt: [32m'meta fabric excerpt'[39m }
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Page: fabric
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Topic Page Data: {
+[2m[WebServer] [22m  id: [32m'6986e810a54605061'[39m,
+[2m[WebServer] [22m  name: [32m'fabric'[39m,
+[2m[WebServer] [22m  deleted: [33mfalse[39m,
+[2m[WebServer] [22m  description: [32m'meta description '[39m,
+[2m[WebServer] [22m  slug: [32m'fabric'[39m,
+[2m[WebServer] [22m  metaTitle: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m  keywords: [
+[2m[WebServer] [22m    [32m'meta fabric keyword 1'[39m,
+[2m[WebServer] [22m    [32m'meta fabric keyword 2'[39m,
+[2m[WebServer] [22m    [32m'meta fabric keyword 3'[39m,
+[2m[WebServer] [22m    [32m'meta fabric keyword 4'[39m
+[2m[WebServer] [22m  ],
+[2m[WebServer] [22m  canonicalUrl: [32m'www.amrita-fashions.com/fabric'[39m,
+[2m[WebServer] [22m  excerpt: [32m'meta fabric excerpt'[39m,
+[2m[WebServer] [22m  ogType: [32m'product'[39m,
+[2m[WebServer] [22m  videoCloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage1: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage2: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage3: [1mnull[22m,
+[2m[WebServer] [22m  altTextImage4: [1mnull[22m,
+[2m[WebServer] [22m  image1CloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  image2CloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  image3CloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  image4CloudUrl: [1mnull[22m,
+[2m[WebServer] [22m  image1Note: [1mnull[22m,
+[2m[WebServer] [22m  image2Note: [1mnull[22m,
+[2m[WebServer] [22m  image3Note: [1mnull[22m,
+[2m[WebServer] [22m  image4Note: [1mnull[22m,
+[2m[WebServer] [22m  slug1: [32m'Draft'[39m,
+[2m[WebServer] [22m  streamUpdatedAt: [1mnull[22m,
+[2m[WebServer] [22m  videoId: [1mnull[22m,
+[2m[WebServer] [22m  videoName: [1mnull[22m,
+[2m[WebServer] [22m  image1Id: [1mnull[22m,
+[2m[WebServer] [22m  image1Name: [1mnull[22m,
+[2m[WebServer] [22m  image2Id: [1mnull[22m,
+[2m[WebServer] [22m  image2Name: [1mnull[22m,
+[2m[WebServer] [22m  image3Id: [1mnull[22m,
+[2m[WebServer] [22m  image3Name: [1mnull[22m,
+[2m[WebServer] [22m  image4Id: [1mnull[22m,
+[2m[WebServer] [22m  image4Name: [1mnull[22m,
+[2m[WebServer] [22m  versionNumber: [33m1[39m
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Metadata extracted: {
+[2m[WebServer] [22m  title: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m  description: [32m'meta description '[39m,
+[2m[WebServer] [22m  excerpt: [32m'meta fabric excerpt'[39m,
+[2m[WebServer] [22m  keywords: [32m'meta fabric keyword 1, meta fabric keyword 2, meta fabric keyword 3, meta fabric keyword 4'[39m,
+[2m[WebServer] [22m  canonicalUrl: [32m'https://www.amrita-fashions.com/fabric'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[Topic Page SEO] Setting canonical to: https://www.amrita-fashions.com/fabric
+
+[1A[2K[2m[WebServer] [22m[Topic Page SEO] Final metadata: {
+[2m[WebServer] [22m  title: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m  description: [32m'meta description '[39m,
+[2m[WebServer] [22m  keywords: [32m'meta fabric keyword 1, meta fabric keyword 2, meta fabric keyword 3, meta fabric keyword 4'[39m,
+[2m[WebServer] [22m  alternates: { canonical: [32m'https://www.amrita-fashions.com/fabric'[39m },
+[2m[WebServer] [22m  openGraph: {
+[2m[WebServer] [22m    title: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m    description: [32m'meta fabric excerpt'[39m,
+[2m[WebServer] [22m    type: [32m'product'[39m,
+[2m[WebServer] [22m    url: [32m'https://www.amrita-fashions.com/fabric'[39m
+[2m[WebServer] [22m  },
+[2m[WebServer] [22m  twitter: {
+[2m[WebServer] [22m    card: [32m'summary_large_image'[39m,
+[2m[WebServer] [22m    title: [32m'meta fabric title'[39m,
+[2m[WebServer] [22m    description: [32m'meta fabric excerpt'[39m
+[2m[WebServer] [22m  },
+[2m[WebServer] [22m  other: { excerpt: [32m'meta fabric excerpt'[39m }
+[2m[WebServer] [22m}
+
+[1A[2K[2m[WebServer] [22m GET /fabric [32m200[39m in 26.7s[2m (compile: 21.6s, render: 5.1s)[22m
+
+[1A[2K[2m[WebServer] [22m GET /fabric [32m200[39m in 26.7s[2m (compile: 21.6s, render: 5.1s)[22m
+
+[1A[2K[WebServer] ⚠ ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 10, column 29 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:10:29:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use math.unit instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 10 |     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 11:30  -assert-ascending()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 494:1  @import
+[WebServer] src\app\globals.scss 15:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 10, column 50 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:10:50:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use math.unit instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 10 |     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 11:51  -assert-ascending()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 494:1  @import
+[WebServer] src\app\globals.scss 15:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 13, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:13:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 13 | @import '~bootstrap/scss/functions';
+[WebServer] 
+[WebServer] src\app\globals.scss 14:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 14, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:14:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 14 | @import '~bootstrap/scss/variables';
+[WebServer] 
+[WebServer] src\app\globals.scss 15:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 15, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:15:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 15 | @import '~bootstrap/scss/variables-dark';
+[WebServer] 
+[WebServer] src\app\globals.scss 16:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 16, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:16:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 16 | @import '~bootstrap/scss/maps';
+[WebServer] 
+[WebServer] src\app\globals.scss 17:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 17, column 8 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/src/app/globals.scss:17:8:
+[WebServer] Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 17 | @import '~bootstrap/scss/mixins';
+[WebServer] 
+[WebServer] src\app\globals.scss 18:9  root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 36, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:36:10:
+[WebServer] red() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "red", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 36 |   @return red($value), green($value), blue($value);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 37:11   to-rgb()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:31  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 36, column 23 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:36:23:
+[WebServer] green() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "green", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 36 |   @return red($value), green($value), blue($value);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 37:24   to-rgb()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:31  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 57, column 29 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:57:29:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($arg == "$key"): $key; else: if($arg == "$value", $value, $arg))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 57 |       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 58:30  @import
+[WebServer] src\app\globals.scss 14:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 57, column 54 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:57:54:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($arg == "$value"): $value; else: $arg)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 57 |       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 58:55  @import
+[WebServer] src\app\globals.scss 14:9                          root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 176, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:176:10:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($l1 > $l2): divide($l1 + 0.05, $l2 + 0.05); else: divide($l2 + 0.05, $l1 + 0.05))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 176 |   @return if($l1 > $l2, divide($l1 + .05, $l2 + .05), divide($l2 + .05, $l1 + .05));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 177:11  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 184, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:184:9:
+[WebServer] red() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "red", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 184 |     "r": red($color),
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 185:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 185, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:185:9:
+[WebServer] green() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "green", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 185 |     "g": green($color),
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 186:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 186, column 9 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:186:9:
+[WebServer] blue() is deprecated. Suggestion:
+[WebServer] 
+[WebServer] color.channel($color, "blue", $space: rgb)
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/color-functions
+[WebServer] 
+[WebServer] 186 |     "b": blue($color)
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 187:10  luminance()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 174:8   contrast-ratio()
+[WebServer] node_modules\bootstrap\scss\_functions.scss 159:22  color-contrast()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 846:42  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 190, column 12 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:190:12:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass(divide($value, 255) < 0.04045): divide(divide($value, 255), 12.92); else: nth($_luminance-list, $value + 1))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 190 |     $value: if(divide($value, 255) < .04045, divide(divide($value, 255), 12.92), nth($_luminance-list, $value + 1));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 191:13  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 206, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:206:10:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 206 |   @return mix(white, $color, $weight);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 207:11  tint-color()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 79:12   @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 211, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:211:10:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 211 |   @return mix(black, $color, $weight);
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 212:11  shade-color()
+[WebServer] node_modules\bootstrap\scss\_variables.scss 84:12   @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 216, column 10 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_functions.scss:216:10:
+[WebServer] The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+[WebServer] 
+[WebServer] Suggestion: if(sass($weight > 0): shade-color($color, $weight); else: tint-color($color, -$weight))
+[WebServer] 
+[WebServer] More info: https://sass-lang.com/d/if-function
+[WebServer] 
+[WebServer] 216 |   @return if($weight > 0, shade-color($color, $weight), tint-color($color, -$weight));
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_functions.scss 217:11  @import
+[WebServer] src\app\globals.scss 14:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] Deprecation Warning on line 341, column 26 of file:///E:/SoftwareDevelopment/Shopy4/front-end/espo-shofy-final-project-07march2026/node_modules/bootstrap/scss/_variables.scss:341:26:
+[WebServer] Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+[WebServer] Use color.mix instead.
+[WebServer] 
+[WebServer] More info and automated migrator: https://sass-lang.com/d/import
+[WebServer] 
+[WebServer] 341 | $light-bg-subtle:         mix($gray-100, $white) !default;
+[WebServer] 
+[WebServer] node_modules\bootstrap\scss\_variables.scss 342:27  @import
+[WebServer] src\app\globals.scss 15:9                           root stylesheet
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+[WebServer] 
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] 318 repetitive deprecation warnings omitted.
+[WebServer] Run in verbose mode to see all warnings.
+[WebServer] 
+[WebServer] Import trace for requested module:
+[WebServer] ./src/app/globals.scss.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[15].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[15].oneOf[11].use[5]!./src/app/globals.scss
+[WebServer] ./src/app/globals.scss
+
+[1A[2K[2m[WebServer] [22m GET /fabric/nokia-602-plain-100cotton-125gsm-mercerized-butter-yellow [32m200[39m in 14.5s[2m (compile: 13.0s, render: 1489ms)[22m
+
+[1A[2K  3 passed (1.9m)

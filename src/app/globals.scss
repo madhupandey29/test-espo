@@ -1,0 +1,1062 @@
+/* ===========================
+   GLOBAL SCSS (Updated)
+   =========================== */
+
+/* Google Fonts now load via next/font in layout.jsx. */
+/* REMOVED: @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'); */
+/* REMOVED: @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap'); */
+
+/* ===========================
+   OPTIMIZED VENDOR IMPORTS
+   =========================== */
+
+/* Bootstrap imports narrowed to modules used in this app. */
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/variables-dark';
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/pagination';
+@import '~bootstrap/scss/badge';
+@import '~bootstrap/scss/alert';
+@import '~bootstrap/scss/progress';
+@import '~bootstrap/scss/helpers';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/utilities/api';
+
+
+
+/* âŒ REMOVED: react-modal-video CSS (package not used) */
+/* @import 'node_modules/react-modal-video/scss/modal-video.scss'; */
+
+/* âœ… Theme styles */
+@import '../../public/assets/scss/main.scss';
+
+
+/* ===========================
+   Brand Tokens (GLOBAL)
+   Edit these to re-theme site
+   =========================== */
+:root{
+  /* Brand */
+  --tp-theme-primary:   #2C4C97; /* AGE Blue */
+  --tp-theme-secondary: #D6A74B; /* AGE Gold */
+  --tp-theme-1:         #112338; /* Deep navy */
+  
+  /* RGB versions for transparency effects */
+  --tp-theme-primary-rgb: 44, 76, 151;
+  --tp-theme-secondary-rgb: 214, 167, 75;
+
+  /* Text & base */
+  --tp-common-white: #ffffff;
+  --tp-common-black: #0F2235;
+  --tp-text-1:       #0F2235;  /* headings */
+  --tp-text-2:       #475569;  /* body/subtle */
+
+  /* Surfaces */
+  --tp-grey-1:  #F7F9FC;  /* alt section bg */
+  --tp-grey-2:  #E6ECF2;  /* borders */
+  --tp-grey-3:  #F1F5F9;
+  --tp-grey-5:  #EEF2F6;
+  --tp-grey-6:  #D9E2EC;
+  --tp-grey-7:  #C9D3E0;
+  --tp-grey-8:  #B6C1CF;
+  --tp-grey-9:  #94A3B8;
+
+  /* Footer / dark strips */
+  --tp-footer-grey-1: #142A42;
+
+  /* Status */
+  --tp-theme-green: #1E824C;
+  --tp-green-dark:  #10603B;
+
+  /* âœ… Fonts (tokens) - now using next/font variables */
+  --tp-ff-jost:   var(--font-poppins),'Poppins','Jost',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; /* headings/display */
+  --font-inter-fallback: var(--font-inter),'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  --tp-ff-roboto: 'Inter','Hind','Jost',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; /* body/UI */
+
+  /* Layout helpers - Enhanced for better sticky positioning */
+  --tp-header-height: 88px;
+  --header-offset: var(--tp-header-height);
+  --sticky-top-offset: calc(var(--header-offset) + 10px);
+  --page-xpad: 16px;
+}
+
+/* Optional Dark Theme (toggle by adding class="theme-dark" on <html>) */
+.theme-dark{
+  --tp-common-white:#0f1b2d;
+  --tp-common-black:#e7edf6;
+
+  --tp-text-1:#e7edf6;
+  --tp-text-2:#b9c3d1;
+
+  --tp-grey-1:#0d1420;
+  --tp-grey-2:#1e2a3a;
+  --tp-footer-grey-1:#0e1a2b;
+
+  /* keep identity */
+  --tp-theme-primary:#2C4C97;
+  --tp-theme-secondary:#D6A74B;
+  --tp-theme-1:#112338;
+}
+
+/* ===========================
+   Fonts (local Jost; global pairing via tokens)
+   =========================== */
+@font-face {
+  font-family: 'Jost';
+  src: url('/assets/fonts/jost/Jost-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url('/assets/fonts/jost/Jost-Italic-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* âœ… Base font-family: use UI/body token */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden; /* Prevent horizontal scroll on html */
+  width: 100%;
+  max-width: 100vw;
+}
+
+body {
+  font-family: var(--tp-ff-roboto);
+  color: var(--tp-text-1);
+  overflow-x: hidden; /* Prevent horizontal scroll globally */
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: var(--tp-common-white);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* ===========================
+   Mobile Layout Fixes
+   =========================== */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+#wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Fix mobile viewport issues */
+@media (max-width: 768px) {
+  html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  /* Prevent white space under footer */
+  #wrapper {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Ensure footer sticks to bottom and covers any white space */
+  .tp-footer-area {
+    margin-top: auto;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Add background extension below footer to prevent white lines */
+  .tp-footer-area::before {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: inherit;
+    z-index: -1;
+  }
+  
+  /* Ensure main content area fills available space */
+  main {
+    flex: 1;
+    min-height: 0;
+  }
+}
+
+/* Fix any potential margin/padding issues on mobile */
+@media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  .container-fluid,
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+  }
+}
+
+/* ===========================
+   Header Mobile Fixes
+   =========================== */
+@media (max-width: 768px) {
+  .tp-header-area {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--tp-common-white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .tp-header-main {
+    padding: 10px 0;
+  }
+  
+  .tp-header-action {
+    gap: 8px;
+  }
+  
+  .tp-header-action-item {
+    margin: 0 4px;
+  }
+
+  /* Hamburger Menu Button Styles */
+  .tp-offcanvas-open-btn,
+  .mobile-menu-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C4C97;
+    transition: all 0.2s ease;
+  }
+
+  .tp-offcanvas-open-btn:hover,
+  .mobile-menu-btn:hover {
+    color: #1e3a7a;
+  }
+
+  .tp-offcanvas-open-btn svg,
+  .mobile-menu-btn svg {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 20px !important;
+  }
+}
+
+/* ===========================
+   Footer Mobile Fixes
+   =========================== */
+@media (max-width: 768px) {
+  .tp-footer-area {
+    position: relative;
+    z-index: 1;
+    background: var(--tp-footer-grey-1);
+  }
+  
+  /* Ensure no white space appears under footer */
+  .tp-footer-area::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: var(--tp-footer-grey-1);
+    z-index: -1;
+  }
+}
+
+/* ===========================
+   Base Body Styles
+   =========================== */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+/* Headings default to display token (Poppins/Jost) */
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--tp-ff-jost);
+  color: var(--tp-text-1);
+}
+
+/* ===========================
+   ENHANCED RESPONSIVE DESIGN FIXES
+   =========================== */
+
+/* Ensure all containers respect viewport boundaries */
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: var(--page-xpad);
+  padding-right: var(--page-xpad);
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow-x: hidden;
+}
+
+/* Enhanced responsive breakpoints */
+@media (max-width: 1366px) {
+  :root {
+    --page-xpad: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  :root {
+    --page-xpad: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  :root {
+    --page-xpad: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --page-xpad: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --page-xpad: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --page-xpad: 10px;
+  }
+}
+
+/* Product details specific responsive improvements */
+.tp-product-details-area .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1366px) {
+  .tp-product-details-area .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .tp-product-details-area .container {
+    max-width: 100%;
+  }
+}
+
+/* Ensure product details columns stack properly on mobile */
+@media (max-width: 991px) {
+  .tp-product-details-top .row {
+    flex-direction: column;
+  }
+  
+  .tp-product-details-top .col-xl-7,
+  .tp-product-details-top .col-xl-5 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+/* Enhanced text scaling for better readability */
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* Prevent horizontal scroll issues */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+img, video, iframe, embed, object {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* ===========================
+   Shop / Toolbar / Filters
+   =========================== */
+
+/* Add space when breadcrumb removed */
+.shop-page-spacing { padding-top: 40px; }
+
+/* sticky toolbar under header */
+.shop-toolbar-sticky{
+  /* position: sticky; */ /* uncomment when needed */
+  top: var(--header-offset, 88px);
+  z-index: 9;
+  background: var(--tp-common-white);
+  border-bottom: 1px solid color-mix(in srgb, var(--tp-common-black) 6%, transparent);
+}
+.shop-toolbar-sticky .tp-shop-top{ margin-bottom:0 !important; }
+
+/* Base toolbar alignment */
+.shop-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: end;
+}
+
+/* Filter header within sidebar */
+.filter-header{
+  position: sticky;
+  top: 0;
+  background: var(--tp-common-white);
+  z-index: 2;
+  padding: 8px 0 10px;
+  border-bottom: 1px solid color-mix(in srgb, var(--tp-common-black) 6%, transparent);
+}
+
+.filter-reset-btn{
+  font: 600 12px/1 var(--tp-ff-roboto);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--tp-grey-2);
+  background: var(--tp-common-white);
+  color: var(--tp-text-1);
+}
+.filter-reset-btn.is-active{
+  background: var(--tp-theme-primary);
+  color: var(--tp-common-white);
+  border-color: var(--tp-theme-primary);
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--tp-theme-primary) 20%, transparent);
+}
+
+/* Header search input respects theme */
+.tp-header-search-box input {
+  padding-left: 25px;
+  padding-right: 88px;
+  width: 100%;
+  height: 46px;
+  background-color: var(--tp-common-white);
+  color: var(--tp-common-black);
+  border: 1px solid var(--tp-grey-2);
+}
+
+/* MOBILE: Search + Filter same row; search grows, filter fixed */
+@media (max-width: 640px) {
+  .tp-shop-top-right.shop-toolbar {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 132px;
+    gap: 10px;
+    align-items: center;
+  }
+  .shop-toolbar__search { min-width: 0; }
+  .shop-toolbar__search form,
+  .shop-toolbar__search .tp-header-search-wrapper { width: 100%; }
+
+  .shop-toolbar__filter .tp-filter-btn {
+    width: 100%;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--tp-theme-1);
+    color: var(--tp-common-white);
+    border: 1px solid transparent;
+  }
+  .shop-toolbar__filter .tp-filter-btn svg,
+  .shop-toolbar__filter .tp-filter-btn svg * {
+    stroke: currentColor;
+    fill: currentColor;
+  }
+}
+
+/* Tiny phones */
+@media (max-width: 320px) {
+  .tp-shop-top-right.shop-toolbar {
+    grid-template-columns: minmax(0, 1fr) 120px;
+  }
+}
+
+/* Ensure product area isn't clipped */
+.tp-shop-main-wrapper{ overflow: visible; }
+
+/* ===========================
+   Header Dropdown Overflow Fix
+   =========================== */
+.tp-header-area,
+.tp-header-top,
+.tp-header-bottom-2,
+.tp-header-sticky,
+.tp-mega-menu-wrapper,
+.tp-header-top-menu,
+.tp-header-top-menu-item,
+.tp-header-setting,
+.tp-header-action-item {
+  overflow: visible !important;
+}
+
+/* Ensure dropdown menus have proper z-index */
+.tp-setting-list-open,
+.user-menu-dropdown {
+  z-index: 10000 !important;
+}
+
+/* ===========================
+   Simplified Sticky Sidebar (Filter panel) - Direct Approach
+   =========================== */
+.sticky-filter {
+  position: sticky;
+  top: calc(var(--tp-header-height, 88px) + 20px);
+  max-height: calc(100vh - var(--tp-header-height, 88px) - 40px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10;
+  background: var(--tp-common-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 0;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+/* Enhanced scrollbar styling */
+.sticky-filter::-webkit-scrollbar { 
+  width: 6px; 
+}
+
+.sticky-filter::-webkit-scrollbar-track { 
+  background: rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+
+.sticky-filter::-webkit-scrollbar-thumb { 
+  background: #d5d5d5; 
+  border-radius: 3px; 
+  transition: background 0.2s ease;
+}
+
+.sticky-filter:hover::-webkit-scrollbar-thumb { 
+  background: #c0c0c0; 
+}
+
+.sticky-filter { 
+  scrollbar-width: thin; 
+  scrollbar-color: #d5d5d5 rgba(0,0,0,0.05); 
+}
+
+/* Ensure the shop area has proper height for sticky to work */
+.tp-shop-area {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Ensure the sidebar container has proper positioning */
+.shop-sidebar-col {
+  position: relative;
+  height: fit-content;
+}
+
+/* Ensure proper layout with flexbox */
+.shop-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  min-height: calc(100vh - 120px);
+}
+
+.shop-sidebar-col {
+  flex: 0 0 320px;
+  max-width: 320px;
+}
+
+.shop-main-col {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Enhanced sidebar spacing for wider layout */
+@media (min-width: 1200px) {
+  .tp-shop-area .container {
+    max-width: 1400px;
+  }
+  
+  .sticky-filter {
+    max-height: calc(100vh - var(--tp-header-height, 88px) - 60px);
+  }
+}
+
+/* Better responsive behavior */
+@media (max-width: 1199.98px) {
+  .shop-sidebar-col {
+    flex: 0 0 300px !important;
+    max-width: 300px !important;
+  }
+  
+  .sticky-filter {
+    max-width: 300px;
+  }
+}
+
+/* Ensure the sidebar is visible on desktop and hidden on mobile */
+.shop-sidebar-col {
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .shop-sidebar-col {
+    display: none !important;
+  }
+  
+  .shop-content-wrapper {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .shop-main-col {
+    min-height: auto;
+  }
+  
+  /* Show mobile filter button */
+  .shopFilterBtn {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Hide mobile filter button on desktop */
+  .shopFilterBtn {
+    display: none !important;
+  }
+}
+
+.tp-btn-reset {
+  background-color: var(--tp-theme-primary);
+  color: var(--tp-common-white);
+  border: 1px solid var(--tp-theme-primary);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--tp-common-white);
+    border-color: var(--tp-theme-primary);
+    color: var(--tp-theme-primary);
+  }
+}
+
+/* Load More â€“ colors only */
+.load-more-btn {
+  background: var(--tp-theme-primary);
+  color: var(--tp-common-white);
+  border: 1px solid var(--tp-theme-primary);
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+}
+.load-more-btn:hover {
+  background-color: var(--tp-common-white);
+  border-color: var(--tp-theme-primary);
+  color: var(--tp-theme-primary);
+}
+
+.theme-dark .load-more-btn {
+  background: var(--tp-theme-primary);
+  color: var(--tp-common-white);
+  border-color: var(--tp-theme-primary);
+}
+.theme-dark .load-more-btn:hover {
+  background-color: var(--tp-common-white);
+  border-color: var(--tp-theme-primary);
+  color: var(--tp-theme-primary);
+}
+
+/* Mobile filter button â€“ colors only */
+.shop-toolbar__filter .tp-filter-btn {
+  background: var(--tp-theme-primary);
+  color: var(--tp-common-white);
+  border: 1px solid var(--tp-theme-primary);
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+}
+.shop-toolbar__filter .tp-filter-btn:hover {
+  background-color: var(--tp-common-white);
+  border-color: var(--tp-theme-primary);
+  color: var(--tp-theme-primary);
+}
+
+.theme-dark .shop-toolbar__filter .tp-filter-btn {
+  background: var(--tp-theme-primary);
+  color: var(--tp-common-white);
+  border-color: var(--tp-theme-primary);
+}
+.theme-dark .shop-toolbar__filter .tp-filter-btn:hover {
+  background-color: var(--tp-common-white);
+  border-color: var(--tp-theme-primary);
+  color: var(--tp-theme-primary);
+}
+
+/* BLOG */
+.blog-card { border-radius: 10px; overflow: hidden; }
+.blog-card__thumb{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #f6f8fb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.blog-card__img{
+  object-fit: contain !important;
+  object-position: center;
+}
+
+.tp-profile-avatar {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.tp-profile-avatar--oval {
+  width: 180px;
+  height: 180px;
+}
+.tp-profile-avatar--circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+.tp-profile-avatar__img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===========================
+   CAPABILITIES MEGA MENU 2x4 GRID STYLES
+   =========================== */
+
+/* ===== MODERN CAPABILITIES MEGAMENU STYLES ===== */
+
+/* Main container for the modern megamenu layout */
+.capabilities-mega-grid-compact.tp-submenu.tp-mega-menu {
+  display: block !important;
+  padding: 0;
+  background: white;
+  width: 100% !important;
+  max-width: 600px; /* Smaller, more focused width */
+  min-height: auto;
+  margin: 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  position: absolute !important;
+  top: 100% !important;
+  left: 50% !important; /* Center horizontally */
+  transform: translateX(-50%) !important; /* Center horizontally */
+  right: auto !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999999 !important;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none; /* Remove border */
+  overflow: hidden;
+}
+
+.capabilities-mega-grid-compact.tp-submenu.tp-mega-menu.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  margin-top: 0;
+}
+
+/* Header section with title - remove gradient background */
+.capabilities-header {
+  background: white; /* Changed from gradient to white */
+  color: #1f2937; /* Changed to dark text */
+  padding: 15px 20px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #e5e7eb; /* Add subtle border */
+}
+
+.capabilities-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Main content area */
+.capabilities-content {
+  padding: 20px;
+}
+
+/* Grid for capability items - clean list style */
+.capabilities-boxes-compact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns like the reference */
+  gap: 0;
+  margin-bottom: 15px;
+}
+
+/* Individual capability items - clean list style */
+.capability-compact-box {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.capability-compact-box:hover {
+  background: #f8fafc;
+}
+
+/* Link styling */
+.capability-compact-link {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  gap: 12px;
+}
+
+.capability-compact-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Icon styling - smaller and cleaner */
+.capability-compact-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--tp-theme-primary);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.capability-compact-box:hover .capability-compact-icon {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(44, 76, 151, 0.3);
+}
+
+/* Content styling */
+.capability-compact-content {
+  flex: 1;
+  min-width: 0; /* Prevent overflow */
+}
+
+.capability-compact-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+  transition: color 0.2s ease;
+}
+
+.capability-compact-desc {
+  font-size: 0.75rem;
+  color: #6b7280;
+  line-height: 1.4;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.capability-compact-box:hover .capability-compact-title {
+  color: var(--tp-theme-primary);
+}
+
+/* Footer CTA */
+.capabilities-footer-cta {
+  border-top: 1px solid #e5e7eb;
+  padding: 15px 20px;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.view-all-compact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: white;
+  color: var(--tp-theme-primary);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 2px solid var(--tp-theme-primary);
+}
+
+.view-all-compact-btn:hover {
+  background: var(--tp-theme-primary);
+  text-decoration: none;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(44, 76, 151, 0.3);
+}
+
+/* Dropdown icon styling */
+.dropdown-icon {
+  margin-left: 6px;
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+  opacity: 0.7;
+}
+
+.has-mega-menu:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .capabilities-mega-grid-compact.tp-submenu.tp-mega-menu {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .capabilities-mega-grid-compact.tp-submenu.tp-mega-menu {
+    max-width: 450px;
+  }
+  
+  .capabilities-boxes-compact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .capability-compact-box:not(:nth-child(2n)):after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .capabilities-mega-grid-compact.tp-submenu.tp-mega-menu {
+    max-width: 350px;
+  }
+  
+  .capabilities-content {
+    padding: 15px;
+  }
+  
+  .capability-compact-link {
+    padding: 12px 15px;
+    gap: 10px;
+  }
+  
+  .capability-compact-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+}
+
+/* ===== END MODERN CAPABILITIES MEGAMENU STYLES ===== */
+
+/* ===== OLD CAPABILITY STYLES - COMMENTED OUT FOR COMPACT VERSION =====
+
+/* Force new stacking context for mega menu container */
+.has-mega-menu {
+  position: relative;
+  z-index: 999999 !important;
+  isolation: isolate;
+}
+
+/* Ensure header has proper stacking context */
+.tp-header-area,
+.tp-header-wrapper,
+.tp-header-main-wrapper {
+  position: relative;
+  z-index: 999998 !important;
+  isolation: isolate;
+}
+
+/* Force banner and other content to stay below mega menu */
+.tp-banner-area,
+.tp-slider-area,
+.banner-area,
+.hero-banner,
+.main-content {
+  position: relative;
+  z-index: 1 !important;
+}
+
+/* ===== END OLD STYLES SECTION ===== */
+
+
+

@@ -1,0 +1,56 @@
+.loader {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+}
+
+.segment {
+  display: block;
+  background: var(--tp-loader-color);
+  border-radius: 999px;
+  transform-origin: center;
+}
+
+.scale .segment {
+  width: 28px;
+  height: 8px;
+  animation: loaderScale 0.9s ease-in-out infinite;
+}
+
+.fade {
+  gap: 5px;
+}
+
+.fade .segment {
+  width: 6px;
+  height: 24px;
+  animation: loaderFade 0.9s ease-in-out infinite;
+}
+
+@keyframes loaderScale {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scaleX(0.72);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes loaderFade {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scaleY(0.6);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

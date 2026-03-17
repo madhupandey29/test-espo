@@ -1,0 +1,50 @@
+
+> shofy-next-js@0.1.0 dev
+> next dev --webpack
+
+▲ Next.js 16.1.6 (webpack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.1.8:3001
+- Environments: .env
+- Experiments (use with caution):
+  · clientTraceMetadata
+  ✓ optimizeCss
+  · optimizePackageImports
+
+✓ Starting...
+○ Compiling /instrumentation ...
+✓ Ready in 24.5s
+○ Compiling / ...
+ GET / 200 in 27.3s (compile: 25.4s, render: 1907ms)
+ GET /fabric 200 in 5.9s (compile: 3.7s, render: 2.2s)
+○ Compiling /fabric/[slug] ...
+ GET /fabric/majestica-705-twill-100cotton-125gsm-dark-forest-green-solid-dyed 200 in 8.2s (compile: 5.8s, render: 2.4s)
+ GET /contact 200 in 4.1s (compile: 3.1s, render: 930ms)
+○ Compiling /login ...
+ GET /login 200 in 11.2s (compile: 10.7s, render: 485ms)
+ GET / 200 in 4.5s (compile: 2.3s, render: 2.2s)
+ GET /login 200 in 116ms (compile: 24ms, render: 92ms)
+ GET /fabric 200 in 5.8s (compile: 2.9s, render: 3.0s)
+ GET /fabric/majestica-705-twill-100cotton-125gsm-dark-forest-green-solid-dyed 200 in 1928ms (compile: 65ms, render: 1863ms)
+ GET /contact 200 in 4.3s (compile: 2.9s, render: 1434ms)
+ GET / 200 in 260ms (compile: 24ms, render: 236ms)
+ GET /fabric 200 in 391ms (compile: 34ms, render: 357ms)
+ GET /fabric/majestica-705-twill-100cotton-125gsm-dark-forest-green-solid-dyed 200 in 400ms (compile: 48ms, render: 352ms)
+ GET /contact 200 in 111ms (compile: 5ms, render: 106ms)
+○ Compiling /blog ...
+ GET /blog 200 in 5.3s (compile: 4.7s, render: 666ms)
+ GET /search 200 in 3.0s (compile: 2.4s, render: 599ms)
+ GET /wishlist 200 in 3.8s (compile: 3.3s, render: 467ms)
+ GET /cart 200 in 3.2s (compile: 2.7s, render: 457ms)
+ GET /checkout 307 in 3.0s (compile: 2.6s, render: 431ms)
+○ Compiling /profile ...
+ GET /profile 200 in 4.2s (compile: 3.7s, render: 443ms)
+ GET /login 200 in 133ms (compile: 54ms, render: 79ms)
+○ Compiling /register ...
+ GET /register 200 in 3.5s (compile: 3.1s, render: 404ms)
+○ Compiling /sitemap ...
+ GET /sitemap 200 in 4.5s (compile: 3.9s, render: 645ms)
+ GET /api/revalidate 405 in 3.1s (compile: 3.1s, render: 33ms)
+○ Compiling / ...
+ GET / 200 in 9.3s (compile: 6.7s, render: 2.6s)
+[?25h

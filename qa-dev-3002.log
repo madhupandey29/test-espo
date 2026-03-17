@@ -1,0 +1,28 @@
+
+> shofy-next-js@0.1.0 dev
+> next dev --webpack --port 3002
+
+▲ Next.js 16.1.6 (webpack)
+- Local:         http://localhost:3002
+- Network:       http://192.168.1.8:3002
+- Environments: .env
+- Experiments (use with caution):
+  · clientTraceMetadata
+  ✓ optimizeCss
+  · optimizePackageImports
+
+✓ Starting...
+○ Compiling /instrumentation ...
+✓ Ready in 19.7s
+○ Compiling /fabric ...
+ GET /fabric 200 in 33.7s (compile: 31.8s, render: 1849ms)
+ GET /fabric 200 in 396ms (compile: 14ms, render: 382ms)
+ GET /fabric 200 in 1333ms (compile: 194ms, render: 1139ms)
+ GET /fabric 200 in 2.9s (compile: 23ms, render: 2.8s)
+ GET /fabric 200 in 1778ms (compile: 398ms, render: 1380ms)
+ GET /fabric 200 in 768ms (compile: 12ms, render: 756ms)
+ GET /fabric 200 in 1776ms (compile: 176ms, render: 1600ms)
+ GET /fabric 200 in 355ms (compile: 6ms, render: 348ms)
+ GET /fabric 200 in 692ms (compile: 6ms, render: 686ms)
+ GET /fabric 200 in 468ms (compile: 8ms, render: 459ms)
+ GET /fabric 200 in 1674ms (compile: 169ms, render: 1505ms)

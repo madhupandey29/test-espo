@@ -1,0 +1,5 @@
+﻿generated_at_utc=2026-03-13T13:19:24Z
+baseline_tag=20260313-180614
+csv=E:\SoftwareDevelopment\Shopy4\front-end\espo-shofy-final-project-07march2026\output\lighthouse\baseline\20260313-180614\lighthouse-baseline.csv
+json_dir=E:\SoftwareDevelopment\Shopy4\front-end\espo-shofy-final-project-07march2026\output\lighthouse\baseline\20260313-180614\json
+report_count=1

@@ -1,0 +1,33 @@
+{
+  // Conservative example for React / Next.js projects.
+  // Start small, then ignore false positives after verification.
+  "entry": [
+    "next.config.js",
+    "next.config.mjs",
+    "src/app/**/*.{js,jsx,ts,tsx}",
+    "src/pages/**/*.{js,jsx,ts,tsx}",
+    "app/**/*.{js,jsx,ts,tsx}",
+    "pages/**/*.{js,jsx,ts,tsx}"
+  ],
+  "project": [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "app/**/*.{js,jsx,ts,tsx}",
+    "pages/**/*.{js,jsx,ts,tsx}",
+    "components/**/*.{js,jsx,ts,tsx}",
+    "lib/**/*.{js,jsx,ts,tsx}",
+    "utils/**/*.{js,jsx,ts,tsx}"
+  ],
+  "ignore": [
+    "**/*.d.ts",
+    ".next/**",
+    "node_modules/**",
+    "coverage/**",
+    "dist/**",
+    "build/**"
+  ],
+  "ignoreDependencies": [
+    "@next/bundle-analyzer",
+    "eslint",
+    "typescript"
+  ]
+}

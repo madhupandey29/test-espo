@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "purgecss": {
+      "command": "node",
+      "args": [
+        "scripts/mcp-purgecss-server.mjs"
+      ]
+    },
+    "next-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "next-devtools-mcp@latest"
+      ]
+    }
+  }
+}

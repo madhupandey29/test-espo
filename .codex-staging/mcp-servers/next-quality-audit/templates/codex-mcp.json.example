@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "next-quality-audit": {
+      "command": "node",
+      "args": [
+        ".codex-staging/mcp-servers/next-quality-audit/server.js"
+      ]
+    }
+  }
+}

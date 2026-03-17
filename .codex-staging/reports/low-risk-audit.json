@@ -1,0 +1,5639 @@
+{
+  "generatedAt": "2026-03-16T10:57:29.423Z",
+  "mode": "stage-1-audit",
+  "project": {
+    "projectPath": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026",
+    "packageManager": "npm",
+    "router": {
+      "appRouter": true,
+      "pagesRouter": false,
+      "mode": "app-router"
+    },
+    "styling": {
+      "tailwind": true,
+      "sass": true,
+      "cssModules": true,
+      "styledComponents": false,
+      "globalCss": true,
+      "cssFileCount": 109,
+      "cssModuleCount": 11,
+      "globalCssCount": 98,
+      "sampleGlobalCssFiles": [
+        "src/app/globals.scss",
+        "src/styles/carousel-mobile-fix.css",
+        "src/styles/safe-responsive-fixes.css",
+        "src/components/chatbot/FloatingChatbot.scss",
+        "public/assets/css/animate.css",
+        "public/assets/scss/main.scss",
+        "public/assets/scss/components/index.scss",
+        "public/assets/scss/components/_accordion.scss",
+        "public/assets/scss/components/_animation.scss",
+        "public/assets/scss/components/_background.scss"
+      ],
+      "sampleCssModules": [
+        "src/app/about/About.module.scss",
+        "src/app/capabilities/Capabilities.module.scss",
+        "src/app/careers/Careers.module.scss",
+        "src/app/sitemap/sitemap.module.scss",
+        "src/components/auth/AuthArea.module.css",
+        "src/components/blog-details/BlogDetails.module.scss",
+        "src/components/common/BackToTop.module.scss",
+        "src/components/common/FloatingButtons.module.scss",
+        "src/components/loader/loader.module.css",
+        "src/components/profile/UserProfile.module.css"
+      ],
+      "globalImports": [
+        {
+          "file": "src/app/layout.jsx",
+          "statement": "import './globals.scss'"
+        }
+      ],
+      "tailwindConfig": null
+    },
+    "detected": {
+      "nextConfig": "next.config.js",
+      "eslintConfig": ".eslintrc.json",
+      "tsconfig": "tsconfig.json",
+      "postcssConfig": "postcss.config.js",
+      "playwrightConfig": "playwright.config.ts"
+    }
+  },
+  "summary": {
+    "unusedDependencyCount": 0,
+    "unusedFileCount": 14,
+    "unusedExportCount": 0,
+    "riskyCssCandidateCount": 15,
+    "largeJsBundleCount": 15,
+    "largeClientComponentCount": 15,
+    "safeFirstActionCount": 0
+  },
+  "findings": {
+    "unusedDependencies": [],
+    "unusedFiles": [
+      {
+        "file": "src/styles/carousel-mobile-fix.css"
+      },
+      {
+        "file": "src/styles/safe-responsive-fixes.css"
+      },
+      {
+        "file": "src/utils/localstorage.js"
+      },
+      {
+        "file": ".codex-staging/mcp-servers/lighthouse-ci/server.js"
+      },
+      {
+        "file": ".codex-staging/mcp-servers/next-quality-audit/cli.js"
+      },
+      {
+        "file": ".codex-staging/mcp-servers/next-quality-audit/server.js"
+      },
+      {
+        "file": ".codex-staging/mcp-servers/purgecss/server.js"
+      },
+      {
+        "file": "src/utils/__tests__/productStructuredData.test.js"
+      },
+      {
+        "file": ".codex-staging/mcp-servers/next-quality-audit/lib/audits.js"
+      },
+      {
+        "file": ".codex-staging/mcp-servers/next-quality-audit/lib/exec.js"
+      },
+      {
+        "file": ".codex-staging/mcp-servers/next-quality-audit/lib/project-intel.js"
+      },
+      {
+        "file": ".codex-staging/mcp-servers/next-quality-audit/lib/report.js"
+      },
+      {
+        "file": "public/assets/scss/components/_preloader.scss"
+      },
+      {
+        "file": "public/assets/scss/components/_theme-settings.scss"
+      }
+    ],
+    "unusedExports": [],
+    "riskyCssCleanupCandidates": [
+      {
+        "file": "public/assets/css/animate.css",
+        "bytes": 71742,
+        "legacy": true,
+        "reason": "large global stylesheet"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_productDetails.scss",
+        "bytes": 46801,
+        "legacy": true,
+        "reason": "large global stylesheet"
+      },
+      {
+        "file": "public/assets/scss/components/_offcanvas.scss",
+        "bytes": 30072,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/pages/_slider.scss",
+        "bytes": 27391,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "src/app/globals.scss",
+        "bytes": 24562,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/blog/_postbox.scss",
+        "bytes": 22906,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_product.scss",
+        "bytes": 22240,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "src/components/chatbot/FloatingChatbot.scss",
+        "bytes": 21628,
+        "legacy": false,
+        "reason": "global stylesheet may contain dynamic selectors"
+      },
+      {
+        "file": "public/assets/scss/layout/pages/_profile.scss",
+        "bytes": 17693,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/menu/_categoryMenu.scss",
+        "bytes": 16081,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/header/_header-5.scss",
+        "bytes": 15871,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/menu/_menu.scss",
+        "bytes": 14951,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_banner.scss",
+        "bytes": 13695,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_category.scss",
+        "bytes": 13225,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_checkout.scss",
+        "bytes": 12749,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      }
+    ],
+    "largeJsBundles": [
+      {
+        "file": "164f4fb6.96b9f50d9f5f168e.js",
+        "bytes": 330491
+      },
+      {
+        "file": "4bd1b696-96fa2570c3ed041f.js",
+        "bytes": 198840
+      },
+      {
+        "file": "3794-4618df11ff397ba8.js",
+        "bytes": 190763
+      },
+      {
+        "file": "framework-7e54adbbc2ea18ad.js",
+        "bytes": 140116
+      },
+      {
+        "file": "main-31393c2e6f8d084a.js",
+        "bytes": 130666
+      },
+      {
+        "file": "polyfills-42372ed130431b0a.js",
+        "bytes": 112594
+      },
+      {
+        "file": "5135.cd14a1151e4cc5ec.js",
+        "bytes": 106486
+      },
+      {
+        "file": "4561-2ff583cd3838a152.js",
+        "bytes": 80271
+      },
+      {
+        "file": "2018-20c59523f480bef6.js",
+        "bytes": 65571
+      },
+      {
+        "file": "1001-c7786fe7436a77c7.js",
+        "bytes": 53310
+      },
+      {
+        "file": "345-a0699c737033b992.js",
+        "bytes": 51406
+      },
+      {
+        "file": "3820-20b8e5622bbd6a9f.js",
+        "bytes": 47222
+      },
+      {
+        "file": "280273a7.560b210d0885bf74.js",
+        "bytes": 45648
+      },
+      {
+        "file": "8394-95b65f3ea7b1da73.js",
+        "bytes": 37856
+      },
+      {
+        "file": "5724-b32d17ef63f51df1.js",
+        "bytes": 31225
+      }
+    ],
+    "largeClientComponents": [
+      {
+        "file": "src/components/profile/UserProfile.jsx",
+        "bytes": 56400,
+        "packages": [
+          "next",
+          "react",
+          "react-icons"
+        ]
+      },
+      {
+        "file": "src/components/product-details/details-thumb-wrapper.jsx",
+        "bytes": 48572,
+        "packages": [
+          "next",
+          "react",
+          "react-icons"
+        ]
+      },
+      {
+        "file": "src/components/checkout/checkout-area.jsx",
+        "bytes": 46906,
+        "packages": [
+          "next",
+          "react",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/components/products/fashion/product-item.jsx",
+        "bytes": 45463,
+        "packages": [
+          "next",
+          "react",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/layout/headers/header-2.jsx",
+        "bytes": 44989,
+        "packages": [
+          "next",
+          "react",
+          "react-icons"
+        ]
+      },
+      {
+        "file": "src/components/product-details/details-wrapper.jsx",
+        "bytes": 35452,
+        "packages": [
+          "next",
+          "react",
+          "react-icons",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/layout/footers/footer.jsx",
+        "bytes": 30265,
+        "packages": [
+          "next",
+          "react",
+          "react-icons",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/components/cart-wishlist/cart-item-new.jsx",
+        "bytes": 29626,
+        "packages": [
+          "next",
+          "react",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/components/forms/contact-form.jsx",
+        "bytes": 28658,
+        "packages": [
+          "react"
+        ]
+      },
+      {
+        "file": "src/components/cart-wishlist/wishlist-item.jsx",
+        "bytes": 28502,
+        "packages": [
+          "next",
+          "react",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/components/products/fashion/weeks-featured.jsx",
+        "bytes": 25898,
+        "packages": [
+          "next",
+          "react",
+          "swiper"
+        ]
+      },
+      {
+        "file": "src/app/category/[slug]/CategoryDetailClient.jsx",
+        "bytes": 25622,
+        "packages": [
+          "next",
+          "react"
+        ]
+      },
+      {
+        "file": "src/components/checkout/order-confirmation-area.jsx",
+        "bytes": 24891,
+        "packages": [
+          "next",
+          "react"
+        ]
+      },
+      {
+        "file": "src/components/products/fashion/popular-products.jsx",
+        "bytes": 24158,
+        "packages": [
+          "next",
+          "react",
+          "swiper"
+        ]
+      },
+      {
+        "file": "src/components/order/order-area.jsx",
+        "bytes": 21840,
+        "packages": [
+          "react",
+          "react-icons"
+        ]
+      }
+    ],
+    "recommendedPackageUpgrades": [
+      {
+        "name": "@typescript-eslint/eslint-plugin",
+        "current": "8.56.1",
+        "target": "8.57.0",
+        "risk": "medium",
+        "whyItMatters": "Minor upgrade may reduce bugs or improve performance.",
+        "expectedBenefit": "Potential library improvements with manageable change risk.",
+        "compatibilityRisk": "medium",
+        "codeChangesMayBeRequired": true
+      },
+      {
+        "name": "@typescript-eslint/parser",
+        "current": "8.56.1",
+        "target": "8.57.0",
+        "risk": "medium",
+        "whyItMatters": "Minor upgrade may reduce bugs or improve performance.",
+        "expectedBenefit": "Potential library improvements with manageable change risk.",
+        "compatibilityRisk": "medium",
+        "codeChangesMayBeRequired": true
+      }
+    ]
+  },
+  "safeFirstActions": [],
+  "mediumRiskActions": [
+    "Review dead-file candidate src/styles/carousel-mobile-fix.css with route and runtime checks before deletion.",
+    "Review dead-file candidate src/styles/safe-responsive-fixes.css with route and runtime checks before deletion.",
+    "Review dead-file candidate src/utils/localstorage.js with route and runtime checks before deletion.",
+    "Review dead-file candidate .codex-staging/mcp-servers/lighthouse-ci/server.js with route and runtime checks before deletion.",
+    "Review dead-file candidate .codex-staging/mcp-servers/next-quality-audit/cli.js with route and runtime checks before deletion.",
+    "Review dead-file candidate .codex-staging/mcp-servers/next-quality-audit/server.js with route and runtime checks before deletion.",
+    "Review dead-file candidate .codex-staging/mcp-servers/purgecss/server.js with route and runtime checks before deletion.",
+    "Review dead-file candidate src/utils/__tests__/productStructuredData.test.js with route and runtime checks before deletion.",
+    "Review dead-file candidate .codex-staging/mcp-servers/next-quality-audit/lib/audits.js with route and runtime checks before deletion.",
+    "Review dead-file candidate .codex-staging/mcp-servers/next-quality-audit/lib/exec.js with route and runtime checks before deletion.",
+    "Review dead-file candidate .codex-staging/mcp-servers/next-quality-audit/lib/project-intel.js with route and runtime checks before deletion.",
+    "Review dead-file candidate .codex-staging/mcp-servers/next-quality-audit/lib/report.js with route and runtime checks before deletion.",
+    "Review dead-file candidate public/assets/scss/components/_preloader.scss with route and runtime checks before deletion.",
+    "Review dead-file candidate public/assets/scss/components/_theme-settings.scss with route and runtime checks before deletion.",
+    "Review CSS candidate public/assets/css/animate.css (large global stylesheet) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_productDetails.scss (large global stylesheet) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/components/_offcanvas.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/pages/_slider.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate src/app/globals.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/blog/_postbox.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_product.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate src/components/chatbot/FloatingChatbot.scss (global stylesheet may contain dynamic selectors) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/pages/_profile.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/menu/_categoryMenu.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/header/_header-5.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/menu/_menu.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_banner.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_category.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_checkout.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review minor upgrade for @typescript-eslint/eslint-plugin from 8.56.1 to 8.57.0.",
+    "Review minor upgrade for @typescript-eslint/parser from 8.56.1 to 8.57.0."
+  ],
+  "actionsRequiringHumanReview": [
+    "Major upgrade review required for @hookform/resolvers (3.10.0 -> 5.2.2).",
+    "Major upgrade review required for @types/node (24.12.0 -> 25.5.0).",
+    "Major upgrade review required for @types/react (18.3.28 -> 19.2.14).",
+    "Major upgrade review required for @types/react-dom (18.3.7 -> 19.2.3).",
+    "Major upgrade review required for @vercel/speed-insights (1.3.1 -> 2.0.0).",
+    "Major upgrade review required for eslint (9.39.4 -> 10.0.3).",
+    "Major upgrade review required for postcss-preset-env (10.6.1 -> 11.2.0).",
+    "Major upgrade review required for react (18.3.1 -> 19.2.4).",
+    "Major upgrade review required for react-dom (18.3.1 -> 19.2.4).",
+    "Major upgrade review required for swiper (11.2.10 -> 12.1.2).",
+    "Framework-critical package eslint needs explicit review (9.39.4 -> 10.0.3).",
+    "Framework-critical package react needs explicit review (18.3.1 -> 19.2.4).",
+    "Framework-critical package react-dom needs explicit review (18.3.1 -> 19.2.4)."
+  ],
+  "commandsUsed": [
+    "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\.bin\\knip.cmd --reporter json",
+    "npm.cmd outdated --json",
+    "npm.cmd audit --omit=dev --json"
+  ],
+  "filesTouched": [],
+  "rollbackGuidance": [
+    "Commit before autofix or dependency changes.",
+    "Keep build output and smoke-test evidence for before/after review.",
+    "Revert only the targeted batch if verification fails."
+  ],
+  "raw": {
+    "unusedCode": {
+      "status": "ok",
+      "tool": "knip",
+      "installCommand": "npm install -D knip",
+      "raw": {
+        "files": [
+          "src/styles/carousel-mobile-fix.css",
+          "src/styles/safe-responsive-fixes.css",
+          "src/utils/localstorage.js",
+          ".codex-staging/mcp-servers/lighthouse-ci/server.js",
+          ".codex-staging/mcp-servers/next-quality-audit/cli.js",
+          ".codex-staging/mcp-servers/next-quality-audit/server.js",
+          ".codex-staging/mcp-servers/purgecss/server.js",
+          "src/utils/__tests__/productStructuredData.test.js",
+          ".codex-staging/mcp-servers/next-quality-audit/lib/audits.js",
+          ".codex-staging/mcp-servers/next-quality-audit/lib/exec.js",
+          ".codex-staging/mcp-servers/next-quality-audit/lib/project-intel.js",
+          ".codex-staging/mcp-servers/next-quality-audit/lib/report.js",
+          "public/assets/scss/components/_preloader.scss",
+          "public/assets/scss/components/_theme-settings.scss"
+        ],
+        "issues": [
+          {
+            "file": "package.json",
+            "dependencies": [
+              {
+                "name": "next-sitemap",
+                "line": 65,
+                "col": 6,
+                "pos": 2636
+              },
+              {
+                "name": "swr",
+                "line": 76,
+                "col": 6,
+                "pos": 2945
+              }
+            ],
+            "devDependencies": [
+              {
+                "name": "@typescript-eslint/eslint-plugin",
+                "line": 87,
+                "col": 6,
+                "pos": 3259
+              },
+              {
+                "name": "@typescript-eslint/parser",
+                "line": 88,
+                "col": 6,
+                "pos": 3310
+              },
+              {
+                "name": "autoprefixer",
+                "line": 89,
+                "col": 6,
+                "pos": 3354
+              },
+              {
+                "name": "critters-webpack-plugin",
+                "line": 90,
+                "col": 6,
+                "pos": 3386
+              },
+              {
+                "name": "cssnano",
+                "line": 92,
+                "col": 6,
+                "pos": 3455
+              },
+              {
+                "name": "tailwindcss",
+                "line": 104,
+                "col": 6,
+                "pos": 3819
+              }
+            ],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/app/globals.scss",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [
+              {
+                "name": "./~bootstrap/scss/functions",
+                "line": 1,
+                "col": 18,
+                "pos": 16
+              },
+              {
+                "name": "./~bootstrap/scss/variables",
+                "line": 2,
+                "col": 18,
+                "pos": 63
+              },
+              {
+                "name": "./~bootstrap/scss/variables-dark",
+                "line": 3,
+                "col": 18,
+                "pos": 110
+              },
+              {
+                "name": "./~bootstrap/scss/maps",
+                "line": 4,
+                "col": 18,
+                "pos": 162
+              },
+              {
+                "name": "./~bootstrap/scss/mixins",
+                "line": 5,
+                "col": 18,
+                "pos": 204
+              },
+              {
+                "name": "./~bootstrap/scss/root",
+                "line": 6,
+                "col": 18,
+                "pos": 248
+              },
+              {
+                "name": "./~bootstrap/scss/reboot",
+                "line": 7,
+                "col": 18,
+                "pos": 290
+              },
+              {
+                "name": "./~bootstrap/scss/type",
+                "line": 8,
+                "col": 18,
+                "pos": 334
+              },
+              {
+                "name": "./~bootstrap/scss/images",
+                "line": 9,
+                "col": 18,
+                "pos": 376
+              },
+              {
+                "name": "./~bootstrap/scss/containers",
+                "line": 10,
+                "col": 18,
+                "pos": 420
+              },
+              {
+                "name": "./~bootstrap/scss/grid",
+                "line": 11,
+                "col": 19,
+                "pos": 469
+              },
+              {
+                "name": "./~bootstrap/scss/tables",
+                "line": 12,
+                "col": 19,
+                "pos": 512
+              },
+              {
+                "name": "./~bootstrap/scss/forms",
+                "line": 13,
+                "col": 19,
+                "pos": 557
+              },
+              {
+                "name": "./~bootstrap/scss/buttons",
+                "line": 14,
+                "col": 19,
+                "pos": 601
+              },
+              {
+                "name": "./~bootstrap/scss/transitions",
+                "line": 15,
+                "col": 19,
+                "pos": 647
+              },
+              {
+                "name": "./~bootstrap/scss/nav",
+                "line": 16,
+                "col": 19,
+                "pos": 697
+              },
+              {
+                "name": "./~bootstrap/scss/card",
+                "line": 17,
+                "col": 19,
+                "pos": 739
+              },
+              {
+                "name": "./~bootstrap/scss/pagination",
+                "line": 18,
+                "col": 19,
+                "pos": 782
+              },
+              {
+                "name": "./~bootstrap/scss/badge",
+                "line": 19,
+                "col": 19,
+                "pos": 831
+              },
+              {
+                "name": "./~bootstrap/scss/alert",
+                "line": 20,
+                "col": 19,
+                "pos": 875
+              },
+              {
+                "name": "./~bootstrap/scss/progress",
+                "line": 21,
+                "col": 19,
+                "pos": 919
+              },
+              {
+                "name": "./~bootstrap/scss/helpers",
+                "line": 22,
+                "col": 19,
+                "pos": 966
+              },
+              {
+                "name": "./~bootstrap/scss/utilities",
+                "line": 23,
+                "col": 19,
+                "pos": 1012
+              },
+              {
+                "name": "./~bootstrap/scss/utilities/api",
+                "line": 24,
+                "col": 19,
+                "pos": 1060
+              }
+            ],
+            "exports": [],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/corporationStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateCorporationJsonLdScript",
+                "line": 176,
+                "col": 14,
+                "pos": 7270
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/websiteStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateWebsiteJsonLdScript",
+                "line": 59,
+                "col": 14,
+                "pos": 2035
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/topicPageSeoIntegration.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateMetadataFromTopicPage",
+                "line": 94,
+                "col": 17,
+                "pos": 3130
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/seo.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "getDefaultSeoSettings",
+                "line": 14,
+                "col": 23,
+                "pos": 368
+              },
+              {
+                "name": "getCanonicalUrl",
+                "line": 87,
+                "col": 14,
+                "pos": 2601
+              },
+              {
+                "name": "getAbsoluteImageUrl",
+                "line": 105,
+                "col": 14,
+                "pos": 3031
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/imageContract.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "isAbsoluteImageUrl",
+                "line": 35,
+                "col": 14,
+                "pos": 832
+              },
+              {
+                "name": "getImageVariantUrl",
+                "line": 95,
+                "col": 14,
+                "pos": 2565
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/sitemap-manager.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "default",
+                "line": 245,
+                "col": 16,
+                "pos": 7188
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [
+              [
+                {
+                  "name": "SitemapManager",
+                  "line": 6,
+                  "col": 61,
+                  "pos": 174
+                },
+                {
+                  "name": "default",
+                  "line": 245,
+                  "col": 15,
+                  "pos": 7187
+                }
+              ]
+            ],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/sitemap-utils.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "pingSearchEngines",
+                "line": 2,
+                "col": 23,
+                "pos": 24
+              },
+              {
+                "name": "getSitemapUrl",
+                "line": 20,
+                "col": 17,
+                "pos": 613
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/runtimeConfig.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "getSiteOrigin",
+                "line": 25,
+                "col": 14,
+                "pos": 592
+              },
+              {
+                "name": "getCdnOrigin",
+                "line": 30,
+                "col": 14,
+                "pos": 750
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/breadcrumbStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateBreadcrumbStructuredData",
+                "line": 8,
+                "col": 17,
+                "pos": 264
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/aboutPageStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateAboutPageJsonLdScript",
+                "line": 39,
+                "col": 14,
+                "pos": 1160
+              },
+              {
+                "name": "AboutPageJsonLd",
+                "line": 58,
+                "col": 17,
+                "pos": 1813
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/blogPageStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateBlogPageStructuredData",
+                "line": 13,
+                "col": 17,
+                "pos": 493
+              },
+              {
+                "name": "generateBlogPageJsonLd",
+                "line": 118,
+                "col": 17,
+                "pos": 4193
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/capabilitiesPageStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateCapabilitiesPageJsonLdScript",
+                "line": 39,
+                "col": 14,
+                "pos": 1214
+              },
+              {
+                "name": "CapabilitiesPageJsonLd",
+                "line": 58,
+                "col": 17,
+                "pos": 1900
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/contactPageStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateContactPageJsonLdScript",
+                "line": 39,
+                "col": 14,
+                "pos": 1173
+              },
+              {
+                "name": "ContactPageJsonLd",
+                "line": 58,
+                "col": 17,
+                "pos": 1834
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/fabricCollectionStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateFabricCollectionStructuredData",
+                "line": 47,
+                "col": 17,
+                "pos": 1256
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/productStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateProductJsonLdScript",
+                "line": 222,
+                "col": 14,
+                "pos": 6466
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/blogStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateBlogStructuredData",
+                "line": 11,
+                "col": 14,
+                "pos": 348
+              },
+              {
+                "name": "generateBlogBreadcrumbStructuredData",
+                "line": 139,
+                "col": 14,
+                "pos": 4107
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/faqStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateFaqStructuredData",
+                "line": 31,
+                "col": 17,
+                "pos": 852
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/collectionItemListStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateCollectionItemListStructuredData",
+                "line": 48,
+                "col": 17,
+                "pos": 1333
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/auth/authSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "clearUserId",
+                "line": 46,
+                "col": 56,
+                "pos": 1333
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/userSelectors.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "selectUser",
+                "line": 29,
+                "col": 14,
+                "pos": 847
+              },
+              {
+                "name": "selectIsAuthenticated",
+                "line": 39,
+                "col": 14,
+                "pos": 1054
+              },
+              {
+                "name": "selectUserInfo",
+                "line": 48,
+                "col": 14,
+                "pos": 1264
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/cartApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "useUpdateCartItemMutation",
+                "line": 188,
+                "col": 3,
+                "pos": 5594
+              },
+              {
+                "name": "useRemoveCartItemMutation",
+                "line": 189,
+                "col": 3,
+                "pos": 5623
+              },
+              {
+                "name": "useAddToCartMutation",
+                "line": 191,
+                "col": 3,
+                "pos": 5676
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/chatbotSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "clearSession",
+                "line": 69,
+                "col": 3,
+                "pos": 1547
+              },
+              {
+                "name": "selectUserContext",
+                "line": 79,
+                "col": 14,
+                "pos": 1907
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/chatbotApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "chatbotApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              },
+              {
+                "name": "useGetChatHistoryQuery",
+                "line": 46,
+                "col": 3,
+                "pos": 1413
+              },
+              {
+                "name": "useClearChatHistoryMutation",
+                "line": 47,
+                "col": 3,
+                "pos": 1440
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/searchHub.ts",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "SEARCH_EVENT",
+                "line": 6,
+                "col": 14,
+                "pos": 184
+              }
+            ],
+            "types": [
+              {
+                "name": "SearchEventDetail",
+                "line": 5,
+                "col": 13,
+                "pos": 131
+              }
+            ],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/wishlist-slice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "wishlistSlice",
+                "line": 287,
+                "col": 14,
+                "pos": 9443
+              },
+              {
+                "name": "set_wishlist",
+                "line": 414,
+                "col": 16,
+                "pos": 13805
+              },
+              {
+                "name": "clear_wishlist",
+                "line": 414,
+                "col": 30,
+                "pos": 13819
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/api/apiSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "useGetFilterOptionsQuery",
+                "line": 261,
+                "col": 3,
+                "pos": 7740
+              },
+              {
+                "name": "useGetECatalogueFieldValuesQuery",
+                "line": 263,
+                "col": 3,
+                "pos": 7798
+              },
+              {
+                "name": "useGetProductsByFieldValueQuery",
+                "line": 264,
+                "col": 3,
+                "pos": 7836
+              },
+              {
+                "name": "useGetProductBySlugQuery",
+                "line": 265,
+                "col": 3,
+                "pos": 7873
+              },
+              {
+                "name": "useGetAuthorByIdQuery",
+                "line": 267,
+                "col": 3,
+                "pos": 7927
+              },
+              {
+                "name": "useGetBlogByIdQuery",
+                "line": 269,
+                "col": 3,
+                "pos": 7974
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/userApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "useGetUserQuery",
+                "line": 46,
+                "col": 16,
+                "pos": 1171
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/cartSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "update_cart_item",
+                "line": 272,
+                "col": 14,
+                "pos": 10090
+              },
+              {
+                "name": "remove_from_cart",
+                "line": 301,
+                "col": 14,
+                "pos": 11231
+              },
+              {
+                "name": "clear_cart_api",
+                "line": 328,
+                "col": 14,
+                "pos": 12294
+              },
+              {
+                "name": "cartSlice",
+                "line": 365,
+                "col": 14,
+                "pos": 13502
+              },
+              {
+                "name": "increment",
+                "line": 436,
+                "col": 3,
+                "pos": 16391
+              },
+              {
+                "name": "decrement",
+                "line": 436,
+                "col": 14,
+                "pos": 16402
+              },
+              {
+                "name": "closeCartMini",
+                "line": 437,
+                "col": 17,
+                "pos": 16452
+              },
+              {
+                "name": "get_cart_products",
+                "line": 438,
+                "col": 3,
+                "pos": 16470
+              },
+              {
+                "name": "add_cart_product",
+                "line": 438,
+                "col": 22,
+                "pos": 16489
+              },
+              {
+                "name": "quantityDecrement",
+                "line": 438,
+                "col": 40,
+                "pos": 16507
+              },
+              {
+                "name": "remove_product",
+                "line": 438,
+                "col": 59,
+                "pos": 16526
+              },
+              {
+                "name": "clearCart",
+                "line": 438,
+                "col": 75,
+                "pos": 16542
+              },
+              {
+                "name": "selectCartDistinctCount",
+                "line": 442,
+                "col": 14,
+                "pos": 16628
+              },
+              {
+                "name": "selectCartLoading",
+                "line": 444,
+                "col": 14,
+                "pos": 16766
+              },
+              {
+                "name": "selectCartError",
+                "line": 445,
+                "col": 14,
+                "pos": 16841
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/productModalSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "productModalSlice",
+                "line": 9,
+                "col": 14,
+                "pos": 194
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/shop-filter-slice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "shopFilterSlice",
+                "line": 7,
+                "col": 14,
+                "pos": 119
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/order/orderSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "orderSlice",
+                "line": 8,
+                "col": 14,
+                "pos": 137
+              },
+              {
+                "name": "get_shipping",
+                "line": 37,
+                "col": 3,
+                "pos": 1006
+              },
+              {
+                "name": "set_shipping",
+                "line": 38,
+                "col": 3,
+                "pos": 1023
+              },
+              {
+                "name": "set_last_order",
+                "line": 39,
+                "col": 3,
+                "pos": 1040
+              },
+              {
+                "name": "clear_last_order",
+                "line": 40,
+                "col": 3,
+                "pos": 1059
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/svg/index.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "ArrowRightSm",
+                "line": 50,
+                "col": 3,
+                "pos": 1733
+              },
+              {
+                "name": "ArrowRightSmTwo",
+                "line": 51,
+                "col": 3,
+                "pos": 1750
+              },
+              {
+                "name": "ArrowRightLongPrev",
+                "line": 52,
+                "col": 3,
+                "pos": 1770
+              },
+              {
+                "name": "Box",
+                "line": 53,
+                "col": 3,
+                "pos": 1793
+              },
+              {
+                "name": "DeliveryTwo",
+                "line": 54,
+                "col": 3,
+                "pos": 1801
+              },
+              {
+                "name": "Processing",
+                "line": 55,
+                "col": 3,
+                "pos": 1817
+              },
+              {
+                "name": "Truck",
+                "line": 56,
+                "col": 3,
+                "pos": 1832
+              },
+              {
+                "name": "Comment",
+                "line": 60,
+                "col": 3,
+                "pos": 1877
+              },
+              {
+                "name": "Date",
+                "line": 61,
+                "col": 3,
+                "pos": 1889
+              },
+              {
+                "name": "UserTwo",
+                "line": 63,
+                "col": 3,
+                "pos": 1908
+              },
+              {
+                "name": "PlusTwo",
+                "line": 66,
+                "col": 3,
+                "pos": 1949
+              },
+              {
+                "name": "AnimatedLine",
+                "line": 67,
+                "col": 3,
+                "pos": 1961
+              },
+              {
+                "name": "TextShape",
+                "line": 68,
+                "col": 3,
+                "pos": 1978
+              },
+              {
+                "name": "Tags",
+                "line": 69,
+                "col": 3,
+                "pos": 1992
+              },
+              {
+                "name": "SliderNextBtn",
+                "line": 70,
+                "col": 3,
+                "pos": 2001
+              },
+              {
+                "name": "SliderPrevBtn",
+                "line": 72,
+                "col": 3,
+                "pos": 2038
+              },
+              {
+                "name": "Minus",
+                "line": 73,
+                "col": 3,
+                "pos": 2056
+              },
+              {
+                "name": "ShippingCar",
+                "line": 78,
+                "col": 3,
+                "pos": 2111
+              },
+              {
+                "name": "User",
+                "line": 80,
+                "col": 3,
+                "pos": 2138
+              },
+              {
+                "name": "Menu",
+                "line": 82,
+                "col": 3,
+                "pos": 2159
+              },
+              {
+                "name": "Phone",
+                "line": 83,
+                "col": 3,
+                "pos": 2168
+              },
+              {
+                "name": "CategoryMenu",
+                "line": 84,
+                "col": 3,
+                "pos": 2178
+              },
+              {
+                "name": "ArrowRight",
+                "line": 85,
+                "col": 3,
+                "pos": 2195
+              },
+              {
+                "name": "PaginationNext",
+                "line": 88,
+                "col": 3,
+                "pos": 2233
+              },
+              {
+                "name": "PaginationPrev",
+                "line": 89,
+                "col": 3,
+                "pos": 2252
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/authReturn.ts",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "RETURN_TO_KEY",
+                "line": 2,
+                "col": 14,
+                "pos": 41
+              },
+              {
+                "name": "isBrowser",
+                "line": 4,
+                "col": 14,
+                "pos": 85
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/authUtils.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "useAuthAction",
+                "line": 11,
+                "col": 14,
+                "pos": 353
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/blogTags.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "getPopularTags",
+                "line": 6,
+                "col": 14,
+                "pos": 204
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/cleanBlogContent.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "extractValidImages",
+                "line": 34,
+                "col": 14,
+                "pos": 1182
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/collectionUtils.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "fetchCollections",
+                "line": 16,
+                "col": 14,
+                "pos": 400
+              },
+              {
+                "name": "getCollectionById",
+                "line": 47,
+                "col": 14,
+                "pos": 1137
+              },
+              {
+                "name": "getProductCollectionId",
+                "line": 60,
+                "col": 14,
+                "pos": 1460
+              },
+              {
+                "name": "useCollectionMedia",
+                "line": 133,
+                "col": 14,
+                "pos": 3429
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/productFieldMapper.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "getContentArray",
+                "line": 47,
+                "col": 14,
+                "pos": 1314
+              },
+              {
+                "name": "getColorArray",
+                "line": 81,
+                "col": 14,
+                "pos": 2093
+              },
+              {
+                "name": "getFinishArray",
+                "line": 105,
+                "col": 14,
+                "pos": 2625
+              },
+              {
+                "name": "getMotifName",
+                "line": 128,
+                "col": 14,
+                "pos": 3067
+              },
+              {
+                "name": "getGroupcodeName",
+                "line": 138,
+                "col": 14,
+                "pos": 3292
+              },
+              {
+                "name": "getProductOz",
+                "line": 148,
+                "col": 14,
+                "pos": 3492
+              },
+              {
+                "name": "getProductImages",
+                "line": 155,
+                "col": 14,
+                "pos": 3651
+              },
+              {
+                "name": "getProductTags",
+                "line": 188,
+                "col": 14,
+                "pos": 4570
+              },
+              {
+                "name": "getVideoUrl",
+                "line": 201,
+                "col": 14,
+                "pos": 4851
+              },
+              {
+                "name": "getProductSlug",
+                "line": 208,
+                "col": 14,
+                "pos": 5012
+              },
+              {
+                "name": "getSuitableArray",
+                "line": 215,
+                "col": 14,
+                "pos": 5179
+              },
+              {
+                "name": "getLeadTimeArray",
+                "line": 225,
+                "col": 14,
+                "pos": 5382
+              },
+              {
+                "name": "mapProductsArray",
+                "line": 284,
+                "col": 14,
+                "pos": 7336
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/searchMiddleware.ts",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "filterItems",
+                "line": 144,
+                "col": 17,
+                "pos": 4526
+              }
+            ],
+            "types": [
+              {
+                "name": "FieldGetter",
+                "line": 3,
+                "col": 13,
+                "pos": 44
+              },
+              {
+                "name": "FilterOptions",
+                "line": 7,
+                "col": 13,
+                "pos": 155
+              }
+            ],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/toast.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "ToastContainer",
+                "line": 25,
+                "col": 10,
+                "pos": 566
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/officeInformationApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "officeInformationApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/newProductApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "newProductApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              },
+              {
+                "name": "useGetSingleNewProductByIdQuery",
+                "line": 791,
+                "col": 3,
+                "pos": 26229
+              },
+              {
+                "name": "useAddNewProductMutation",
+                "line": 792,
+                "col": 3,
+                "pos": 26265
+              },
+              {
+                "name": "useUpdateNewProductMutation",
+                "line": 793,
+                "col": 3,
+                "pos": 26294
+              },
+              {
+                "name": "useDeleteNewProductMutation",
+                "line": 794,
+                "col": 3,
+                "pos": 26326
+              },
+              {
+                "name": "useGetGroupCodeProductsQuery",
+                "line": 796,
+                "col": 3,
+                "pos": 26387
+              },
+              {
+                "name": "useGetCategoryProductsQuery",
+                "line": 797,
+                "col": 3,
+                "pos": 26420
+              },
+              {
+                "name": "useGetStructureProductsQuery",
+                "line": 798,
+                "col": 3,
+                "pos": 26452
+              },
+              {
+                "name": "useGetContentProductsQuery",
+                "line": 799,
+                "col": 3,
+                "pos": 26485
+              },
+              {
+                "name": "useGetFinishProductsQuery",
+                "line": 800,
+                "col": 3,
+                "pos": 26516
+              },
+              {
+                "name": "useGetDesignProductsQuery",
+                "line": 801,
+                "col": 3,
+                "pos": 26546
+              },
+              {
+                "name": "useGetColorProductsQuery",
+                "line": 802,
+                "col": 3,
+                "pos": 26576
+              },
+              {
+                "name": "useGetMotifProductsQuery",
+                "line": 803,
+                "col": 3,
+                "pos": 26605
+              },
+              {
+                "name": "useGetSuitableProductsQuery",
+                "line": 804,
+                "col": 3,
+                "pos": 26634
+              },
+              {
+                "name": "useGetVendorProductsQuery",
+                "line": 805,
+                "col": 3,
+                "pos": 26666
+              },
+              {
+                "name": "useGetIdentifierProductsQuery",
+                "line": 806,
+                "col": 3,
+                "pos": 26696
+              },
+              {
+                "name": "useGetInchUptoQuery",
+                "line": 809,
+                "col": 3,
+                "pos": 26775
+              },
+              {
+                "name": "useGetCmUptoQuery",
+                "line": 810,
+                "col": 3,
+                "pos": 26799
+              },
+              {
+                "name": "useGetGroupCodeByIdQuery",
+                "line": 814,
+                "col": 3,
+                "pos": 26907
+              },
+              {
+                "name": "useGetAllProductsForFilteringQuery",
+                "line": 815,
+                "col": 3,
+                "pos": 26936
+              },
+              {
+                "name": "useGetPopularNewProductsQuery",
+                "line": 816,
+                "col": 3,
+                "pos": 26975
+              },
+              {
+                "name": "useGetOffersQuery",
+                "line": 817,
+                "col": 3,
+                "pos": 27009
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/components/shop/FilterOnly.jsx",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "default",
+                "line": 265,
+                "col": 16,
+                "pos": 7791
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/auth/authApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "authApi",
+                "line": 34,
+                "col": 14,
+                "pos": 893
+              },
+              {
+                "name": "useSendRegistrationOTPMutation",
+                "line": 332,
+                "col": 3,
+                "pos": 10896
+              },
+              {
+                "name": "useVerifyOTPAndRegisterMutation",
+                "line": 333,
+                "col": 3,
+                "pos": 10931
+              },
+              {
+                "name": "useLoginUserMutation",
+                "line": 334,
+                "col": 3,
+                "pos": 10967
+              },
+              {
+                "name": "useRequestLoginOTPMutation",
+                "line": 335,
+                "col": 3,
+                "pos": 10992
+              },
+              {
+                "name": "useVerifyLoginOTPMutation",
+                "line": 336,
+                "col": 3,
+                "pos": 11023
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/components/loader/index.jsx",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "HomeCateLoader",
+                "line": 19,
+                "col": 3,
+                "pos": 1073
+              },
+              {
+                "name": "HomeGadgetPrdLoader",
+                "line": 20,
+                "col": 3,
+                "pos": 1092
+              },
+              {
+                "name": "HomeOfferPrdLoader",
+                "line": 22,
+                "col": 3,
+                "pos": 1144
+              },
+              {
+                "name": "HomePrdLoader",
+                "line": 23,
+                "col": 3,
+                "pos": 1167
+              },
+              {
+                "name": "HomeSmPrdLoader",
+                "line": 24,
+                "col": 3,
+                "pos": 1185
+              },
+              {
+                "name": "HomeTwoCateLoader",
+                "line": 25,
+                "col": 3,
+                "pos": 1205
+              },
+              {
+                "name": "HomeTwoPrdLoader",
+                "line": 28,
+                "col": 3,
+                "pos": 1284
+              },
+              {
+                "name": "HomeTwoNewPrdPrdLoader",
+                "line": 29,
+                "col": 3,
+                "pos": 1305
+              },
+              {
+                "name": "HomeTwoBestSellPrdPrdLoader",
+                "line": 30,
+                "col": 3,
+                "pos": 1332
+              },
+              {
+                "name": "HomeThreeCategoryLoader",
+                "line": 31,
+                "col": 3,
+                "pos": 1364
+              },
+              {
+                "name": "HomeThreePrdLoader",
+                "line": 32,
+                "col": 3,
+                "pos": 1392
+              },
+              {
+                "name": "HomeThreePrdTwoLoader",
+                "line": 33,
+                "col": 3,
+                "pos": 1415
+              },
+              {
+                "name": "HomeThreeTrendingPrdLoader",
+                "line": 34,
+                "col": 3,
+                "pos": 1441
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/order/orderApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "orderApi",
+                "line": 6,
+                "col": 14,
+                "pos": 211
+              },
+              {
+                "name": "useCreateOrderMutation",
+                "line": 41,
+                "col": 3,
+                "pos": 1143
+              },
+              {
+                "name": "useGetUserOrdersQuery",
+                "line": 43,
+                "col": 3,
+                "pos": 1194
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/productApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "productApi",
+                "line": 4,
+                "col": 14,
+                "pos": 97
+              },
+              {
+                "name": "useGetAllProductsQuery",
+                "line": 135,
+                "col": 3,
+                "pos": 4224
+              },
+              {
+                "name": "useGetProductsByTypeQuery",
+                "line": 136,
+                "col": 3,
+                "pos": 4251
+              },
+              {
+                "name": "useGetOfferProductsQuery",
+                "line": 137,
+                "col": 3,
+                "pos": 4281
+              },
+              {
+                "name": "useGetPopularProductsQuery",
+                "line": 138,
+                "col": 3,
+                "pos": 4310
+              },
+              {
+                "name": "useGetTopRatedProductsQuery",
+                "line": 139,
+                "col": 3,
+                "pos": 4341
+              },
+              {
+                "name": "useGetRelatedProductsQuery",
+                "line": 141,
+                "col": 3,
+                "pos": 4402
+              },
+              {
+                "name": "useGetPopularNewProductsQuery",
+                "line": 142,
+                "col": 3,
+                "pos": 4433
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/websiteFaqApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "websiteFaqApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/designApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "designApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/motifSizeApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "motifSizeApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/data/menu-data.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [
+              [
+                {
+                  "name": "primaryNavigation",
+                  "line": 39,
+                  "col": 13,
+                  "pos": 1039
+                },
+                {
+                  "name": "default",
+                  "line": 88,
+                  "col": 15,
+                  "pos": 1822
+                }
+              ]
+            ],
+            "catalog": []
+          }
+        ]
+      },
+      "findings": {
+        "dependencies": [],
+        "files": [
+          {
+            "file": "src/styles/carousel-mobile-fix.css"
+          },
+          {
+            "file": "src/styles/safe-responsive-fixes.css"
+          },
+          {
+            "file": "src/utils/localstorage.js"
+          },
+          {
+            "file": ".codex-staging/mcp-servers/lighthouse-ci/server.js"
+          },
+          {
+            "file": ".codex-staging/mcp-servers/next-quality-audit/cli.js"
+          },
+          {
+            "file": ".codex-staging/mcp-servers/next-quality-audit/server.js"
+          },
+          {
+            "file": ".codex-staging/mcp-servers/purgecss/server.js"
+          },
+          {
+            "file": "src/utils/__tests__/productStructuredData.test.js"
+          },
+          {
+            "file": ".codex-staging/mcp-servers/next-quality-audit/lib/audits.js"
+          },
+          {
+            "file": ".codex-staging/mcp-servers/next-quality-audit/lib/exec.js"
+          },
+          {
+            "file": ".codex-staging/mcp-servers/next-quality-audit/lib/project-intel.js"
+          },
+          {
+            "file": ".codex-staging/mcp-servers/next-quality-audit/lib/report.js"
+          },
+          {
+            "file": "public/assets/scss/components/_preloader.scss"
+          },
+          {
+            "file": "public/assets/scss/components/_theme-settings.scss"
+          }
+        ],
+        "exports": [],
+        "issues": [
+          {
+            "file": "package.json",
+            "dependencies": [
+              {
+                "name": "next-sitemap",
+                "line": 65,
+                "col": 6,
+                "pos": 2636
+              },
+              {
+                "name": "swr",
+                "line": 76,
+                "col": 6,
+                "pos": 2945
+              }
+            ],
+            "devDependencies": [
+              {
+                "name": "@typescript-eslint/eslint-plugin",
+                "line": 87,
+                "col": 6,
+                "pos": 3259
+              },
+              {
+                "name": "@typescript-eslint/parser",
+                "line": 88,
+                "col": 6,
+                "pos": 3310
+              },
+              {
+                "name": "autoprefixer",
+                "line": 89,
+                "col": 6,
+                "pos": 3354
+              },
+              {
+                "name": "critters-webpack-plugin",
+                "line": 90,
+                "col": 6,
+                "pos": 3386
+              },
+              {
+                "name": "cssnano",
+                "line": 92,
+                "col": 6,
+                "pos": 3455
+              },
+              {
+                "name": "tailwindcss",
+                "line": 104,
+                "col": 6,
+                "pos": 3819
+              }
+            ],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/app/globals.scss",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [
+              {
+                "name": "./~bootstrap/scss/functions",
+                "line": 1,
+                "col": 18,
+                "pos": 16
+              },
+              {
+                "name": "./~bootstrap/scss/variables",
+                "line": 2,
+                "col": 18,
+                "pos": 63
+              },
+              {
+                "name": "./~bootstrap/scss/variables-dark",
+                "line": 3,
+                "col": 18,
+                "pos": 110
+              },
+              {
+                "name": "./~bootstrap/scss/maps",
+                "line": 4,
+                "col": 18,
+                "pos": 162
+              },
+              {
+                "name": "./~bootstrap/scss/mixins",
+                "line": 5,
+                "col": 18,
+                "pos": 204
+              },
+              {
+                "name": "./~bootstrap/scss/root",
+                "line": 6,
+                "col": 18,
+                "pos": 248
+              },
+              {
+                "name": "./~bootstrap/scss/reboot",
+                "line": 7,
+                "col": 18,
+                "pos": 290
+              },
+              {
+                "name": "./~bootstrap/scss/type",
+                "line": 8,
+                "col": 18,
+                "pos": 334
+              },
+              {
+                "name": "./~bootstrap/scss/images",
+                "line": 9,
+                "col": 18,
+                "pos": 376
+              },
+              {
+                "name": "./~bootstrap/scss/containers",
+                "line": 10,
+                "col": 18,
+                "pos": 420
+              },
+              {
+                "name": "./~bootstrap/scss/grid",
+                "line": 11,
+                "col": 19,
+                "pos": 469
+              },
+              {
+                "name": "./~bootstrap/scss/tables",
+                "line": 12,
+                "col": 19,
+                "pos": 512
+              },
+              {
+                "name": "./~bootstrap/scss/forms",
+                "line": 13,
+                "col": 19,
+                "pos": 557
+              },
+              {
+                "name": "./~bootstrap/scss/buttons",
+                "line": 14,
+                "col": 19,
+                "pos": 601
+              },
+              {
+                "name": "./~bootstrap/scss/transitions",
+                "line": 15,
+                "col": 19,
+                "pos": 647
+              },
+              {
+                "name": "./~bootstrap/scss/nav",
+                "line": 16,
+                "col": 19,
+                "pos": 697
+              },
+              {
+                "name": "./~bootstrap/scss/card",
+                "line": 17,
+                "col": 19,
+                "pos": 739
+              },
+              {
+                "name": "./~bootstrap/scss/pagination",
+                "line": 18,
+                "col": 19,
+                "pos": 782
+              },
+              {
+                "name": "./~bootstrap/scss/badge",
+                "line": 19,
+                "col": 19,
+                "pos": 831
+              },
+              {
+                "name": "./~bootstrap/scss/alert",
+                "line": 20,
+                "col": 19,
+                "pos": 875
+              },
+              {
+                "name": "./~bootstrap/scss/progress",
+                "line": 21,
+                "col": 19,
+                "pos": 919
+              },
+              {
+                "name": "./~bootstrap/scss/helpers",
+                "line": 22,
+                "col": 19,
+                "pos": 966
+              },
+              {
+                "name": "./~bootstrap/scss/utilities",
+                "line": 23,
+                "col": 19,
+                "pos": 1012
+              },
+              {
+                "name": "./~bootstrap/scss/utilities/api",
+                "line": 24,
+                "col": 19,
+                "pos": 1060
+              }
+            ],
+            "exports": [],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/corporationStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateCorporationJsonLdScript",
+                "line": 176,
+                "col": 14,
+                "pos": 7270
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/websiteStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateWebsiteJsonLdScript",
+                "line": 59,
+                "col": 14,
+                "pos": 2035
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/topicPageSeoIntegration.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateMetadataFromTopicPage",
+                "line": 94,
+                "col": 17,
+                "pos": 3130
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/seo.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "getDefaultSeoSettings",
+                "line": 14,
+                "col": 23,
+                "pos": 368
+              },
+              {
+                "name": "getCanonicalUrl",
+                "line": 87,
+                "col": 14,
+                "pos": 2601
+              },
+              {
+                "name": "getAbsoluteImageUrl",
+                "line": 105,
+                "col": 14,
+                "pos": 3031
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/imageContract.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "isAbsoluteImageUrl",
+                "line": 35,
+                "col": 14,
+                "pos": 832
+              },
+              {
+                "name": "getImageVariantUrl",
+                "line": 95,
+                "col": 14,
+                "pos": 2565
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/sitemap-manager.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "default",
+                "line": 245,
+                "col": 16,
+                "pos": 7188
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [
+              [
+                {
+                  "name": "SitemapManager",
+                  "line": 6,
+                  "col": 61,
+                  "pos": 174
+                },
+                {
+                  "name": "default",
+                  "line": 245,
+                  "col": 15,
+                  "pos": 7187
+                }
+              ]
+            ],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/sitemap-utils.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "pingSearchEngines",
+                "line": 2,
+                "col": 23,
+                "pos": 24
+              },
+              {
+                "name": "getSitemapUrl",
+                "line": 20,
+                "col": 17,
+                "pos": 613
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/runtimeConfig.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "getSiteOrigin",
+                "line": 25,
+                "col": 14,
+                "pos": 592
+              },
+              {
+                "name": "getCdnOrigin",
+                "line": 30,
+                "col": 14,
+                "pos": 750
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/breadcrumbStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateBreadcrumbStructuredData",
+                "line": 8,
+                "col": 17,
+                "pos": 264
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/aboutPageStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateAboutPageJsonLdScript",
+                "line": 39,
+                "col": 14,
+                "pos": 1160
+              },
+              {
+                "name": "AboutPageJsonLd",
+                "line": 58,
+                "col": 17,
+                "pos": 1813
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/blogPageStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateBlogPageStructuredData",
+                "line": 13,
+                "col": 17,
+                "pos": 493
+              },
+              {
+                "name": "generateBlogPageJsonLd",
+                "line": 118,
+                "col": 17,
+                "pos": 4193
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/capabilitiesPageStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateCapabilitiesPageJsonLdScript",
+                "line": 39,
+                "col": 14,
+                "pos": 1214
+              },
+              {
+                "name": "CapabilitiesPageJsonLd",
+                "line": 58,
+                "col": 17,
+                "pos": 1900
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/contactPageStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateContactPageJsonLdScript",
+                "line": 39,
+                "col": 14,
+                "pos": 1173
+              },
+              {
+                "name": "ContactPageJsonLd",
+                "line": 58,
+                "col": 17,
+                "pos": 1834
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/fabricCollectionStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateFabricCollectionStructuredData",
+                "line": 47,
+                "col": 17,
+                "pos": 1256
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/productStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateProductJsonLdScript",
+                "line": 222,
+                "col": 14,
+                "pos": 6466
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/blogStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateBlogStructuredData",
+                "line": 11,
+                "col": 14,
+                "pos": 348
+              },
+              {
+                "name": "generateBlogBreadcrumbStructuredData",
+                "line": 139,
+                "col": 14,
+                "pos": 4107
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/faqStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateFaqStructuredData",
+                "line": 31,
+                "col": 17,
+                "pos": 852
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/collectionItemListStructuredData.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "generateCollectionItemListStructuredData",
+                "line": 48,
+                "col": 17,
+                "pos": 1333
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/auth/authSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "clearUserId",
+                "line": 46,
+                "col": 56,
+                "pos": 1333
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/userSelectors.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "selectUser",
+                "line": 29,
+                "col": 14,
+                "pos": 847
+              },
+              {
+                "name": "selectIsAuthenticated",
+                "line": 39,
+                "col": 14,
+                "pos": 1054
+              },
+              {
+                "name": "selectUserInfo",
+                "line": 48,
+                "col": 14,
+                "pos": 1264
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/cartApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "useUpdateCartItemMutation",
+                "line": 188,
+                "col": 3,
+                "pos": 5594
+              },
+              {
+                "name": "useRemoveCartItemMutation",
+                "line": 189,
+                "col": 3,
+                "pos": 5623
+              },
+              {
+                "name": "useAddToCartMutation",
+                "line": 191,
+                "col": 3,
+                "pos": 5676
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/chatbotSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "clearSession",
+                "line": 69,
+                "col": 3,
+                "pos": 1547
+              },
+              {
+                "name": "selectUserContext",
+                "line": 79,
+                "col": 14,
+                "pos": 1907
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/chatbotApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "chatbotApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              },
+              {
+                "name": "useGetChatHistoryQuery",
+                "line": 46,
+                "col": 3,
+                "pos": 1413
+              },
+              {
+                "name": "useClearChatHistoryMutation",
+                "line": 47,
+                "col": 3,
+                "pos": 1440
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/searchHub.ts",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "SEARCH_EVENT",
+                "line": 6,
+                "col": 14,
+                "pos": 184
+              }
+            ],
+            "types": [
+              {
+                "name": "SearchEventDetail",
+                "line": 5,
+                "col": 13,
+                "pos": 131
+              }
+            ],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/wishlist-slice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "wishlistSlice",
+                "line": 287,
+                "col": 14,
+                "pos": 9443
+              },
+              {
+                "name": "set_wishlist",
+                "line": 414,
+                "col": 16,
+                "pos": 13805
+              },
+              {
+                "name": "clear_wishlist",
+                "line": 414,
+                "col": 30,
+                "pos": 13819
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/api/apiSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "useGetFilterOptionsQuery",
+                "line": 261,
+                "col": 3,
+                "pos": 7740
+              },
+              {
+                "name": "useGetECatalogueFieldValuesQuery",
+                "line": 263,
+                "col": 3,
+                "pos": 7798
+              },
+              {
+                "name": "useGetProductsByFieldValueQuery",
+                "line": 264,
+                "col": 3,
+                "pos": 7836
+              },
+              {
+                "name": "useGetProductBySlugQuery",
+                "line": 265,
+                "col": 3,
+                "pos": 7873
+              },
+              {
+                "name": "useGetAuthorByIdQuery",
+                "line": 267,
+                "col": 3,
+                "pos": 7927
+              },
+              {
+                "name": "useGetBlogByIdQuery",
+                "line": 269,
+                "col": 3,
+                "pos": 7974
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/userApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "useGetUserQuery",
+                "line": 46,
+                "col": 16,
+                "pos": 1171
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/cartSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "update_cart_item",
+                "line": 272,
+                "col": 14,
+                "pos": 10090
+              },
+              {
+                "name": "remove_from_cart",
+                "line": 301,
+                "col": 14,
+                "pos": 11231
+              },
+              {
+                "name": "clear_cart_api",
+                "line": 328,
+                "col": 14,
+                "pos": 12294
+              },
+              {
+                "name": "cartSlice",
+                "line": 365,
+                "col": 14,
+                "pos": 13502
+              },
+              {
+                "name": "increment",
+                "line": 436,
+                "col": 3,
+                "pos": 16391
+              },
+              {
+                "name": "decrement",
+                "line": 436,
+                "col": 14,
+                "pos": 16402
+              },
+              {
+                "name": "closeCartMini",
+                "line": 437,
+                "col": 17,
+                "pos": 16452
+              },
+              {
+                "name": "get_cart_products",
+                "line": 438,
+                "col": 3,
+                "pos": 16470
+              },
+              {
+                "name": "add_cart_product",
+                "line": 438,
+                "col": 22,
+                "pos": 16489
+              },
+              {
+                "name": "quantityDecrement",
+                "line": 438,
+                "col": 40,
+                "pos": 16507
+              },
+              {
+                "name": "remove_product",
+                "line": 438,
+                "col": 59,
+                "pos": 16526
+              },
+              {
+                "name": "clearCart",
+                "line": 438,
+                "col": 75,
+                "pos": 16542
+              },
+              {
+                "name": "selectCartDistinctCount",
+                "line": 442,
+                "col": 14,
+                "pos": 16628
+              },
+              {
+                "name": "selectCartLoading",
+                "line": 444,
+                "col": 14,
+                "pos": 16766
+              },
+              {
+                "name": "selectCartError",
+                "line": 445,
+                "col": 14,
+                "pos": 16841
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/productModalSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "productModalSlice",
+                "line": 9,
+                "col": 14,
+                "pos": 194
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/shop-filter-slice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "shopFilterSlice",
+                "line": 7,
+                "col": 14,
+                "pos": 119
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/order/orderSlice.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "orderSlice",
+                "line": 8,
+                "col": 14,
+                "pos": 137
+              },
+              {
+                "name": "get_shipping",
+                "line": 37,
+                "col": 3,
+                "pos": 1006
+              },
+              {
+                "name": "set_shipping",
+                "line": 38,
+                "col": 3,
+                "pos": 1023
+              },
+              {
+                "name": "set_last_order",
+                "line": 39,
+                "col": 3,
+                "pos": 1040
+              },
+              {
+                "name": "clear_last_order",
+                "line": 40,
+                "col": 3,
+                "pos": 1059
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/svg/index.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "ArrowRightSm",
+                "line": 50,
+                "col": 3,
+                "pos": 1733
+              },
+              {
+                "name": "ArrowRightSmTwo",
+                "line": 51,
+                "col": 3,
+                "pos": 1750
+              },
+              {
+                "name": "ArrowRightLongPrev",
+                "line": 52,
+                "col": 3,
+                "pos": 1770
+              },
+              {
+                "name": "Box",
+                "line": 53,
+                "col": 3,
+                "pos": 1793
+              },
+              {
+                "name": "DeliveryTwo",
+                "line": 54,
+                "col": 3,
+                "pos": 1801
+              },
+              {
+                "name": "Processing",
+                "line": 55,
+                "col": 3,
+                "pos": 1817
+              },
+              {
+                "name": "Truck",
+                "line": 56,
+                "col": 3,
+                "pos": 1832
+              },
+              {
+                "name": "Comment",
+                "line": 60,
+                "col": 3,
+                "pos": 1877
+              },
+              {
+                "name": "Date",
+                "line": 61,
+                "col": 3,
+                "pos": 1889
+              },
+              {
+                "name": "UserTwo",
+                "line": 63,
+                "col": 3,
+                "pos": 1908
+              },
+              {
+                "name": "PlusTwo",
+                "line": 66,
+                "col": 3,
+                "pos": 1949
+              },
+              {
+                "name": "AnimatedLine",
+                "line": 67,
+                "col": 3,
+                "pos": 1961
+              },
+              {
+                "name": "TextShape",
+                "line": 68,
+                "col": 3,
+                "pos": 1978
+              },
+              {
+                "name": "Tags",
+                "line": 69,
+                "col": 3,
+                "pos": 1992
+              },
+              {
+                "name": "SliderNextBtn",
+                "line": 70,
+                "col": 3,
+                "pos": 2001
+              },
+              {
+                "name": "SliderPrevBtn",
+                "line": 72,
+                "col": 3,
+                "pos": 2038
+              },
+              {
+                "name": "Minus",
+                "line": 73,
+                "col": 3,
+                "pos": 2056
+              },
+              {
+                "name": "ShippingCar",
+                "line": 78,
+                "col": 3,
+                "pos": 2111
+              },
+              {
+                "name": "User",
+                "line": 80,
+                "col": 3,
+                "pos": 2138
+              },
+              {
+                "name": "Menu",
+                "line": 82,
+                "col": 3,
+                "pos": 2159
+              },
+              {
+                "name": "Phone",
+                "line": 83,
+                "col": 3,
+                "pos": 2168
+              },
+              {
+                "name": "CategoryMenu",
+                "line": 84,
+                "col": 3,
+                "pos": 2178
+              },
+              {
+                "name": "ArrowRight",
+                "line": 85,
+                "col": 3,
+                "pos": 2195
+              },
+              {
+                "name": "PaginationNext",
+                "line": 88,
+                "col": 3,
+                "pos": 2233
+              },
+              {
+                "name": "PaginationPrev",
+                "line": 89,
+                "col": 3,
+                "pos": 2252
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/authReturn.ts",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "RETURN_TO_KEY",
+                "line": 2,
+                "col": 14,
+                "pos": 41
+              },
+              {
+                "name": "isBrowser",
+                "line": 4,
+                "col": 14,
+                "pos": 85
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/authUtils.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "useAuthAction",
+                "line": 11,
+                "col": 14,
+                "pos": 353
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/blogTags.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "getPopularTags",
+                "line": 6,
+                "col": 14,
+                "pos": 204
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/cleanBlogContent.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "extractValidImages",
+                "line": 34,
+                "col": 14,
+                "pos": 1182
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/collectionUtils.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "fetchCollections",
+                "line": 16,
+                "col": 14,
+                "pos": 400
+              },
+              {
+                "name": "getCollectionById",
+                "line": 47,
+                "col": 14,
+                "pos": 1137
+              },
+              {
+                "name": "getProductCollectionId",
+                "line": 60,
+                "col": 14,
+                "pos": 1460
+              },
+              {
+                "name": "useCollectionMedia",
+                "line": 133,
+                "col": 14,
+                "pos": 3429
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/productFieldMapper.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "getContentArray",
+                "line": 47,
+                "col": 14,
+                "pos": 1314
+              },
+              {
+                "name": "getColorArray",
+                "line": 81,
+                "col": 14,
+                "pos": 2093
+              },
+              {
+                "name": "getFinishArray",
+                "line": 105,
+                "col": 14,
+                "pos": 2625
+              },
+              {
+                "name": "getMotifName",
+                "line": 128,
+                "col": 14,
+                "pos": 3067
+              },
+              {
+                "name": "getGroupcodeName",
+                "line": 138,
+                "col": 14,
+                "pos": 3292
+              },
+              {
+                "name": "getProductOz",
+                "line": 148,
+                "col": 14,
+                "pos": 3492
+              },
+              {
+                "name": "getProductImages",
+                "line": 155,
+                "col": 14,
+                "pos": 3651
+              },
+              {
+                "name": "getProductTags",
+                "line": 188,
+                "col": 14,
+                "pos": 4570
+              },
+              {
+                "name": "getVideoUrl",
+                "line": 201,
+                "col": 14,
+                "pos": 4851
+              },
+              {
+                "name": "getProductSlug",
+                "line": 208,
+                "col": 14,
+                "pos": 5012
+              },
+              {
+                "name": "getSuitableArray",
+                "line": 215,
+                "col": 14,
+                "pos": 5179
+              },
+              {
+                "name": "getLeadTimeArray",
+                "line": 225,
+                "col": 14,
+                "pos": 5382
+              },
+              {
+                "name": "mapProductsArray",
+                "line": 284,
+                "col": 14,
+                "pos": 7336
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/searchMiddleware.ts",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "filterItems",
+                "line": 144,
+                "col": 17,
+                "pos": 4526
+              }
+            ],
+            "types": [
+              {
+                "name": "FieldGetter",
+                "line": 3,
+                "col": 13,
+                "pos": 44
+              },
+              {
+                "name": "FilterOptions",
+                "line": 7,
+                "col": 13,
+                "pos": 155
+              }
+            ],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/utils/toast.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "ToastContainer",
+                "line": 25,
+                "col": 10,
+                "pos": 566
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/officeInformationApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "officeInformationApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/newProductApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "newProductApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              },
+              {
+                "name": "useGetSingleNewProductByIdQuery",
+                "line": 791,
+                "col": 3,
+                "pos": 26229
+              },
+              {
+                "name": "useAddNewProductMutation",
+                "line": 792,
+                "col": 3,
+                "pos": 26265
+              },
+              {
+                "name": "useUpdateNewProductMutation",
+                "line": 793,
+                "col": 3,
+                "pos": 26294
+              },
+              {
+                "name": "useDeleteNewProductMutation",
+                "line": 794,
+                "col": 3,
+                "pos": 26326
+              },
+              {
+                "name": "useGetGroupCodeProductsQuery",
+                "line": 796,
+                "col": 3,
+                "pos": 26387
+              },
+              {
+                "name": "useGetCategoryProductsQuery",
+                "line": 797,
+                "col": 3,
+                "pos": 26420
+              },
+              {
+                "name": "useGetStructureProductsQuery",
+                "line": 798,
+                "col": 3,
+                "pos": 26452
+              },
+              {
+                "name": "useGetContentProductsQuery",
+                "line": 799,
+                "col": 3,
+                "pos": 26485
+              },
+              {
+                "name": "useGetFinishProductsQuery",
+                "line": 800,
+                "col": 3,
+                "pos": 26516
+              },
+              {
+                "name": "useGetDesignProductsQuery",
+                "line": 801,
+                "col": 3,
+                "pos": 26546
+              },
+              {
+                "name": "useGetColorProductsQuery",
+                "line": 802,
+                "col": 3,
+                "pos": 26576
+              },
+              {
+                "name": "useGetMotifProductsQuery",
+                "line": 803,
+                "col": 3,
+                "pos": 26605
+              },
+              {
+                "name": "useGetSuitableProductsQuery",
+                "line": 804,
+                "col": 3,
+                "pos": 26634
+              },
+              {
+                "name": "useGetVendorProductsQuery",
+                "line": 805,
+                "col": 3,
+                "pos": 26666
+              },
+              {
+                "name": "useGetIdentifierProductsQuery",
+                "line": 806,
+                "col": 3,
+                "pos": 26696
+              },
+              {
+                "name": "useGetInchUptoQuery",
+                "line": 809,
+                "col": 3,
+                "pos": 26775
+              },
+              {
+                "name": "useGetCmUptoQuery",
+                "line": 810,
+                "col": 3,
+                "pos": 26799
+              },
+              {
+                "name": "useGetGroupCodeByIdQuery",
+                "line": 814,
+                "col": 3,
+                "pos": 26907
+              },
+              {
+                "name": "useGetAllProductsForFilteringQuery",
+                "line": 815,
+                "col": 3,
+                "pos": 26936
+              },
+              {
+                "name": "useGetPopularNewProductsQuery",
+                "line": 816,
+                "col": 3,
+                "pos": 26975
+              },
+              {
+                "name": "useGetOffersQuery",
+                "line": 817,
+                "col": 3,
+                "pos": 27009
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/components/shop/FilterOnly.jsx",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "default",
+                "line": 265,
+                "col": 16,
+                "pos": 7791
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/auth/authApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "authApi",
+                "line": 34,
+                "col": 14,
+                "pos": 893
+              },
+              {
+                "name": "useSendRegistrationOTPMutation",
+                "line": 332,
+                "col": 3,
+                "pos": 10896
+              },
+              {
+                "name": "useVerifyOTPAndRegisterMutation",
+                "line": 333,
+                "col": 3,
+                "pos": 10931
+              },
+              {
+                "name": "useLoginUserMutation",
+                "line": 334,
+                "col": 3,
+                "pos": 10967
+              },
+              {
+                "name": "useRequestLoginOTPMutation",
+                "line": 335,
+                "col": 3,
+                "pos": 10992
+              },
+              {
+                "name": "useVerifyLoginOTPMutation",
+                "line": 336,
+                "col": 3,
+                "pos": 11023
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/components/loader/index.jsx",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "HomeCateLoader",
+                "line": 19,
+                "col": 3,
+                "pos": 1073
+              },
+              {
+                "name": "HomeGadgetPrdLoader",
+                "line": 20,
+                "col": 3,
+                "pos": 1092
+              },
+              {
+                "name": "HomeOfferPrdLoader",
+                "line": 22,
+                "col": 3,
+                "pos": 1144
+              },
+              {
+                "name": "HomePrdLoader",
+                "line": 23,
+                "col": 3,
+                "pos": 1167
+              },
+              {
+                "name": "HomeSmPrdLoader",
+                "line": 24,
+                "col": 3,
+                "pos": 1185
+              },
+              {
+                "name": "HomeTwoCateLoader",
+                "line": 25,
+                "col": 3,
+                "pos": 1205
+              },
+              {
+                "name": "HomeTwoPrdLoader",
+                "line": 28,
+                "col": 3,
+                "pos": 1284
+              },
+              {
+                "name": "HomeTwoNewPrdPrdLoader",
+                "line": 29,
+                "col": 3,
+                "pos": 1305
+              },
+              {
+                "name": "HomeTwoBestSellPrdPrdLoader",
+                "line": 30,
+                "col": 3,
+                "pos": 1332
+              },
+              {
+                "name": "HomeThreeCategoryLoader",
+                "line": 31,
+                "col": 3,
+                "pos": 1364
+              },
+              {
+                "name": "HomeThreePrdLoader",
+                "line": 32,
+                "col": 3,
+                "pos": 1392
+              },
+              {
+                "name": "HomeThreePrdTwoLoader",
+                "line": 33,
+                "col": 3,
+                "pos": 1415
+              },
+              {
+                "name": "HomeThreeTrendingPrdLoader",
+                "line": 34,
+                "col": 3,
+                "pos": 1441
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/order/orderApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "orderApi",
+                "line": 6,
+                "col": 14,
+                "pos": 211
+              },
+              {
+                "name": "useCreateOrderMutation",
+                "line": 41,
+                "col": 3,
+                "pos": 1143
+              },
+              {
+                "name": "useGetUserOrdersQuery",
+                "line": 43,
+                "col": 3,
+                "pos": 1194
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/productApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "productApi",
+                "line": 4,
+                "col": 14,
+                "pos": 97
+              },
+              {
+                "name": "useGetAllProductsQuery",
+                "line": 135,
+                "col": 3,
+                "pos": 4224
+              },
+              {
+                "name": "useGetProductsByTypeQuery",
+                "line": 136,
+                "col": 3,
+                "pos": 4251
+              },
+              {
+                "name": "useGetOfferProductsQuery",
+                "line": 137,
+                "col": 3,
+                "pos": 4281
+              },
+              {
+                "name": "useGetPopularProductsQuery",
+                "line": 138,
+                "col": 3,
+                "pos": 4310
+              },
+              {
+                "name": "useGetTopRatedProductsQuery",
+                "line": 139,
+                "col": 3,
+                "pos": 4341
+              },
+              {
+                "name": "useGetRelatedProductsQuery",
+                "line": 141,
+                "col": 3,
+                "pos": 4402
+              },
+              {
+                "name": "useGetPopularNewProductsQuery",
+                "line": 142,
+                "col": 3,
+                "pos": 4433
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/websiteFaqApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "websiteFaqApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/designApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "designApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/redux/features/motifSizeApi.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [
+              {
+                "name": "motifSizeApi",
+                "line": 3,
+                "col": 14,
+                "pos": 60
+              }
+            ],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [],
+            "catalog": []
+          },
+          {
+            "file": "src/data/menu-data.js",
+            "dependencies": [],
+            "devDependencies": [],
+            "optionalPeerDependencies": [],
+            "unlisted": [],
+            "binaries": [],
+            "unresolved": [],
+            "exports": [],
+            "types": [],
+            "enumMembers": {},
+            "duplicates": [
+              [
+                {
+                  "name": "primaryNavigation",
+                  "line": 39,
+                  "col": 13,
+                  "pos": 1039
+                },
+                {
+                  "name": "default",
+                  "line": 88,
+                  "col": 15,
+                  "pos": 1822
+                }
+              ]
+            ],
+            "catalog": []
+          }
+        ]
+      },
+      "command": {
+        "ok": false,
+        "code": 1,
+        "command": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\.bin\\knip.cmd --reporter json",
+        "durationMs": 10783,
+        "timedOut": false,
+        "stdoutTail": "{\"files\":[\"src/styles/carousel-mobile-fix.css\",\"src/styles/safe-responsive-fixes.css\",\"src/utils/localstorage.js\",\".codex-staging/mcp-servers/lighthouse-ci/server.js\",\".codex-staging/mcp-servers/next-quality-audit/cli.js\",\".codex-staging/mcp-servers/next-quality-audit/server.js\",\".codex-staging/mcp-servers/purgecss/server.js\",\"src/utils/__tests__/productStructuredData.test.js\",\".codex-staging/mcp-servers/next-quality-audit/lib/audits.js\",\".codex-staging/mcp-servers/next-quality-audit/lib/exec.js\",\".codex-staging/mcp-servers/next-quality-audit/lib/project-intel.js\",\".codex-staging/mcp-servers/next-quality-audit/lib/report.js\",\"public/assets/scss/components/_preloader.scss\",\"public/assets/scss/components/_theme-settings.scss\"],\"issues\":[{\"file\":\"package.json\",\"dependencies\":[{\"name\":\"next-sitemap\",\"line\":65,\"col\":6,\"pos\":2636},{\"name\":\"swr\",\"line\":76,\"col\":6,\"pos\":2945}],\"devDependencies\":[{\"name\":\"@typescript-eslint/eslint-plugin\",\"line\":87,\"col\":6,\"pos\":3259},{\"name\":\"@typescript-eslint/parser\",\"line\":88,\"col\":6,\"pos\":3310},{\"name\":\"autoprefixer\",\"line\":89,\"col\":6,\"pos\":3354},{\"name\":\"critters-webpack-plugin\",\"line\":90,\"col\":6,\"pos\":3386},{\"name\":\"cssnano\",\"line\":92,\"col\":6,\"pos\":3455},{\"name\":\"tailwindcss\",\"line\":104,\"col\":6,\"pos\":3819}],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/app/globals.scss\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[{\"name\":\"./~bootstrap/scss/functions\",\"line\":1,\"col\":18,\"pos\":16},{\"name\":\"./~bootstrap/scss/variables\",\"line\":2,\"col\":18,\"pos\":63},{\"name\":\"./~bootstrap/scss/variables-dark\",\"line\":3,\"col\":18,\"pos\":110},{\"name\":\"./~bootstrap/scss/maps\",\"line\":4,\"col\":18,\"pos\":162},{\"name\":\"./~bootstrap/scss/mixins\",\"line\":5,\"col\":18,\"pos\":204},{\"name\":\"./~bootstrap/scss/root\",\"line\":6,\"col\":18,\"pos\":248},{\"name\":\"./~bootstrap/scss/reboot\",\"line\":7,\"col\":18,\"pos\":290},{\"name\":\"./~bootstrap/scss/type\",\"line\":8,\"col\":18,\"pos\":334},{\"name\":\"./~bootstrap/scss/images\",\"line\":9,\"col\":18,\"pos\":376},{\"name\":\"./~bootstrap/scss/containers\",\"line\":10,\"col\":18,\"pos\":420},{\"name\":\"./~bootstrap/scss/grid\",\"line\":11,\"col\":19,\"pos\":469},{\"name\":\"./~bootstrap/scss/tables\",\"line\":12,\"col\":19,\"pos\":512},{\"name\":\"./~bootstrap/scss/forms\",\"line\":13,\"col\":19,\"pos\":557},{\"name\":\"./~bootstrap/scss/buttons\",\"line\":14,\"col\":19,\"pos\":601},{\"name\":\"./~bootstrap/scss/transitions\",\"line\":15,\"col\":19,\"pos\":647},{\"name\":\"./~bootstrap/scss/nav\",\"line\":16,\"col\":19,\"pos\":697},{\"name\":\"./~bootstrap/scss/card\",\"line\":17,\"col\":19,\"pos\":739},{\"name\":\"./~bootstrap/scss/pagination\",\"line\":18,\"col\":19,\"pos\":782},{\"name\":\"./~bootstrap/scss/badge\",\"line\":19,\"col\":19,\"pos\":831},{\"name\":\"./~bootstrap/scss/alert\",\"line\":20,\"col\":19,\"pos\":875},{\"name\":\"./~bootstrap/scss/progress\",\"line\":21,\"col\":19,\"pos\":919},{\"name\":\"./~bootstrap/scss/helpers\",\"line\":22,\"col\":19,\"pos\":966},{\"name\":\"./~bootstrap/scss/utilities\",\"line\":23,\"col\":19,\"pos\":1012},{\"name\":\"./~bootstrap/scss/utilities/api\",\"line\":24,\"col\":19,\"pos\":1060}],\"exports\":[],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/corporationStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateCorporationJsonLdScript\",\"line\":176,\"col\":14,\"pos\":7270}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/websiteStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateWebsiteJsonLdScript\",\"line\":59,\"col\":14,\"pos\":2035}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/topicPageSeoIntegration.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateMetadataFromTopicPage\",\"line\":94,\"col\":17,\"pos\":3130}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/seo.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"getDefaultSeoSettings\",\"line\":14,\"col\":23,\"pos\":368},{\"name\":\"getCanonicalUrl\",\"line\":87,\"col\":14,\"pos\":2601},{\"name\":\"getAbsoluteImageUrl\",\"line\":105,\"col\":14,\"pos\":3031}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/imageContract.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"isAbsoluteImageUrl\",\"line\":35,\"col\":14,\"pos\":832},{\"name\":\"getImageVariantUrl\",\"line\":95,\"col\":14,\"pos\":2565}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/sitemap-manager.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"default\",\"line\":245,\"col\":16,\"pos\":7188}],\"types\":[],\"enumMembers\":{},\"duplicates\":[[{\"name\":\"SitemapManager\",\"line\":6,\"col\":61,\"pos\":174},{\"name\":\"default\",\"line\":245,\"col\":15,\"pos\":7187}]],\"catalog\":[]},{\"file\":\"src/utils/sitemap-utils.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"pingSearchEngines\",\"line\":2,\"col\":23,\"pos\":24},{\"name\":\"getSitemapUrl\",\"line\":20,\"col\":17,\"pos\":613}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/runtimeConfig.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"getSiteOrigin\",\"line\":25,\"col\":14,\"pos\":592},{\"name\":\"getCdnOrigin\",\"line\":30,\"col\":14,\"pos\":750}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/breadcrumbStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateBreadcrumbStructuredData\",\"line\":8,\"col\":17,\"pos\":264}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/aboutPageStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateAboutPageJsonLdScript\",\"line\":39,\"col\":14,\"pos\":1160},{\"name\":\"AboutPageJsonLd\",\"line\":58,\"col\":17,\"pos\":1813}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/blogPageStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateBlogPageStructuredData\",\"line\":13,\"col\":17,\"pos\":493},{\"name\":\"generateBlogPageJsonLd\",\"line\":118,\"col\":17,\"pos\":4193}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/capabilitiesPageStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateCapabilitiesPageJsonLdScript\",\"line\":39,\"col\":14,\"pos\":1214},{\"name\":\"CapabilitiesPageJsonLd\",\"line\":58,\"col\":17,\"pos\":1900}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/contactPageStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateContactPageJsonLdScript\",\"line\":39,\"col\":14,\"pos\":1173},{\"name\":\"ContactPageJsonLd\",\"line\":58,\"col\":17,\"pos\":1834}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/fabricCollectionStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateFabricCollectionStructuredData\",\"line\":47,\"col\":17,\"pos\":1256}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/productStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateProductJsonLdScript\",\"line\":222,\"col\":14,\"pos\":6466}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/blogStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateBlogStructuredData\",\"line\":11,\"col\":14,\"pos\":348},{\"name\":\"generateBlogBreadcrumbStructuredData\",\"line\":139,\"col\":14,\"pos\":4107}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/faqStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateFaqStructuredData\",\"line\":31,\"col\":17,\"pos\":852}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/collectionItemListStructuredData.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"generateCollectionItemListStructuredData\",\"line\":48,\"col\":17,\"pos\":1333}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/auth/authSlice.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"clearUserId\",\"line\":46,\"col\":56,\"pos\":1333}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/userSelectors.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"selectUser\",\"line\":29,\"col\":14,\"pos\":847},{\"name\":\"selectIsAuthenticated\",\"line\":39,\"col\":14,\"pos\":1054},{\"name\":\"selectUserInfo\",\"line\":48,\"col\":14,\"pos\":1264}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/cartApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"useUpdateCartItemMutation\",\"line\":188,\"col\":3,\"pos\":5594},{\"name\":\"useRemoveCartItemMutation\",\"line\":189,\"col\":3,\"pos\":5623},{\"name\":\"useAddToCartMutation\",\"line\":191,\"col\":3,\"pos\":5676}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/chatbotSlice.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"clearSession\",\"line\":69,\"col\":3,\"pos\":1547},{\"name\":\"selectUserContext\",\"line\":79,\"col\":14,\"pos\":1907}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/chatbotApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"chatbotApi\",\"line\":3,\"col\":14,\"pos\":60},{\"name\":\"useGetChatHistoryQuery\",\"line\":46,\"col\":3,\"pos\":1413},{\"name\":\"useClearChatHistoryMutation\",\"line\":47,\"col\":3,\"pos\":1440}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/searchHub.ts\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"SEARCH_EVENT\",\"line\":6,\"col\":14,\"pos\":184}],\"types\":[{\"name\":\"SearchEventDetail\",\"line\":5,\"col\":13,\"pos\":131}],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/wishlist-slice.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"wishlistSlice\",\"line\":287,\"col\":14,\"pos\":9443},{\"name\":\"set_wishlist\",\"line\":414,\"col\":16,\"pos\":13805},{\"name\":\"clear_wishlist\",\"line\":414,\"col\":30,\"pos\":13819}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/api/apiSlice.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"useGetFilterOptionsQuery\",\"line\":261,\"col\":3,\"pos\":7740},{\"name\":\"useGetECatalogueFieldValuesQuery\",\"line\":263,\"col\":3,\"pos\":7798},{\"name\":\"useGetProductsByFieldValueQuery\",\"line\":264,\"col\":3,\"pos\":7836},{\"name\":\"useGetProductBySlugQuery\",\"line\":265,\"col\":3,\"pos\":7873},{\"name\":\"useGetAuthorByIdQuery\",\"line\":267,\"col\":3,\"pos\":7927},{\"name\":\"useGetBlogByIdQuery\",\"line\":269,\"col\":3,\"pos\":7974}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/userApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"useGetUserQuery\",\"line\":46,\"col\":16,\"pos\":1171}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/cartSlice.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"update_cart_item\",\"line\":272,\"col\":14,\"pos\":10090},{\"name\":\"remove_from_cart\",\"line\":301,\"col\":14,\"pos\":11231},{\"name\":\"clear_cart_api\",\"line\":328,\"col\":14,\"pos\":12294},{\"name\":\"cartSlice\",\"line\":365,\"col\":14,\"pos\":13502},{\"name\":\"increment\",\"line\":436,\"col\":3,\"pos\":16391},{\"name\":\"decrement\",\"line\":436,\"col\":14,\"pos\":16402},{\"name\":\"closeCartMini\",\"line\":437,\"col\":17,\"pos\":16452},{\"name\":\"get_cart_products\",\"line\":438,\"col\":3,\"pos\":16470},{\"name\":\"add_cart_product\",\"line\":438,\"col\":22,\"pos\":16489},{\"name\":\"quantityDecrement\",\"line\":438,\"col\":40,\"pos\":16507},{\"name\":\"remove_product\",\"line\":438,\"col\":59,\"pos\":16526},{\"name\":\"clearCart\",\"line\":438,\"col\":75,\"pos\":16542},{\"name\":\"selectCartDistinctCount\",\"line\":442,\"col\":14,\"pos\":16628},{\"name\":\"selectCartLoading\",\"line\":444,\"col\":14,\"pos\":16766},{\"name\":\"selectCartError\",\"line\":445,\"col\":14,\"pos\":16841}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/productModalSlice.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"productModalSlice\",\"line\":9,\"col\":14,\"pos\":194}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/shop-filter-slice.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"shopFilterSlice\",\"line\":7,\"col\":14,\"pos\":119}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/order/orderSlice.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"orderSlice\",\"line\":8,\"col\":14,\"pos\":137},{\"name\":\"get_shipping\",\"line\":37,\"col\":3,\"pos\":1006},{\"name\":\"set_shipping\",\"line\":38,\"col\":3,\"pos\":1023},{\"name\":\"set_last_order\",\"line\":39,\"col\":3,\"pos\":1040},{\"name\":\"clear_last_order\",\"line\":40,\"col\":3,\"pos\":1059}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/svg/index.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"ArrowRightSm\",\"line\":50,\"col\":3,\"pos\":1733},{\"name\":\"ArrowRightSmTwo\",\"line\":51,\"col\":3,\"pos\":1750},{\"name\":\"ArrowRightLongPrev\",\"line\":52,\"col\":3,\"pos\":1770},{\"name\":\"Box\",\"line\":53,\"col\":3,\"pos\":1793},{\"name\":\"DeliveryTwo\",\"line\":54,\"col\":3,\"pos\":1801},{\"name\":\"Processing\",\"line\":55,\"col\":3,\"pos\":1817},{\"name\":\"Truck\",\"line\":56,\"col\":3,\"pos\":1832},{\"name\":\"Comment\",\"line\":60,\"col\":3,\"pos\":1877},{\"name\":\"Date\",\"line\":61,\"col\":3,\"pos\":1889},{\"name\":\"UserTwo\",\"line\":63,\"col\":3,\"pos\":1908},{\"name\":\"PlusTwo\",\"line\":66,\"col\":3,\"pos\":1949},{\"name\":\"AnimatedLine\",\"line\":67,\"col\":3,\"pos\":1961},{\"name\":\"TextShape\",\"line\":68,\"col\":3,\"pos\":1978},{\"name\":\"Tags\",\"line\":69,\"col\":3,\"pos\":1992},{\"name\":\"SliderNextBtn\",\"line\":70,\"col\":3,\"pos\":2001},{\"name\":\"SliderPrevBtn\",\"line\":72,\"col\":3,\"pos\":2038},{\"name\":\"Minus\",\"line\":73,\"col\":3,\"pos\":2056},{\"name\":\"ShippingCar\",\"line\":78,\"col\":3,\"pos\":2111},{\"name\":\"User\",\"line\":80,\"col\":3,\"pos\":2138},{\"name\":\"Menu\",\"line\":82,\"col\":3,\"pos\":2159},{\"name\":\"Phone\",\"line\":83,\"col\":3,\"pos\":2168},{\"name\":\"CategoryMenu\",\"line\":84,\"col\":3,\"pos\":2178},{\"name\":\"ArrowRight\",\"line\":85,\"col\":3,\"pos\":2195},{\"name\":\"PaginationNext\",\"line\":88,\"col\":3,\"pos\":2233},{\"name\":\"PaginationPrev\",\"line\":89,\"col\":3,\"pos\":2252}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/authReturn.ts\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"RETURN_TO_KEY\",\"line\":2,\"col\":14,\"pos\":41},{\"name\":\"isBrowser\",\"line\":4,\"col\":14,\"pos\":85}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/authUtils.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"useAuthAction\",\"line\":11,\"col\":14,\"pos\":353}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/blogTags.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"getPopularTags\",\"line\":6,\"col\":14,\"pos\":204}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/cleanBlogContent.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"extractValidImages\",\"line\":34,\"col\":14,\"pos\":1182}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/collectionUtils.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"fetchCollections\",\"line\":16,\"col\":14,\"pos\":400},{\"name\":\"getCollectionById\",\"line\":47,\"col\":14,\"pos\":1137},{\"name\":\"getProductCollectionId\",\"line\":60,\"col\":14,\"pos\":1460},{\"name\":\"useCollectionMedia\",\"line\":133,\"col\":14,\"pos\":3429}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/productFieldMapper.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"getContentArray\",\"line\":47,\"col\":14,\"pos\":1314},{\"name\":\"getColorArray\",\"line\":81,\"col\":14,\"pos\":2093},{\"name\":\"getFinishArray\",\"line\":105,\"col\":14,\"pos\":2625},{\"name\":\"getMotifName\",\"line\":128,\"col\":14,\"pos\":3067},{\"name\":\"getGroupcodeName\",\"line\":138,\"col\":14,\"pos\":3292},{\"name\":\"getProductOz\",\"line\":148,\"col\":14,\"pos\":3492},{\"name\":\"getProductImages\",\"line\":155,\"col\":14,\"pos\":3651},{\"name\":\"getProductTags\",\"line\":188,\"col\":14,\"pos\":4570},{\"name\":\"getVideoUrl\",\"line\":201,\"col\":14,\"pos\":4851},{\"name\":\"getProductSlug\",\"line\":208,\"col\":14,\"pos\":5012},{\"name\":\"getSuitableArray\",\"line\":215,\"col\":14,\"pos\":5179},{\"name\":\"getLeadTimeArray\",\"line\":225,\"col\":14,\"pos\":5382},{\"name\":\"mapProductsArray\",\"line\":284,\"col\":14,\"pos\":7336}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/searchMiddleware.ts\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"filterItems\",\"line\":144,\"col\":17,\"pos\":4526}],\"types\":[{\"name\":\"FieldGetter\",\"line\":3,\"col\":13,\"pos\":44},{\"name\":\"FilterOptions\",\"line\":7,\"col\":13,\"pos\":155}],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/utils/toast.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"ToastContainer\",\"line\":25,\"col\":10,\"pos\":566}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/officeInformationApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"officeInformationApi\",\"line\":3,\"col\":14,\"pos\":60}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/newProductApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"newProductApi\",\"line\":3,\"col\":14,\"pos\":60},{\"name\":\"useGetSingleNewProductByIdQuery\",\"line\":791,\"col\":3,\"pos\":26229},{\"name\":\"useAddNewProductMutation\",\"line\":792,\"col\":3,\"pos\":26265},{\"name\":\"useUpdateNewProductMutation\",\"line\":793,\"col\":3,\"pos\":26294},{\"name\":\"useDeleteNewProductMutation\",\"line\":794,\"col\":3,\"pos\":26326},{\"name\":\"useGetGroupCodeProductsQuery\",\"line\":796,\"col\":3,\"pos\":26387},{\"name\":\"useGetCategoryProductsQuery\",\"line\":797,\"col\":3,\"pos\":26420},{\"name\":\"useGetStructureProductsQuery\",\"line\":798,\"col\":3,\"pos\":26452},{\"name\":\"useGetContentProductsQuery\",\"line\":799,\"col\":3,\"pos\":26485},{\"name\":\"useGetFinishProductsQuery\",\"line\":800,\"col\":3,\"pos\":26516},{\"name\":\"useGetDesignProductsQuery\",\"line\":801,\"col\":3,\"pos\":26546},{\"name\":\"useGetColorProductsQuery\",\"line\":802,\"col\":3,\"pos\":26576},{\"name\":\"useGetMotifProductsQuery\",\"line\":803,\"col\":3,\"pos\":26605},{\"name\":\"useGetSuitableProductsQuery\",\"line\":804,\"col\":3,\"pos\":26634},{\"name\":\"useGetVendorProductsQuery\",\"line\":805,\"col\":3,\"pos\":26666},{\"name\":\"useGetIdentifierProductsQuery\",\"line\":806,\"col\":3,\"pos\":26696},{\"name\":\"useGetInchUptoQuery\",\"line\":809,\"col\":3,\"pos\":26775},{\"name\":\"useGetCmUptoQuery\",\"line\":810,\"col\":3,\"pos\":26799},{\"name\":\"useGetGroupCodeByIdQuery\",\"line\":814,\"col\":3,\"pos\":26907},{\"name\":\"useGetAllProductsForFilteringQuery\",\"line\":815,\"col\":3,\"pos\":26936},{\"name\":\"useGetPopularNewProductsQuery\",\"line\":816,\"col\":3,\"pos\":26975},{\"name\":\"useGetOffersQuery\",\"line\":817,\"col\":3,\"pos\":27009}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/components/shop/FilterOnly.jsx\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"default\",\"line\":265,\"col\":16,\"pos\":7791}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/auth/authApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"authApi\",\"line\":34,\"col\":14,\"pos\":893},{\"name\":\"useSendRegistrationOTPMutation\",\"line\":332,\"col\":3,\"pos\":10896},{\"name\":\"useVerifyOTPAndRegisterMutation\",\"line\":333,\"col\":3,\"pos\":10931},{\"name\":\"useLoginUserMutation\",\"line\":334,\"col\":3,\"pos\":10967},{\"name\":\"useRequestLoginOTPMutation\",\"line\":335,\"col\":3,\"pos\":10992},{\"name\":\"useVerifyLoginOTPMutation\",\"line\":336,\"col\":3,\"pos\":11023}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/components/loader/index.jsx\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"HomeCateLoader\",\"line\":19,\"col\":3,\"pos\":1073},{\"name\":\"HomeGadgetPrdLoader\",\"line\":20,\"col\":3,\"pos\":1092},{\"name\":\"HomeOfferPrdLoader\",\"line\":22,\"col\":3,\"pos\":1144},{\"name\":\"HomePrdLoader\",\"line\":23,\"col\":3,\"pos\":1167},{\"name\":\"HomeSmPrdLoader\",\"line\":24,\"col\":3,\"pos\":1185},{\"name\":\"HomeTwoCateLoader\",\"line\":25,\"col\":3,\"pos\":1205},{\"name\":\"HomeTwoPrdLoader\",\"line\":28,\"col\":3,\"pos\":1284},{\"name\":\"HomeTwoNewPrdPrdLoader\",\"line\":29,\"col\":3,\"pos\":1305},{\"name\":\"HomeTwoBestSellPrdPrdLoader\",\"line\":30,\"col\":3,\"pos\":1332},{\"name\":\"HomeThreeCategoryLoader\",\"line\":31,\"col\":3,\"pos\":1364},{\"name\":\"HomeThreePrdLoader\",\"line\":32,\"col\":3,\"pos\":1392},{\"name\":\"HomeThreePrdTwoLoader\",\"line\":33,\"col\":3,\"pos\":1415},{\"name\":\"HomeThreeTrendingPrdLoader\",\"line\":34,\"col\":3,\"pos\":1441}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/order/orderApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"orderApi\",\"line\":6,\"col\":14,\"pos\":211},{\"name\":\"useCreateOrderMutation\",\"line\":41,\"col\":3,\"pos\":1143},{\"name\":\"useGetUserOrdersQuery\",\"line\":43,\"col\":3,\"pos\":1194}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/productApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"productApi\",\"line\":4,\"col\":14,\"pos\":97},{\"name\":\"useGetAllProductsQuery\",\"line\":135,\"col\":3,\"pos\":4224},{\"name\":\"useGetProductsByTypeQuery\",\"line\":136,\"col\":3,\"pos\":4251},{\"name\":\"useGetOfferProductsQuery\",\"line\":137,\"col\":3,\"pos\":4281},{\"name\":\"useGetPopularProductsQuery\",\"line\":138,\"col\":3,\"pos\":4310},{\"name\":\"useGetTopRatedProductsQuery\",\"line\":139,\"col\":3,\"pos\":4341},{\"name\":\"useGetRelatedProductsQuery\",\"line\":141,\"col\":3,\"pos\":4402},{\"name\":\"useGetPopularNewProductsQuery\",\"line\":142,\"col\":3,\"pos\":4433}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/websiteFaqApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"websiteFaqApi\",\"line\":3,\"col\":14,\"pos\":60}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/designApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"designApi\",\"line\":3,\"col\":14,\"pos\":60}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/redux/features/motifSizeApi.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[{\"name\":\"motifSizeApi\",\"line\":3,\"col\":14,\"pos\":60}],\"types\":[],\"enumMembers\":{},\"duplicates\":[],\"catalog\":[]},{\"file\":\"src/data/menu-data.js\",\"dependencies\":[],\"devDependencies\":[],\"optionalPeerDependencies\":[],\"unlisted\":[],\"binaries\":[],\"unresolved\":[],\"exports\":[],\"types\":[],\"enumMembers\":{},\"duplicates\":[[{\"name\":\"primaryNavigation\",\"line\":39,\"col\":13,\"pos\":1039},{\"name\":\"default\",\"line\":88,\"col\":15,\"pos\":1822}]],\"catalog\":[]}]}",
+        "stderrTail": ""
+      },
+      "commandsUsed": [
+        "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\.bin\\knip.cmd --reporter json"
+      ]
+    },
+    "css": {
+      "status": "ok",
+      "styling": {
+        "tailwind": true,
+        "sass": true,
+        "cssModules": true,
+        "styledComponents": false,
+        "globalCss": true,
+        "cssFileCount": 109,
+        "cssModuleCount": 11,
+        "globalCssCount": 98,
+        "sampleGlobalCssFiles": [
+          "src/app/globals.scss",
+          "src/styles/carousel-mobile-fix.css",
+          "src/styles/safe-responsive-fixes.css",
+          "src/components/chatbot/FloatingChatbot.scss",
+          "public/assets/css/animate.css",
+          "public/assets/scss/main.scss",
+          "public/assets/scss/components/index.scss",
+          "public/assets/scss/components/_accordion.scss",
+          "public/assets/scss/components/_animation.scss",
+          "public/assets/scss/components/_background.scss"
+        ],
+        "sampleCssModules": [
+          "src/app/about/About.module.scss",
+          "src/app/capabilities/Capabilities.module.scss",
+          "src/app/careers/Careers.module.scss",
+          "src/app/sitemap/sitemap.module.scss",
+          "src/components/auth/AuthArea.module.css",
+          "src/components/blog-details/BlogDetails.module.scss",
+          "src/components/common/BackToTop.module.scss",
+          "src/components/common/FloatingButtons.module.scss",
+          "src/components/loader/loader.module.css",
+          "src/components/profile/UserProfile.module.css"
+        ],
+        "globalImports": [
+          {
+            "file": "src/app/layout.jsx",
+            "statement": "import './globals.scss'"
+          }
+        ],
+        "tailwindConfig": null
+      },
+      "largeCssFiles": [
+        {
+          "file": "public/assets/css/animate.css",
+          "bytes": 71742,
+          "global": true,
+          "legacy": true
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_productDetails.scss",
+          "bytes": 46801,
+          "global": true,
+          "legacy": true
+        },
+        {
+          "file": "src/app/about/About.module.scss",
+          "bytes": 40293,
+          "global": false,
+          "legacy": false
+        }
+      ],
+      "riskyCssCleanupCandidates": [
+        {
+          "file": "public/assets/css/animate.css",
+          "bytes": 71742,
+          "legacy": true,
+          "reason": "large global stylesheet"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_productDetails.scss",
+          "bytes": 46801,
+          "legacy": true,
+          "reason": "large global stylesheet"
+        },
+        {
+          "file": "public/assets/scss/components/_offcanvas.scss",
+          "bytes": 30072,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/pages/_slider.scss",
+          "bytes": 27391,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "src/app/globals.scss",
+          "bytes": 24562,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/blog/_postbox.scss",
+          "bytes": 22906,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_product.scss",
+          "bytes": 22240,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "src/components/chatbot/FloatingChatbot.scss",
+          "bytes": 21628,
+          "legacy": false,
+          "reason": "global stylesheet may contain dynamic selectors"
+        },
+        {
+          "file": "public/assets/scss/layout/pages/_profile.scss",
+          "bytes": 17693,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/menu/_categoryMenu.scss",
+          "bytes": 16081,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/header/_header-5.scss",
+          "bytes": 15871,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/menu/_menu.scss",
+          "bytes": 14951,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_banner.scss",
+          "bytes": 13695,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_category.scss",
+          "bytes": 13225,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_checkout.scss",
+          "bytes": 12749,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        }
+      ],
+      "purgeCssSuggested": true,
+      "purgeCssScope": "legacy-and-global-css-only",
+      "warnings": [
+        "Tailwind-like class patterns detected; safelist dynamic classes before any PurgeCSS run."
+      ],
+      "commandsUsed": []
+    },
+    "bundle": {
+      "status": "ok",
+      "build": null,
+      "largeJsBundles": [
+        {
+          "file": "164f4fb6.96b9f50d9f5f168e.js",
+          "bytes": 330491
+        },
+        {
+          "file": "4bd1b696-96fa2570c3ed041f.js",
+          "bytes": 198840
+        },
+        {
+          "file": "3794-4618df11ff397ba8.js",
+          "bytes": 190763
+        },
+        {
+          "file": "framework-7e54adbbc2ea18ad.js",
+          "bytes": 140116
+        },
+        {
+          "file": "main-31393c2e6f8d084a.js",
+          "bytes": 130666
+        },
+        {
+          "file": "polyfills-42372ed130431b0a.js",
+          "bytes": 112594
+        },
+        {
+          "file": "5135.cd14a1151e4cc5ec.js",
+          "bytes": 106486
+        },
+        {
+          "file": "4561-2ff583cd3838a152.js",
+          "bytes": 80271
+        },
+        {
+          "file": "2018-20c59523f480bef6.js",
+          "bytes": 65571
+        },
+        {
+          "file": "1001-c7786fe7436a77c7.js",
+          "bytes": 53310
+        },
+        {
+          "file": "345-a0699c737033b992.js",
+          "bytes": 51406
+        },
+        {
+          "file": "3820-20b8e5622bbd6a9f.js",
+          "bytes": 47222
+        },
+        {
+          "file": "280273a7.560b210d0885bf74.js",
+          "bytes": 45648
+        },
+        {
+          "file": "8394-95b65f3ea7b1da73.js",
+          "bytes": 37856
+        },
+        {
+          "file": "5724-b32d17ef63f51df1.js",
+          "bytes": 31225
+        }
+      ],
+      "largeCssBundles": [
+        {
+          "file": "0c334cd17430a2cf.css",
+          "bytes": 509639
+        },
+        {
+          "file": "5d79e63aa9e40a1e.css",
+          "bytes": 48212
+        },
+        {
+          "file": "1f07fef9051e1742.css",
+          "bytes": 24556
+        },
+        {
+          "file": "310b7428d6d9b49b.css",
+          "bytes": 15595
+        },
+        {
+          "file": "2ffbb4f730177864.css",
+          "bytes": 14050
+        },
+        {
+          "file": "17befa9eba60f727.css",
+          "bytes": 13579
+        },
+        {
+          "file": "2385d94afda7bf42.css",
+          "bytes": 11618
+        },
+        {
+          "file": "ac3d1ba253c9002e.css",
+          "bytes": 10688
+        },
+        {
+          "file": "a201c2a91aacd302.css",
+          "bytes": 8382
+        },
+        {
+          "file": "013adfd220e22c24.css",
+          "bytes": 7955
+        }
+      ],
+      "largeClientComponents": [
+        {
+          "file": "src/components/profile/UserProfile.jsx",
+          "bytes": 56400,
+          "packages": [
+            "next",
+            "react",
+            "react-icons"
+          ]
+        },
+        {
+          "file": "src/components/product-details/details-thumb-wrapper.jsx",
+          "bytes": 48572,
+          "packages": [
+            "next",
+            "react",
+            "react-icons"
+          ]
+        },
+        {
+          "file": "src/components/checkout/checkout-area.jsx",
+          "bytes": 46906,
+          "packages": [
+            "next",
+            "react",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/components/products/fashion/product-item.jsx",
+          "bytes": 45463,
+          "packages": [
+            "next",
+            "react",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/layout/headers/header-2.jsx",
+          "bytes": 44989,
+          "packages": [
+            "next",
+            "react",
+            "react-icons"
+          ]
+        },
+        {
+          "file": "src/components/product-details/details-wrapper.jsx",
+          "bytes": 35452,
+          "packages": [
+            "next",
+            "react",
+            "react-icons",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/layout/footers/footer.jsx",
+          "bytes": 30265,
+          "packages": [
+            "next",
+            "react",
+            "react-icons",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/components/cart-wishlist/cart-item-new.jsx",
+          "bytes": 29626,
+          "packages": [
+            "next",
+            "react",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/components/forms/contact-form.jsx",
+          "bytes": 28658,
+          "packages": [
+            "react"
+          ]
+        },
+        {
+          "file": "src/components/cart-wishlist/wishlist-item.jsx",
+          "bytes": 28502,
+          "packages": [
+            "next",
+            "react",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/components/products/fashion/weeks-featured.jsx",
+          "bytes": 25898,
+          "packages": [
+            "next",
+            "react",
+            "swiper"
+          ]
+        },
+        {
+          "file": "src/app/category/[slug]/CategoryDetailClient.jsx",
+          "bytes": 25622,
+          "packages": [
+            "next",
+            "react"
+          ]
+        },
+        {
+          "file": "src/components/checkout/order-confirmation-area.jsx",
+          "bytes": 24891,
+          "packages": [
+            "next",
+            "react"
+          ]
+        },
+        {
+          "file": "src/components/products/fashion/popular-products.jsx",
+          "bytes": 24158,
+          "packages": [
+            "next",
+            "react",
+            "swiper"
+          ]
+        },
+        {
+          "file": "src/components/order/order-area.jsx",
+          "bytes": 21840,
+          "packages": [
+            "react",
+            "react-icons"
+          ]
+        }
+      ],
+      "analyzerAvailable": true,
+      "analyzerCommand": "npm run build:analyze",
+      "buildManifestRoutes": [
+        "/_app"
+      ],
+      "commandsUsed": []
+    },
+    "dependencies": {
+      "status": "ok",
+      "outdated": [
+        {
+          "name": "@hookform/resolvers",
+          "current": "3.10.0",
+          "wanted": "3.10.0",
+          "latest": "5.2.2",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@hookform\\resolvers",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/node",
+          "current": "24.12.0",
+          "wanted": "24.12.0",
+          "latest": "25.5.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\node",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/react",
+          "current": "18.3.28",
+          "wanted": "18.3.28",
+          "latest": "19.2.14",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\react",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/react-dom",
+          "current": "18.3.7",
+          "wanted": "18.3.7",
+          "latest": "19.2.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\react-dom",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@typescript-eslint/eslint-plugin",
+          "current": "8.56.1",
+          "wanted": "8.57.0",
+          "latest": "8.57.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@typescript-eslint\\eslint-plugin",
+          "type": "minor",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@typescript-eslint/parser",
+          "current": "8.56.1",
+          "wanted": "8.57.0",
+          "latest": "8.57.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@typescript-eslint\\parser",
+          "type": "minor",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@vercel/speed-insights",
+          "current": "1.3.1",
+          "wanted": "1.3.1",
+          "latest": "2.0.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@vercel\\speed-insights",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "eslint",
+          "current": "9.39.4",
+          "wanted": "9.39.4",
+          "latest": "10.0.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\eslint",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "postcss-preset-env",
+          "current": "10.6.1",
+          "wanted": "10.6.1",
+          "latest": "11.2.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\postcss-preset-env",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "react",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "react-dom",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react-dom",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "swiper",
+          "current": "11.2.10",
+          "wanted": "11.2.10",
+          "latest": "12.1.2",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\swiper",
+          "type": "major",
+          "frameworkCritical": false
+        }
+      ],
+      "patchSafe": [],
+      "minorLikelySafe": [
+        {
+          "name": "@typescript-eslint/eslint-plugin",
+          "current": "8.56.1",
+          "wanted": "8.57.0",
+          "latest": "8.57.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@typescript-eslint\\eslint-plugin",
+          "type": "minor",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@typescript-eslint/parser",
+          "current": "8.56.1",
+          "wanted": "8.57.0",
+          "latest": "8.57.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@typescript-eslint\\parser",
+          "type": "minor",
+          "frameworkCritical": false
+        }
+      ],
+      "majorNeedsReview": [
+        {
+          "name": "@hookform/resolvers",
+          "current": "3.10.0",
+          "wanted": "3.10.0",
+          "latest": "5.2.2",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@hookform\\resolvers",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/node",
+          "current": "24.12.0",
+          "wanted": "24.12.0",
+          "latest": "25.5.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\node",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/react",
+          "current": "18.3.28",
+          "wanted": "18.3.28",
+          "latest": "19.2.14",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\react",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/react-dom",
+          "current": "18.3.7",
+          "wanted": "18.3.7",
+          "latest": "19.2.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\react-dom",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@vercel/speed-insights",
+          "current": "1.3.1",
+          "wanted": "1.3.1",
+          "latest": "2.0.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@vercel\\speed-insights",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "eslint",
+          "current": "9.39.4",
+          "wanted": "9.39.4",
+          "latest": "10.0.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\eslint",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "postcss-preset-env",
+          "current": "10.6.1",
+          "wanted": "10.6.1",
+          "latest": "11.2.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\postcss-preset-env",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "react",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "react-dom",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react-dom",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "swiper",
+          "current": "11.2.10",
+          "wanted": "11.2.10",
+          "latest": "12.1.2",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\swiper",
+          "type": "major",
+          "frameworkCritical": false
+        }
+      ],
+      "frameworkCritical": [
+        {
+          "name": "eslint",
+          "current": "9.39.4",
+          "wanted": "9.39.4",
+          "latest": "10.0.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\eslint",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "react",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "react-dom",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react-dom",
+          "type": "major",
+          "frameworkCritical": true
+        }
+      ],
+      "audit": {
+        "metadata": {
+          "vulnerabilities": {
+            "info": 0,
+            "low": 0,
+            "moderate": 1,
+            "high": 0,
+            "critical": 1,
+            "total": 2
+          },
+          "dependencies": {
+            "prod": 368,
+            "dev": 928,
+            "optional": 159,
+            "peer": 52,
+            "peerOptional": 0,
+            "total": 1450
+          }
+        },
+        "vulnerabilities": {
+          "dompurify": {
+            "name": "dompurify",
+            "severity": "moderate",
+            "isDirect": false,
+            "via": [
+              {
+                "source": 1114017,
+                "name": "dompurify",
+                "dependency": "dompurify",
+                "title": "DOMPurify contains a Cross-site Scripting vulnerability",
+                "url": "https://github.com/advisories/GHSA-v2wj-7wpq-c8vv",
+                "severity": "moderate",
+                "cwe": [
+                  "CWE-79"
+                ],
+                "cvss": {
+                  "score": 6.1,
+                  "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+                },
+                "range": ">=3.1.3 <=3.3.1"
+              }
+            ],
+            "effects": [],
+            "range": "3.1.3 - 3.3.1",
+            "nodes": [
+              "node_modules/dompurify"
+            ],
+            "fixAvailable": true
+          },
+          "swiper": {
+            "name": "swiper",
+            "severity": "critical",
+            "isDirect": true,
+            "via": [
+              {
+                "source": 1113431,
+                "name": "swiper",
+                "dependency": "swiper",
+                "title": "Prototype pollution in swiper",
+                "url": "https://github.com/advisories/GHSA-hmx5-qpq5-p643",
+                "severity": "critical",
+                "cwe": [
+                  "CWE-1321"
+                ],
+                "cvss": {
+                  "score": 0,
+                  "vectorString": null
+                },
+                "range": ">=6.5.1 <12.1.2"
+              }
+            ],
+            "effects": [],
+            "range": "6.5.1 - 12.1.1",
+            "nodes": [
+              "node_modules/swiper"
+            ],
+            "fixAvailable": {
+              "name": "swiper",
+              "version": "12.1.2",
+              "isSemVerMajor": true
+            }
+          }
+        },
+        "raw": {
+          "auditReportVersion": 2,
+          "vulnerabilities": {
+            "dompurify": {
+              "name": "dompurify",
+              "severity": "moderate",
+              "isDirect": false,
+              "via": [
+                {
+                  "source": 1114017,
+                  "name": "dompurify",
+                  "dependency": "dompurify",
+                  "title": "DOMPurify contains a Cross-site Scripting vulnerability",
+                  "url": "https://github.com/advisories/GHSA-v2wj-7wpq-c8vv",
+                  "severity": "moderate",
+                  "cwe": [
+                    "CWE-79"
+                  ],
+                  "cvss": {
+                    "score": 6.1,
+                    "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+                  },
+                  "range": ">=3.1.3 <=3.3.1"
+                }
+              ],
+              "effects": [],
+              "range": "3.1.3 - 3.3.1",
+              "nodes": [
+                "node_modules/dompurify"
+              ],
+              "fixAvailable": true
+            },
+            "swiper": {
+              "name": "swiper",
+              "severity": "critical",
+              "isDirect": true,
+              "via": [
+                {
+                  "source": 1113431,
+                  "name": "swiper",
+                  "dependency": "swiper",
+                  "title": "Prototype pollution in swiper",
+                  "url": "https://github.com/advisories/GHSA-hmx5-qpq5-p643",
+                  "severity": "critical",
+                  "cwe": [
+                    "CWE-1321"
+                  ],
+                  "cvss": {
+                    "score": 0,
+                    "vectorString": null
+                  },
+                  "range": ">=6.5.1 <12.1.2"
+                }
+              ],
+              "effects": [],
+              "range": "6.5.1 - 12.1.1",
+              "nodes": [
+                "node_modules/swiper"
+              ],
+              "fixAvailable": {
+                "name": "swiper",
+                "version": "12.1.2",
+                "isSemVerMajor": true
+              }
+            }
+          },
+          "metadata": {
+            "vulnerabilities": {
+              "info": 0,
+              "low": 0,
+              "moderate": 1,
+              "high": 0,
+              "critical": 1,
+              "total": 2
+            },
+            "dependencies": {
+              "prod": 368,
+              "dev": 928,
+              "optional": 159,
+              "peer": 52,
+              "peerOptional": 0,
+              "total": 1450
+            }
+          }
+        }
+      },
+      "nextCodemodsSuggested": false,
+      "commandsUsed": [
+        "npm.cmd outdated --json",
+        "npm.cmd audit --omit=dev --json"
+      ]
+    },
+    "verification": null
+  }
+}

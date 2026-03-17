@@ -1,0 +1,25 @@
+
+> shofy-next-js@0.1.0 lhci
+> lhci autorun
+
+✅  .lighthouseci/ directory writable
+✅  Configuration file found
+✅  Chrome installation found
+Healthcheck passed!
+
+Error: spawn EPERM
+    at ChildProcess.spawn (node:internal/child_process:421:11)
+    at Object.spawn (node:child_process:796:9)
+    at runCommandAndWaitForPattern (E:\SoftwareDevelopment\Shopy4\front-end\espo-shofy-final-project-07march2026\node_modules\@lhci\utils\src\child-process-helper.js:39:30)
+    at startServerAndDetermineUrls (E:\SoftwareDevelopment\Shopy4\front-end\espo-shofy-final-project-07march2026\node_modules\@lhci\cli\src\collect\collect.js:163:59)
+    at Object.runCommand (E:\SoftwareDevelopment\Shopy4\front-end\espo-shofy-final-project-07march2026\node_modules\@lhci\cli\src\collect\collect.js:251:31)
+    at run (E:\SoftwareDevelopment\Shopy4\front-end\espo-shofy-final-project-07march2026\node_modules\@lhci\cli\src\cli.js:100:24)
+    at Object.<anonymous> (E:\SoftwareDevelopment\Shopy4\front-end\espo-shofy-final-project-07march2026\node_modules\@lhci\cli\src\cli.js:134:1)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+
+    at Module.load (node:internal/modules/cjs/loader:1533:32)npm notice
+npm notice New minor version of npm available! 11.9.0 -> 11.11.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.11.0
+npm notice To update run: npm install -g npm@11.11.0
+npm notice

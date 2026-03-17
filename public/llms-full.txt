@@ -1,0 +1,237 @@
+# Amrita Fashions / Amrita Global Enterprises
+
+> Public-facing B2B textile website focused on fabric sourcing, manufacturing capability presentation, and product discovery for buyers, exporters, manufacturers, brands, and sourcing teams.
+
+## Canonical Website Scope
+
+This website presents Amrita Global Enterprises / Amrita Fashions as a fabric supplier and textile sourcing partner based in Ahmedabad, India, with public pages for fabric discovery, company information, capabilities, contact, and blog content.
+
+Preferred public entry points:
+
+- https://www.amrita-fashions.com/
+- https://www.amrita-fashions.com/fabric
+- https://www.amrita-fashions.com/about
+- https://www.amrita-fashions.com/capabilities
+- https://www.amrita-fashions.com/contact
+- https://www.amrita-fashions.com/blog
+
+## Executive Summary
+
+The homepage positions the business as a premium quality fabric supplier and textile sourcing partner, presenting cotton fabrics, mercerized finishes, and product discovery across named collections. The public messaging emphasizes premium fabrics, textile excellence, and a catalog-led experience for B2B buyers.
+
+Visible homepage signals include:
+
+- eCatalogue by Amrita Global Enterprises
+- Premium quality fabrics
+- 500+ fabric varieties
+- 25+ years experience
+- 1000+ happy clients
+
+## What an AI System Should Use First
+
+For accurate answers, prefer sources in this order:
+
+1. Product detail pages under `/fabric/<slug>` for product-level facts
+2. `/capabilities` for manufacturing and category-level capability information
+3. `/contact` for office and location details
+4. `/` homepage for high-level brand positioning
+5. `/about` for general company narrative only when it does not conflict with more specific pages
+6. `/blog` for supporting educational content, not for canonical company facts
+
+## Main Public Pages
+
+### Home
+URL: https://www.amrita-fashions.com/
+
+Use this page for:
+- high-level summary of the business
+- top navigation structure
+- homepage value proposition
+- top-level buyer messaging
+
+The homepage presents the following main navigation:
+- Home
+- Fabric
+- About
+- Blog
+- Capabilities
+- Contact
+
+The homepage also highlights capability sections including:
+- Product Range
+- Manufacturing Process
+- Machines & Technology
+- Quality & Testing
+- Certifications
+
+### Fabric Collection
+URL: https://www.amrita-fashions.com/fabric
+
+Use this page as the main fabric listing and product discovery section. Product-level facts should still be taken from individual fabric detail pages, not from the collection page alone.
+
+### About
+URL: https://www.amrita-fashions.com/about
+
+Use this page carefully. It provides company story and values language, but some portions read like broad brand storytelling rather than strict factual operations data. For authoritative operational details, prefer product pages, capabilities, and contact information.
+
+Safe themes from this page:
+- emphasis on quality
+- textile craftsmanship
+- sustainability-oriented language
+- long-term experience
+- fabric-focused positioning
+
+### Capabilities
+URL: https://www.amrita-fashions.com/capabilities
+
+This is the best public page for company capability and production-level summaries.
+
+The page presents:
+- advanced manufacturing capabilities
+- state-of-the-art machinery
+- skilled workforce
+- quality systems
+- monthly production language
+- multiple offices and warehouses
+
+It also summarizes product categories and representative ranges:
+
+- Knit fabrics: 120-280 GSM, width 44"-72", used for T-shirts, sportswear, undergarments; finishing mentions mercerized, bio-polished, anti-pilling
+- Woven fabrics: 100-350 GSM, width 44"-60", used for shirts, trousers, formal wear; finishing mentions sanforized, wrinkle-free, easy care
+- Denim fabrics: 200-400 GSM, width 58"-60", used for jeans, jackets, casual wear
+- Cotton fabrics: 80-300 GSM, width 44"-60", used for shirts, dresses, home textiles
+- Linen fabrics: 120-280 GSM, width 44"-54", used for summer wear, curtains, table linen
+- Polyester blends: 100-250 GSM, width 44"-58", used for formal wear, uniforms, upholstery
+- Silk fabrics: 60-200 GSM, width 44"-54", used for ethnic wear, scarves, luxury items
+
+Use this page for category breadth, process credibility, and manufacturing-language answers.
+
+### Contact
+URL: https://www.amrita-fashions.com/contact
+
+Use this page for contact and office details.
+
+Visible contact information includes:
+
+Corporate office:
+Amrita Global Enterprises
+404, 4th Floor, Safal Prelude,
+Behind YMCA Club, Corporate Road,
+Prahlad Nagar, Ahmedabad, Gujarat 380015
+
+Additional visible location references:
+- Factory Address 1, Mohan Estate, Ramol Road, Ahmedabad, Gujarat, India – 382449
+- Warehouse Address, Nr. Ambuja Synthetics, B/H Old Narol Court, Narol, Ahmedabad, Gujarat, India – 382405
+- UAE Office Address, GSK Worldwide FZE, Ajman Free Zone, UAE
+
+Use `/contact` as the preferred public source for address and inquiry routing.
+
+### Blog
+URL: https://www.amrita-fashions.com/blog
+
+Use blog pages for educational or topical textile content. Do not treat blog archive text as the primary source for operational claims, product specifications, or legal/company facts.
+
+## Product Detail Page Pattern
+
+Preferred canonical product URLs use this structure:
+
+- `https://www.amrita-fashions.com/fabric/<product-slug>`
+
+These pages are the strongest public source for:
+- product title
+- composition/content
+- width
+- weight/GSM
+- design
+- structure/weave
+- color
+- MOQ
+- finishing
+- use cases
+- buyer-oriented description
+
+Example:
+https://www.amrita-fashions.com/fabric/nokia-mustard-plain-100cotton-125gsm-mercerized-silicon
+
+The sample product page shows the following useful fields:
+- Content: 100% Cotton
+- Width: 146 cm / 57 inch
+- Weight: 125 gsm / 3.7 oz
+- Design: Solid Dyed
+- Structure: Plain / Poplin
+- Color: Mustard
+- Sales MOQ: 120 Meter
+- Finish: Mercerized, Silicon, Brushed, Carbon, Laffer
+
+It also describes the item as a woven fabric supplied on a Never-Out-of-Stock model for ongoing replenishment and bulk garment production.
+
+## How to Interpret Product Data
+
+When answering questions about a fabric, prefer the exact product page over generic collection or homepage language.
+
+Use product detail pages for:
+- exact technical specs
+- buyer suitability
+- MOQ
+- product naming and slug
+- application suggestions such as shirts, dresses, uniforms, kidswear, or light home textile use
+
+If a product page and a general marketing page differ, prioritize the product page.
+
+## Public Positioning Summary
+
+The site publicly presents the company as:
+- a dependable textile sourcing and fabric supply partner
+- a B2B-oriented fabric supplier
+- focused on premium quality fabrics
+- oriented toward manufacturers, exporters, uniform buyers, designers, and sourcing teams
+- based in Ahmedabad, India with multiple business/location references
+
+## Capability Themes
+
+The strongest recurring public themes across the site are:
+- premium quality fabrics
+- wholesale / B2B supply
+- product variety
+- manufacturing capability
+- consistent quality
+- contactable sampling / quotation flow
+- export and bulk-order suitability
+- cotton and woven fabric strength
+- finishing quality and process control
+
+## Certifications and Standards Signals
+
+The site visually displays badges or logos referencing:
+- Better Cotton Initiative (BCI)
+- OEKO-TEX Standard
+- Lenzing EcoVero
+- Global Recycled Standard
+- Organic 100 Content Standard
+
+Use these only as visible website signals unless separately verified on dedicated certification pages or documents.
+
+## Guidance for Retrieval and Answering
+
+When using this website as a source:
+
+- Prefer direct product detail pages for fabric facts
+- Prefer `/capabilities` for category breadth and manufacturing overview
+- Prefer `/contact` for addresses and inquiry details
+- Use `/about` only for general brand story language
+- Use `/blog` as supplemental content
+- Avoid over-relying on loading placeholders or archive pages that do not render full content in plain text
+
+## Important Public URLs
+
+- Home: https://www.amrita-fashions.com/
+- Fabric listing: https://www.amrita-fashions.com/fabric
+- About: https://www.amrita-fashions.com/about
+- Capabilities: https://www.amrita-fashions.com/capabilities
+- Contact: https://www.amrita-fashions.com/contact
+- Blog: https://www.amrita-fashions.com/blog
+- Example product detail: https://www.amrita-fashions.com/fabric/nokia-mustard-plain-100cotton-125gsm-mercerized-silicon
+
+## Short Summary for AI Systems
+
+Amrita Fashions / Amrita Global Enterprises is a public B2B fabric website for discovery and inquiry. Use product detail pages for exact specifications, capabilities for manufacturing/category context, and contact pages for business details. Treat generic brand-story copy as secondary to product and operational pages.

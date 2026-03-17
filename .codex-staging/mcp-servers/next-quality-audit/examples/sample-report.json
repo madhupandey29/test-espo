@@ -1,0 +1,1284 @@
+{
+  "generatedAt": "2026-03-16T10:50:08.243Z",
+  "mode": "audit-only",
+  "project": {
+    "projectPath": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026",
+    "packageManager": "npm",
+    "router": {
+      "appRouter": true,
+      "pagesRouter": false,
+      "mode": "app-router"
+    },
+    "styling": {
+      "tailwind": true,
+      "sass": true,
+      "cssModules": true,
+      "styledComponents": false,
+      "globalCss": true,
+      "cssFileCount": 109,
+      "cssModuleCount": 11,
+      "globalCssCount": 98,
+      "sampleGlobalCssFiles": [
+        "src/app/globals.scss",
+        "src/styles/carousel-mobile-fix.css",
+        "src/styles/safe-responsive-fixes.css",
+        "src/components/chatbot/FloatingChatbot.scss",
+        "public/assets/css/animate.css",
+        "public/assets/scss/main.scss",
+        "public/assets/scss/components/index.scss",
+        "public/assets/scss/components/_accordion.scss",
+        "public/assets/scss/components/_animation.scss",
+        "public/assets/scss/components/_background.scss"
+      ],
+      "sampleCssModules": [
+        "src/app/about/About.module.scss",
+        "src/app/capabilities/Capabilities.module.scss",
+        "src/app/careers/Careers.module.scss",
+        "src/app/sitemap/sitemap.module.scss",
+        "src/components/auth/AuthArea.module.css",
+        "src/components/blog-details/BlogDetails.module.scss",
+        "src/components/common/BackToTop.module.scss",
+        "src/components/common/FloatingButtons.module.scss",
+        "src/components/loader/loader.module.css",
+        "src/components/profile/UserProfile.module.css"
+      ],
+      "globalImports": [
+        {
+          "file": "src/app/layout.jsx",
+          "statement": "import './globals.scss'"
+        }
+      ],
+      "tailwindConfig": null
+    },
+    "detected": {
+      "nextConfig": "next.config.js",
+      "eslintConfig": ".eslintrc.json",
+      "tsconfig": "tsconfig.json",
+      "postcssConfig": "postcss.config.js",
+      "playwrightConfig": "playwright.config.ts"
+    }
+  },
+  "summary": {
+    "unusedDependencyCount": 0,
+    "unusedFileCount": 0,
+    "unusedExportCount": 0,
+    "riskyCssCandidateCount": 15,
+    "largeJsBundleCount": 15,
+    "largeClientComponentCount": 15,
+    "safeFirstActionCount": 0
+  },
+  "findings": {
+    "unusedDependencies": [],
+    "unusedFiles": [],
+    "unusedExports": [],
+    "riskyCssCleanupCandidates": [
+      {
+        "file": "public/assets/css/animate.css",
+        "bytes": 71742,
+        "legacy": true,
+        "reason": "large global stylesheet"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_productDetails.scss",
+        "bytes": 46801,
+        "legacy": true,
+        "reason": "large global stylesheet"
+      },
+      {
+        "file": "public/assets/scss/components/_offcanvas.scss",
+        "bytes": 30072,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/pages/_slider.scss",
+        "bytes": 27391,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "src/app/globals.scss",
+        "bytes": 24562,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/blog/_postbox.scss",
+        "bytes": 22906,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_product.scss",
+        "bytes": 22240,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "src/components/chatbot/FloatingChatbot.scss",
+        "bytes": 21628,
+        "legacy": false,
+        "reason": "global stylesheet may contain dynamic selectors"
+      },
+      {
+        "file": "public/assets/scss/layout/pages/_profile.scss",
+        "bytes": 17693,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/menu/_categoryMenu.scss",
+        "bytes": 16081,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/header/_header-5.scss",
+        "bytes": 15871,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/menu/_menu.scss",
+        "bytes": 14951,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_banner.scss",
+        "bytes": 13695,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_category.scss",
+        "bytes": 13225,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      },
+      {
+        "file": "public/assets/scss/layout/ecommerce/_checkout.scss",
+        "bytes": 12749,
+        "legacy": true,
+        "reason": "legacy or global stylesheet should be reviewed before cleanup"
+      }
+    ],
+    "largeJsBundles": [
+      {
+        "file": "164f4fb6.96b9f50d9f5f168e.js",
+        "bytes": 330491
+      },
+      {
+        "file": "4bd1b696-96fa2570c3ed041f.js",
+        "bytes": 198840
+      },
+      {
+        "file": "3794-4618df11ff397ba8.js",
+        "bytes": 190763
+      },
+      {
+        "file": "framework-7e54adbbc2ea18ad.js",
+        "bytes": 140116
+      },
+      {
+        "file": "main-31393c2e6f8d084a.js",
+        "bytes": 130666
+      },
+      {
+        "file": "polyfills-42372ed130431b0a.js",
+        "bytes": 112594
+      },
+      {
+        "file": "5135.cd14a1151e4cc5ec.js",
+        "bytes": 106486
+      },
+      {
+        "file": "4561-2ff583cd3838a152.js",
+        "bytes": 80271
+      },
+      {
+        "file": "2018-20c59523f480bef6.js",
+        "bytes": 65571
+      },
+      {
+        "file": "1001-c7786fe7436a77c7.js",
+        "bytes": 53310
+      },
+      {
+        "file": "345-a0699c737033b992.js",
+        "bytes": 51406
+      },
+      {
+        "file": "3820-20b8e5622bbd6a9f.js",
+        "bytes": 47222
+      },
+      {
+        "file": "280273a7.560b210d0885bf74.js",
+        "bytes": 45648
+      },
+      {
+        "file": "8394-95b65f3ea7b1da73.js",
+        "bytes": 37856
+      },
+      {
+        "file": "5724-b32d17ef63f51df1.js",
+        "bytes": 31225
+      }
+    ],
+    "largeClientComponents": [
+      {
+        "file": "src/components/profile/UserProfile.jsx",
+        "bytes": 56400,
+        "packages": [
+          "next",
+          "react",
+          "react-icons"
+        ]
+      },
+      {
+        "file": "src/components/product-details/details-thumb-wrapper.jsx",
+        "bytes": 48572,
+        "packages": [
+          "next",
+          "react",
+          "react-icons"
+        ]
+      },
+      {
+        "file": "src/components/checkout/checkout-area.jsx",
+        "bytes": 46906,
+        "packages": [
+          "next",
+          "react",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/components/products/fashion/product-item.jsx",
+        "bytes": 45463,
+        "packages": [
+          "next",
+          "react",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/layout/headers/header-2.jsx",
+        "bytes": 44989,
+        "packages": [
+          "next",
+          "react",
+          "react-icons"
+        ]
+      },
+      {
+        "file": "src/components/product-details/details-wrapper.jsx",
+        "bytes": 35452,
+        "packages": [
+          "next",
+          "react",
+          "react-icons",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/layout/footers/footer.jsx",
+        "bytes": 30265,
+        "packages": [
+          "next",
+          "react",
+          "react-icons",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/components/cart-wishlist/cart-item-new.jsx",
+        "bytes": 29626,
+        "packages": [
+          "next",
+          "react",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/components/forms/contact-form.jsx",
+        "bytes": 28658,
+        "packages": [
+          "react"
+        ]
+      },
+      {
+        "file": "src/components/cart-wishlist/wishlist-item.jsx",
+        "bytes": 28502,
+        "packages": [
+          "next",
+          "react",
+          "react-toastify"
+        ]
+      },
+      {
+        "file": "src/components/products/fashion/weeks-featured.jsx",
+        "bytes": 25898,
+        "packages": [
+          "next",
+          "react",
+          "swiper"
+        ]
+      },
+      {
+        "file": "src/app/category/[slug]/CategoryDetailClient.jsx",
+        "bytes": 25622,
+        "packages": [
+          "next",
+          "react"
+        ]
+      },
+      {
+        "file": "src/components/checkout/order-confirmation-area.jsx",
+        "bytes": 24891,
+        "packages": [
+          "next",
+          "react"
+        ]
+      },
+      {
+        "file": "src/components/products/fashion/popular-products.jsx",
+        "bytes": 24158,
+        "packages": [
+          "next",
+          "react",
+          "swiper"
+        ]
+      },
+      {
+        "file": "src/components/order/order-area.jsx",
+        "bytes": 21840,
+        "packages": [
+          "react",
+          "react-icons"
+        ]
+      }
+    ],
+    "recommendedPackageUpgrades": [
+      {
+        "name": "@typescript-eslint/eslint-plugin",
+        "current": "8.56.1",
+        "target": "8.57.0",
+        "risk": "medium",
+        "whyItMatters": "Minor upgrade may reduce bugs or improve performance.",
+        "expectedBenefit": "Potential library improvements with manageable change risk.",
+        "compatibilityRisk": "medium",
+        "codeChangesMayBeRequired": true
+      },
+      {
+        "name": "@typescript-eslint/parser",
+        "current": "8.56.1",
+        "target": "8.57.0",
+        "risk": "medium",
+        "whyItMatters": "Minor upgrade may reduce bugs or improve performance.",
+        "expectedBenefit": "Potential library improvements with manageable change risk.",
+        "compatibilityRisk": "medium",
+        "codeChangesMayBeRequired": true
+      }
+    ]
+  },
+  "safeFirstActions": [],
+  "mediumRiskActions": [
+    "Review CSS candidate public/assets/css/animate.css (large global stylesheet) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_productDetails.scss (large global stylesheet) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/components/_offcanvas.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/pages/_slider.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate src/app/globals.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/blog/_postbox.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_product.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate src/components/chatbot/FloatingChatbot.scss (global stylesheet may contain dynamic selectors) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/pages/_profile.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/menu/_categoryMenu.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/header/_header-5.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/menu/_menu.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_banner.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_category.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review CSS candidate public/assets/scss/layout/ecommerce/_checkout.scss (legacy or global stylesheet should be reviewed before cleanup) with safelists before any PurgeCSS apply step.",
+    "Review minor upgrade for @typescript-eslint/eslint-plugin from 8.56.1 to 8.57.0.",
+    "Review minor upgrade for @typescript-eslint/parser from 8.56.1 to 8.57.0."
+  ],
+  "actionsRequiringHumanReview": [
+    "Major upgrade review required for @hookform/resolvers (3.10.0 -> 5.2.2).",
+    "Major upgrade review required for @types/node (24.12.0 -> 25.5.0).",
+    "Major upgrade review required for @types/react (18.3.28 -> 19.2.14).",
+    "Major upgrade review required for @types/react-dom (18.3.7 -> 19.2.3).",
+    "Major upgrade review required for @vercel/speed-insights (1.3.1 -> 2.0.0).",
+    "Major upgrade review required for eslint (9.39.4 -> 10.0.3).",
+    "Major upgrade review required for postcss-preset-env (10.6.1 -> 11.2.0).",
+    "Major upgrade review required for react (18.3.1 -> 19.2.4).",
+    "Major upgrade review required for react-dom (18.3.1 -> 19.2.4).",
+    "Major upgrade review required for swiper (11.2.10 -> 12.1.2).",
+    "Framework-critical package eslint needs explicit review (9.39.4 -> 10.0.3).",
+    "Framework-critical package react needs explicit review (18.3.1 -> 19.2.4).",
+    "Framework-critical package react-dom needs explicit review (18.3.1 -> 19.2.4)."
+  ],
+  "commandsUsed": [
+    "npm.cmd outdated --json",
+    "npm.cmd audit --omit=dev --json"
+  ],
+  "filesTouched": [],
+  "rollbackGuidance": [
+    "Commit before autofix or dependency changes.",
+    "Keep build output and smoke-test evidence for before/after review.",
+    "Revert only the targeted batch if verification fails."
+  ],
+  "raw": {
+    "unusedCode": {
+      "status": "missing-tool",
+      "tool": "knip",
+      "installCommand": "npm install -D knip",
+      "findings": {
+        "dependencies": [],
+        "files": [],
+        "exports": [],
+        "issues": []
+      },
+      "commandsUsed": []
+    },
+    "css": {
+      "status": "ok",
+      "styling": {
+        "tailwind": true,
+        "sass": true,
+        "cssModules": true,
+        "styledComponents": false,
+        "globalCss": true,
+        "cssFileCount": 109,
+        "cssModuleCount": 11,
+        "globalCssCount": 98,
+        "sampleGlobalCssFiles": [
+          "src/app/globals.scss",
+          "src/styles/carousel-mobile-fix.css",
+          "src/styles/safe-responsive-fixes.css",
+          "src/components/chatbot/FloatingChatbot.scss",
+          "public/assets/css/animate.css",
+          "public/assets/scss/main.scss",
+          "public/assets/scss/components/index.scss",
+          "public/assets/scss/components/_accordion.scss",
+          "public/assets/scss/components/_animation.scss",
+          "public/assets/scss/components/_background.scss"
+        ],
+        "sampleCssModules": [
+          "src/app/about/About.module.scss",
+          "src/app/capabilities/Capabilities.module.scss",
+          "src/app/careers/Careers.module.scss",
+          "src/app/sitemap/sitemap.module.scss",
+          "src/components/auth/AuthArea.module.css",
+          "src/components/blog-details/BlogDetails.module.scss",
+          "src/components/common/BackToTop.module.scss",
+          "src/components/common/FloatingButtons.module.scss",
+          "src/components/loader/loader.module.css",
+          "src/components/profile/UserProfile.module.css"
+        ],
+        "globalImports": [
+          {
+            "file": "src/app/layout.jsx",
+            "statement": "import './globals.scss'"
+          }
+        ],
+        "tailwindConfig": null
+      },
+      "largeCssFiles": [
+        {
+          "file": "public/assets/css/animate.css",
+          "bytes": 71742,
+          "global": true,
+          "legacy": true
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_productDetails.scss",
+          "bytes": 46801,
+          "global": true,
+          "legacy": true
+        },
+        {
+          "file": "src/app/about/About.module.scss",
+          "bytes": 40293,
+          "global": false,
+          "legacy": false
+        }
+      ],
+      "riskyCssCleanupCandidates": [
+        {
+          "file": "public/assets/css/animate.css",
+          "bytes": 71742,
+          "legacy": true,
+          "reason": "large global stylesheet"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_productDetails.scss",
+          "bytes": 46801,
+          "legacy": true,
+          "reason": "large global stylesheet"
+        },
+        {
+          "file": "public/assets/scss/components/_offcanvas.scss",
+          "bytes": 30072,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/pages/_slider.scss",
+          "bytes": 27391,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "src/app/globals.scss",
+          "bytes": 24562,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/blog/_postbox.scss",
+          "bytes": 22906,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_product.scss",
+          "bytes": 22240,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "src/components/chatbot/FloatingChatbot.scss",
+          "bytes": 21628,
+          "legacy": false,
+          "reason": "global stylesheet may contain dynamic selectors"
+        },
+        {
+          "file": "public/assets/scss/layout/pages/_profile.scss",
+          "bytes": 17693,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/menu/_categoryMenu.scss",
+          "bytes": 16081,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/header/_header-5.scss",
+          "bytes": 15871,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/menu/_menu.scss",
+          "bytes": 14951,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_banner.scss",
+          "bytes": 13695,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_category.scss",
+          "bytes": 13225,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        },
+        {
+          "file": "public/assets/scss/layout/ecommerce/_checkout.scss",
+          "bytes": 12749,
+          "legacy": true,
+          "reason": "legacy or global stylesheet should be reviewed before cleanup"
+        }
+      ],
+      "purgeCssSuggested": true,
+      "purgeCssScope": "legacy-and-global-css-only",
+      "warnings": [
+        "Tailwind-like class patterns detected; safelist dynamic classes before any PurgeCSS run."
+      ],
+      "commandsUsed": []
+    },
+    "bundle": {
+      "status": "ok",
+      "build": null,
+      "largeJsBundles": [
+        {
+          "file": "164f4fb6.96b9f50d9f5f168e.js",
+          "bytes": 330491
+        },
+        {
+          "file": "4bd1b696-96fa2570c3ed041f.js",
+          "bytes": 198840
+        },
+        {
+          "file": "3794-4618df11ff397ba8.js",
+          "bytes": 190763
+        },
+        {
+          "file": "framework-7e54adbbc2ea18ad.js",
+          "bytes": 140116
+        },
+        {
+          "file": "main-31393c2e6f8d084a.js",
+          "bytes": 130666
+        },
+        {
+          "file": "polyfills-42372ed130431b0a.js",
+          "bytes": 112594
+        },
+        {
+          "file": "5135.cd14a1151e4cc5ec.js",
+          "bytes": 106486
+        },
+        {
+          "file": "4561-2ff583cd3838a152.js",
+          "bytes": 80271
+        },
+        {
+          "file": "2018-20c59523f480bef6.js",
+          "bytes": 65571
+        },
+        {
+          "file": "1001-c7786fe7436a77c7.js",
+          "bytes": 53310
+        },
+        {
+          "file": "345-a0699c737033b992.js",
+          "bytes": 51406
+        },
+        {
+          "file": "3820-20b8e5622bbd6a9f.js",
+          "bytes": 47222
+        },
+        {
+          "file": "280273a7.560b210d0885bf74.js",
+          "bytes": 45648
+        },
+        {
+          "file": "8394-95b65f3ea7b1da73.js",
+          "bytes": 37856
+        },
+        {
+          "file": "5724-b32d17ef63f51df1.js",
+          "bytes": 31225
+        }
+      ],
+      "largeCssBundles": [
+        {
+          "file": "0c334cd17430a2cf.css",
+          "bytes": 509639
+        },
+        {
+          "file": "5d79e63aa9e40a1e.css",
+          "bytes": 48212
+        },
+        {
+          "file": "1f07fef9051e1742.css",
+          "bytes": 24556
+        },
+        {
+          "file": "310b7428d6d9b49b.css",
+          "bytes": 15595
+        },
+        {
+          "file": "2ffbb4f730177864.css",
+          "bytes": 14050
+        },
+        {
+          "file": "17befa9eba60f727.css",
+          "bytes": 13579
+        },
+        {
+          "file": "2385d94afda7bf42.css",
+          "bytes": 11618
+        },
+        {
+          "file": "ac3d1ba253c9002e.css",
+          "bytes": 10688
+        },
+        {
+          "file": "a201c2a91aacd302.css",
+          "bytes": 8382
+        },
+        {
+          "file": "013adfd220e22c24.css",
+          "bytes": 7955
+        }
+      ],
+      "largeClientComponents": [
+        {
+          "file": "src/components/profile/UserProfile.jsx",
+          "bytes": 56400,
+          "packages": [
+            "next",
+            "react",
+            "react-icons"
+          ]
+        },
+        {
+          "file": "src/components/product-details/details-thumb-wrapper.jsx",
+          "bytes": 48572,
+          "packages": [
+            "next",
+            "react",
+            "react-icons"
+          ]
+        },
+        {
+          "file": "src/components/checkout/checkout-area.jsx",
+          "bytes": 46906,
+          "packages": [
+            "next",
+            "react",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/components/products/fashion/product-item.jsx",
+          "bytes": 45463,
+          "packages": [
+            "next",
+            "react",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/layout/headers/header-2.jsx",
+          "bytes": 44989,
+          "packages": [
+            "next",
+            "react",
+            "react-icons"
+          ]
+        },
+        {
+          "file": "src/components/product-details/details-wrapper.jsx",
+          "bytes": 35452,
+          "packages": [
+            "next",
+            "react",
+            "react-icons",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/layout/footers/footer.jsx",
+          "bytes": 30265,
+          "packages": [
+            "next",
+            "react",
+            "react-icons",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/components/cart-wishlist/cart-item-new.jsx",
+          "bytes": 29626,
+          "packages": [
+            "next",
+            "react",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/components/forms/contact-form.jsx",
+          "bytes": 28658,
+          "packages": [
+            "react"
+          ]
+        },
+        {
+          "file": "src/components/cart-wishlist/wishlist-item.jsx",
+          "bytes": 28502,
+          "packages": [
+            "next",
+            "react",
+            "react-toastify"
+          ]
+        },
+        {
+          "file": "src/components/products/fashion/weeks-featured.jsx",
+          "bytes": 25898,
+          "packages": [
+            "next",
+            "react",
+            "swiper"
+          ]
+        },
+        {
+          "file": "src/app/category/[slug]/CategoryDetailClient.jsx",
+          "bytes": 25622,
+          "packages": [
+            "next",
+            "react"
+          ]
+        },
+        {
+          "file": "src/components/checkout/order-confirmation-area.jsx",
+          "bytes": 24891,
+          "packages": [
+            "next",
+            "react"
+          ]
+        },
+        {
+          "file": "src/components/products/fashion/popular-products.jsx",
+          "bytes": 24158,
+          "packages": [
+            "next",
+            "react",
+            "swiper"
+          ]
+        },
+        {
+          "file": "src/components/order/order-area.jsx",
+          "bytes": 21840,
+          "packages": [
+            "react",
+            "react-icons"
+          ]
+        }
+      ],
+      "analyzerAvailable": true,
+      "analyzerCommand": "npm run build:analyze",
+      "buildManifestRoutes": [
+        "/_app"
+      ],
+      "commandsUsed": []
+    },
+    "dependencies": {
+      "status": "ok",
+      "outdated": [
+        {
+          "name": "@hookform/resolvers",
+          "current": "3.10.0",
+          "wanted": "3.10.0",
+          "latest": "5.2.2",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@hookform\\resolvers",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/node",
+          "current": "24.12.0",
+          "wanted": "24.12.0",
+          "latest": "25.5.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\node",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/react",
+          "current": "18.3.28",
+          "wanted": "18.3.28",
+          "latest": "19.2.14",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\react",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/react-dom",
+          "current": "18.3.7",
+          "wanted": "18.3.7",
+          "latest": "19.2.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\react-dom",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@typescript-eslint/eslint-plugin",
+          "current": "8.56.1",
+          "wanted": "8.57.0",
+          "latest": "8.57.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@typescript-eslint\\eslint-plugin",
+          "type": "minor",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@typescript-eslint/parser",
+          "current": "8.56.1",
+          "wanted": "8.57.0",
+          "latest": "8.57.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@typescript-eslint\\parser",
+          "type": "minor",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@vercel/speed-insights",
+          "current": "1.3.1",
+          "wanted": "1.3.1",
+          "latest": "2.0.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@vercel\\speed-insights",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "eslint",
+          "current": "9.39.4",
+          "wanted": "9.39.4",
+          "latest": "10.0.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\eslint",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "postcss-preset-env",
+          "current": "10.6.1",
+          "wanted": "10.6.1",
+          "latest": "11.2.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\postcss-preset-env",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "react",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "react-dom",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react-dom",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "swiper",
+          "current": "11.2.10",
+          "wanted": "11.2.10",
+          "latest": "12.1.2",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\swiper",
+          "type": "major",
+          "frameworkCritical": false
+        }
+      ],
+      "patchSafe": [],
+      "minorLikelySafe": [
+        {
+          "name": "@typescript-eslint/eslint-plugin",
+          "current": "8.56.1",
+          "wanted": "8.57.0",
+          "latest": "8.57.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@typescript-eslint\\eslint-plugin",
+          "type": "minor",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@typescript-eslint/parser",
+          "current": "8.56.1",
+          "wanted": "8.57.0",
+          "latest": "8.57.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@typescript-eslint\\parser",
+          "type": "minor",
+          "frameworkCritical": false
+        }
+      ],
+      "majorNeedsReview": [
+        {
+          "name": "@hookform/resolvers",
+          "current": "3.10.0",
+          "wanted": "3.10.0",
+          "latest": "5.2.2",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@hookform\\resolvers",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/node",
+          "current": "24.12.0",
+          "wanted": "24.12.0",
+          "latest": "25.5.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\node",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/react",
+          "current": "18.3.28",
+          "wanted": "18.3.28",
+          "latest": "19.2.14",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\react",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@types/react-dom",
+          "current": "18.3.7",
+          "wanted": "18.3.7",
+          "latest": "19.2.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@types\\react-dom",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "@vercel/speed-insights",
+          "current": "1.3.1",
+          "wanted": "1.3.1",
+          "latest": "2.0.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\@vercel\\speed-insights",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "eslint",
+          "current": "9.39.4",
+          "wanted": "9.39.4",
+          "latest": "10.0.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\eslint",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "postcss-preset-env",
+          "current": "10.6.1",
+          "wanted": "10.6.1",
+          "latest": "11.2.0",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\postcss-preset-env",
+          "type": "major",
+          "frameworkCritical": false
+        },
+        {
+          "name": "react",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "react-dom",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react-dom",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "swiper",
+          "current": "11.2.10",
+          "wanted": "11.2.10",
+          "latest": "12.1.2",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\swiper",
+          "type": "major",
+          "frameworkCritical": false
+        }
+      ],
+      "frameworkCritical": [
+        {
+          "name": "eslint",
+          "current": "9.39.4",
+          "wanted": "9.39.4",
+          "latest": "10.0.3",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\eslint",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "react",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react",
+          "type": "major",
+          "frameworkCritical": true
+        },
+        {
+          "name": "react-dom",
+          "current": "18.3.1",
+          "wanted": "18.3.1",
+          "latest": "19.2.4",
+          "location": "E:\\SoftwareDevelopment\\Shopy4\\front-end\\espo-shofy-final-project-07march2026\\node_modules\\react-dom",
+          "type": "major",
+          "frameworkCritical": true
+        }
+      ],
+      "audit": {
+        "metadata": {
+          "vulnerabilities": {
+            "info": 0,
+            "low": 0,
+            "moderate": 1,
+            "high": 0,
+            "critical": 1,
+            "total": 2
+          },
+          "dependencies": {
+            "prod": 368,
+            "dev": 896,
+            "optional": 138,
+            "peer": 52,
+            "peerOptional": 0,
+            "total": 1418
+          }
+        },
+        "vulnerabilities": {
+          "dompurify": {
+            "name": "dompurify",
+            "severity": "moderate",
+            "isDirect": false,
+            "via": [
+              {
+                "source": 1114017,
+                "name": "dompurify",
+                "dependency": "dompurify",
+                "title": "DOMPurify contains a Cross-site Scripting vulnerability",
+                "url": "https://github.com/advisories/GHSA-v2wj-7wpq-c8vv",
+                "severity": "moderate",
+                "cwe": [
+                  "CWE-79"
+                ],
+                "cvss": {
+                  "score": 6.1,
+                  "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+                },
+                "range": ">=3.1.3 <=3.3.1"
+              }
+            ],
+            "effects": [],
+            "range": "3.1.3 - 3.3.1",
+            "nodes": [
+              "node_modules/dompurify"
+            ],
+            "fixAvailable": true
+          },
+          "swiper": {
+            "name": "swiper",
+            "severity": "critical",
+            "isDirect": true,
+            "via": [
+              {
+                "source": 1113431,
+                "name": "swiper",
+                "dependency": "swiper",
+                "title": "Prototype pollution in swiper",
+                "url": "https://github.com/advisories/GHSA-hmx5-qpq5-p643",
+                "severity": "critical",
+                "cwe": [
+                  "CWE-1321"
+                ],
+                "cvss": {
+                  "score": 0,
+                  "vectorString": null
+                },
+                "range": ">=6.5.1 <12.1.2"
+              }
+            ],
+            "effects": [],
+            "range": "6.5.1 - 12.1.1",
+            "nodes": [
+              "node_modules/swiper"
+            ],
+            "fixAvailable": {
+              "name": "swiper",
+              "version": "12.1.2",
+              "isSemVerMajor": true
+            }
+          }
+        },
+        "raw": {
+          "auditReportVersion": 2,
+          "vulnerabilities": {
+            "dompurify": {
+              "name": "dompurify",
+              "severity": "moderate",
+              "isDirect": false,
+              "via": [
+                {
+                  "source": 1114017,
+                  "name": "dompurify",
+                  "dependency": "dompurify",
+                  "title": "DOMPurify contains a Cross-site Scripting vulnerability",
+                  "url": "https://github.com/advisories/GHSA-v2wj-7wpq-c8vv",
+                  "severity": "moderate",
+                  "cwe": [
+                    "CWE-79"
+                  ],
+                  "cvss": {
+                    "score": 6.1,
+                    "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+                  },
+                  "range": ">=3.1.3 <=3.3.1"
+                }
+              ],
+              "effects": [],
+              "range": "3.1.3 - 3.3.1",
+              "nodes": [
+                "node_modules/dompurify"
+              ],
+              "fixAvailable": true
+            },
+            "swiper": {
+              "name": "swiper",
+              "severity": "critical",
+              "isDirect": true,
+              "via": [
+                {
+                  "source": 1113431,
+                  "name": "swiper",
+                  "dependency": "swiper",
+                  "title": "Prototype pollution in swiper",
+                  "url": "https://github.com/advisories/GHSA-hmx5-qpq5-p643",
+                  "severity": "critical",
+                  "cwe": [
+                    "CWE-1321"
+                  ],
+                  "cvss": {
+                    "score": 0,
+                    "vectorString": null
+                  },
+                  "range": ">=6.5.1 <12.1.2"
+                }
+              ],
+              "effects": [],
+              "range": "6.5.1 - 12.1.1",
+              "nodes": [
+                "node_modules/swiper"
+              ],
+              "fixAvailable": {
+                "name": "swiper",
+                "version": "12.1.2",
+                "isSemVerMajor": true
+              }
+            }
+          },
+          "metadata": {
+            "vulnerabilities": {
+              "info": 0,
+              "low": 0,
+              "moderate": 1,
+              "high": 0,
+              "critical": 1,
+              "total": 2
+            },
+            "dependencies": {
+              "prod": 368,
+              "dev": 896,
+              "optional": 138,
+              "peer": 52,
+              "peerOptional": 0,
+              "total": 1418
+            }
+          }
+        }
+      },
+      "nextCodemodsSuggested": false,
+      "commandsUsed": [
+        "npm.cmd outdated --json",
+        "npm.cmd audit --omit=dev --json"
+      ]
+    },
+    "verification": null
+  }
+}

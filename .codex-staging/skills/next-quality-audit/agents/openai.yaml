@@ -1,0 +1,6 @@
+interface:
+  display_name: "Next Quality Audit"
+  short_description: "Safe React and Next.js audits"
+  default_prompt: "Use $next-quality-audit to inspect a local React or Next.js app, run audit-only checks first, and classify safe versus review-required actions."
+policy:
+  allow_implicit_invocation: true
