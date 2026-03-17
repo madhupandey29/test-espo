@@ -72,8 +72,8 @@ const ModernBlogCard = ({ blog, index = 0 }) => {
   const rawTitle = blog?.title || '';
   const plainTitle = stripHtml(rawTitle) || 'Blog Post';
 
-  const img1 = normalizeImg(blog?.blogimage1);
-  const img2 = normalizeImg(blog?.blogimage2);
+  const img1 = normalizeImg(blog?.blogimage1 || blog?.blogimage1CloudURL);
+  const img2 = normalizeImg(blog?.blogimage2 || blog?.blogimage2CloudURL);
   const chosen = img1.src ? img1 : img2.src ? img2 : null;
 
   const fallbackSrc = '/assets/img/blog/blog-big-2.jpg';

@@ -23,6 +23,10 @@ const WeeksFeatured = dynamic(
   () => import("@/components/products/fashion/weeks-featured"),
   { ssr: false, loading: () => <div style={{ minHeight: "400px" }} /> }
 );
+const DynamicProductSection = dynamic(
+  () => import("@/components/products/fashion/dynamic-section"),
+  { ssr: false, loading: () => <div style={{ minHeight: "400px" }} /> }
+);
 const FashionTestimonial = dynamic(
   () => import("@/components/testimonial/fashion-testimonial"),
   { ssr: false, loading: () => <div style={{ minHeight: "400px" }} /> }
@@ -45,7 +49,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/f
 import { FaXTwitter } from "react-icons/fa6";
 import { normalizeSocialUrl } from "@/utils/socialLinks";
 
-export default function HomePageTwoClient({ office = null, homeProducts = [], homeBlogs = [], categorySummaries = [] }) {
+export default function HomePageTwoClient({ office = null, homeProducts = [], homeBlogs = [], categorySummaries = [], dynamicSections = [], dynamicSectionsData = [] }) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -111,13 +115,29 @@ export default function HomePageTwoClient({ office = null, homeProducts = [], ho
     <Wrapper>
       <HeaderTwo />
       <FashionBanner />
-      <HomeCategorySection categorySummaries={categorySummaries} />
-      <DeferredSection minHeight={500}>
-        <PopularProducts products={homeProducts} />
-      </DeferredSection>
-      <DeferredSection minHeight={420}>
-        <WeeksFeatured products={homeProducts} />
-      </DeferredSection>
+      {dynamicSectionsData.length > 0 ? (
+        dynamicSectionsData.map((section) => (
+          <DeferredSection key={section.id} minHeight={500}>
+            <DynamicProductSection
+              sectionId={section.id}
+              sectionTitle={section.title}
+              products={section.products}
+              sectionPath={`/dynamicsection/${section.id}`}
+              showViewAll={true}
+            />
+          </DeferredSection>
+        ))
+      ) : (
+        <>
+          <HomeCategorySection categorySummaries={categorySummaries} />
+          <DeferredSection minHeight={500}>
+            <PopularProducts products={homeProducts} />
+          </DeferredSection>
+          <DeferredSection minHeight={420}>
+            <WeeksFeatured products={homeProducts} />
+          </DeferredSection>
+        </>
+      )}
       <DeferredSection minHeight={220}>
         <FeatureAreaTwo />
       </DeferredSection>

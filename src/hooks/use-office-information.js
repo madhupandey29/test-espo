@@ -9,16 +9,17 @@ let officeInfoCache = null;
 let officeInfoPromise = null;
 
 function normalizeOfficeInformationResponse(response) {
-  if (!response?.success || !Array.isArray(response.data)) {
+  if (!response?.success || !Array.isArray(response.data) || response.data.length === 0) {
     return EMPTY_RESPONSE;
   }
 
   const companyFilter = process.env.NEXT_PUBLIC_COMPANY_FILTER;
-  if (!companyFilter) {
-    return EMPTY_RESPONSE;
-  }
 
-  const targetCompany = response.data.find((company) => company.name === companyFilter);
+  // If filter is available (server-side or inlined), use it; otherwise fall back to first entry
+  const targetCompany = companyFilter
+    ? response.data.find((company) => company.name === companyFilter)
+    : response.data[0];
+
   if (!targetCompany) {
     return EMPTY_RESPONSE;
   }

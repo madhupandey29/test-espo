@@ -38,8 +38,10 @@ export default function BlogItem({ blog }) {
     return url.startsWith('http://') || url.startsWith('https://') || url.startsWith('/');
   };
   
-  const blogimage1 = validateImageUrl(blog?.blogimage1) ? blog.blogimage1 : null;
-  const blogimage2 = validateImageUrl(blog?.blogimage2) ? blog.blogimage2 : null;
+  const blogimage1 = validateImageUrl(blog?.blogimage1) ? blog.blogimage1
+    : validateImageUrl(blog?.blogimage1CloudURL) ? blog.blogimage1CloudURL : null;
+  const blogimage2 = validateImageUrl(blog?.blogimage2) ? blog.blogimage2
+    : validateImageUrl(blog?.blogimage2CloudURL) ? blog.blogimage2CloudURL : null;
   const oldImg = validateImageUrl(blog?.img) ? blog.img : null;
   
   const img = blogimage1 || blogimage2 || oldImg || '/assets/img/blog/fallback.jpg';

@@ -72,9 +72,9 @@ const BlogDetailsArea = ({ blog }) => {
   const publishedDate = fmt(blog?.publishedAt || blog?.createdAt);
   const author = blog?.assignedUserName || blog?.author || 'Admin';
 
-  // Handle images with validation
-  const heroImage = blog?.blogimage1;
-  const inlineImage = blog?.blogimage2;
+  // Handle images with validation — prefer direct field, fall back to CloudURL
+  const heroImage = blog?.blogimage1 || blog?.blogimage1CloudURL;
+  const inlineImage = blog?.blogimage2 || blog?.blogimage2CloudURL;
 
   // Validate image URLs - must be absolute URLs or start with /
   const isValidImageUrl = (url) => {
@@ -139,7 +139,7 @@ const BlogDetailsArea = ({ blog }) => {
             {/* CONTENT FLOW: Image1 → Introduction → Image2 → Content → Conclusion */}
             
             {/* First Image - Before Introduction */}
-            {validHeroImage ? (
+            {validHeroImage && (
               <div className={styles.heroImageContainer}>
                 <Image
                   src={validHeroImage}
@@ -150,20 +150,6 @@ const BlogDetailsArea = ({ blog }) => {
                   priority
                 />
               </div>
-            ) : (
-              <div className={styles.heroImageContainer}>
-                <Image
-                  src="/assets/img/blog/blog-big-2.jpg"
-                  alt="Sample blog image 1"
-                  width={800}
-                  height={450}
-                  className={styles.heroImage}
-                  priority
-                />
-                <div className={styles.imagePlaceholderOverlay}>
-                  <span>Placeholder for blogimage1 (first image)</span>
-                </div>
-              </div>
             )}
 
             {/* First part of content (Introduction) */}
@@ -172,7 +158,7 @@ const BlogDetailsArea = ({ blog }) => {
             )}
 
             {/* Second Image - Before paragraph2 */}
-            {validInlineImage ? (
+            {validInlineImage && (
               <div className={styles.inlineImageContainer}>
                 <Image
                   src={validInlineImage}
@@ -181,19 +167,6 @@ const BlogDetailsArea = ({ blog }) => {
                   height={400}
                   className={styles.inlineImage}
                 />
-              </div>
-            ) : paragraph2Content && (
-              <div className={styles.inlineImageContainer}>
-                <Image
-                  src="/assets/img/blog/blog-big-3.jpg"
-                  alt="Sample blog image 2"
-                  width={800}
-                  height={400}
-                  className={styles.inlineImage}
-                />
-                <div className={styles.imagePlaceholderOverlay}>
-                  <span>Placeholder for blogimage2 (second image)</span>
-                </div>
               </div>
             )}
 
