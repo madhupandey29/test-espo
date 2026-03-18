@@ -135,11 +135,7 @@ const getSecurityHeaders = () => {
     'https://vercel.live',
     'https://www.clarity.ms',
     'https://scripts.clarity.ms',
-    'https://c.clarity.ms',
-    'https://h.clarity.ms',
-    'https://n.clarity.ms',
-    'https://v.clarity.ms',
-    'https://z.clarity.ms',
+    'https://*.clarity.ms',
     'https://accounts.google.com',
     'https://www.youtube-nocookie.com',
     'https://maps.googleapis.com',
@@ -292,7 +288,7 @@ const nextConfig = {
   },
 
   poweredByHeader: false,
-  productionBrowserSourceMaps: false,
+  productionBrowserSourceMaps: true,
   compress: true,
 
   experimental: {
