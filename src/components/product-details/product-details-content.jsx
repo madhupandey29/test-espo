@@ -217,7 +217,7 @@ export default function ProductDetailsContent({ productItem }) {
     <section className="tp-product-details-area">
       <div className="tp-product-details-top pb-25">
         <div className="container">
-          <div className="row">
+          <div className="row g-0 g-lg-3">
             <div className="col-lg-7 col-md-12">
               <DetailsThumbWrapper
                 activeImg={activeImg}

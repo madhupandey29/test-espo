@@ -229,7 +229,7 @@ const ShopContent = ({
   return (
     <section className="tp-shop-area pb-120">
       <div className="container">
-        <div className="row align-items-start shop-content-wrapper">
+        <div className="row align-items-start shop-content-wrapper g-0 g-lg-3">
           {/* sidebar */}
           {!shop_right && !hidden_sidebar && (
             <aside className="col-auto shop-sidebar-col">
@@ -249,7 +249,7 @@ const ShopContent = ({
             <div className="tp-shop-main-wrapper">
               <div className="shop-toolbar-sticky">
                 <div className="tp-shop-top">
-                  <div className="row align-items-start">
+                  <div className="row align-items-start g-0 g-xl-3">
                     <div className="col-xl-7 mb-10">
                       <ShopTopLeft
                         total={uniqueProducts.length}
@@ -438,10 +438,21 @@ const ShopContent = ({
           100% { transform: rotate(360deg); }
         }
         
+        @media (max-width: 991.98px) {
+          .tp-shop-main-wrapper {
+            padding: 0;
+          }
+          .shop-main-col {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          }
+        }
+
         @media (max-width: 768px) {
           .products-grid {
             grid-template-columns: 1fr;
-            gap: 20px; /* Normal gap - original size */
+            gap: 20px;
+            padding: 0 4px;
           }
           
           .progress-text {
@@ -459,8 +470,9 @@ const ShopContent = ({
         
         @media (max-width: 480px) {
           .products-grid {
-            gap: 18px; /* Normal gap - original size */
+            gap: 18px;
             grid-template-columns: 1fr;
+            padding: 0 2px;
           }
           
           .products-progress {
