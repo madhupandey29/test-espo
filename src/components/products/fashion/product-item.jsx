@@ -803,135 +803,82 @@ const ProductItem = ({ product, index = 0 }) => {
 
         .options-ribbon {
           position: absolute;
-          left: 16px;
-          bottom: 16px;
+          left: 10px;
+          bottom: 10px;
           border: 0;
           background: transparent;
           cursor: pointer;
           z-index: 3;
+          padding: 0;
         }
 
         .collection-ribbon {
           position: absolute;
-          left: 50%;
-          bottom: 16px;
-          transform: translateX(-50%);
+          left: 10px;
+          bottom: 10px;
           border: 0;
           background: transparent;
           cursor: pointer;
           z-index: 3;
-          animation: subtle-bounce 2s ease-in-out infinite;
-        }
-
-        @keyframes subtle-bounce {
-          0%, 100% {
-            transform: translateX(-50%) translateY(0);
-          }
-          50% {
-            transform: translateX(-50%) translateY(-2px);
-          }
-        }
-
-        .collection-ribbon:hover {
-          animation: none;
+          padding: 0;
         }
 
         .ribbon-inner {
-          display: flex;
+          display: inline-flex;
           align-items: center;
-          justify-content: center;
-          gap: 8px;
-          height: 36px;
-          padding: 0 16px;
-          border-radius: 18px;
-          background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
-          border: 2px solid rgba(255, 255, 255, 0.95);
-          box-shadow: 0 6px 20px rgba(79, 70, 229, 0.35);
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          backdrop-filter: blur(12px);
-          position: relative;
-          overflow: hidden;
+          gap: 5px;
+          height: 26px;
+          padding: 0 10px 0 8px;
+          border-radius: 20px;
+          background: rgba(15, 34, 53, 0.72);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          transition: background 0.2s ease;
         }
 
-        .ribbon-inner::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-          transition: left 0.6s ease;
+        .ribbon-inner:hover {
+          background: rgba(15, 34, 53, 0.88);
         }
 
         .collection-inner {
-          background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
-          box-shadow: 0 6px 20px rgba(79, 70, 229, 0.35);
-        }
-
-        .ribbon-inner:hover,
-        .collection-inner:hover {
-          transform: scale(1.05);
-          box-shadow: 0 8px 24px rgba(79, 70, 229, 0.45);
-        }
-
-        .ribbon-inner:hover::before {
-          left: 100%;
-        }
-
-        .collection-inner:hover {
-          box-shadow: 0 8px 24px rgba(79, 70, 229, 0.45);
+          background: rgba(15, 34, 53, 0.72);
         }
 
         .ribbon-icon {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 20px;
-          height: 20px;
           flex-shrink: 0;
         }
 
         .badge-icon {
-          width: 100%;
-          height: 100%;
+          width: 13px;
+          height: 13px;
           display: block;
           filter: brightness(0) invert(1);
+          opacity: 0.9;
         }
 
         .layers-icon {
-          width: 20px;
-          height: 20px;
-          filter: brightness(0) invert(1) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
-          opacity: 0.95;
-          transition: all 0.3s ease;
-        }
-
-        .collection-inner:hover .layers-icon {
-          transform: scale(1.1) rotate(5deg);
-          opacity: 1;
-        }
-
-        .collection-icon {
-          width: 16px;
-          height: 16px;
-          color: #fff;
+          width: 13px;
+          height: 13px;
+          filter: brightness(0) invert(1);
+          opacity: 0.9;
         }
 
         .ribbon-text {
-          font-size: 14px;
+          font-size: 12px;
           font-weight: 600;
-          color: #fff;
-          letter-spacing: 0.4px;
+          color: rgba(255, 255, 255, 0.95);
+          letter-spacing: 0.2px;
           line-height: 1;
-          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
           white-space: nowrap;
         }
 
         .ribbon-text strong {
           font-weight: 700;
-          margin-right: 4px;
-          font-size: 15px;
+          color: #fff;
         }
 
         .product-actions {
