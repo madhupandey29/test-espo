@@ -1,9 +1,6 @@
 'use client';
 
 const DynamicSectionKeywordsFAQ = ({ sectionSlug, topicData }) => {
-  // Don't render if no data
-  if (!topicData) return null;
-
   // Get keywords from API
   const keywords = topicData?.keywords || [];
 
@@ -32,7 +29,7 @@ const DynamicSectionKeywordsFAQ = ({ sectionSlug, topicData }) => {
             <div className="section-header">
               <h2 className="section-title">Frequently Asked Questions</h2>
               <p className="section-description">
-                Find answers to common questions about our {topicData.name} collection
+                Find answers to common questions about our {topicData?.name || sectionSlug} collection
               </p>
             </div>
 

@@ -3,10 +3,7 @@
 import Image from 'next/image';
 
 const DynamicSectionHero = ({ sectionSlug, topicData }) => {
-  // Don't render if no data
-  if (!topicData) return null;
-
-  // Use API data
+  // Use API data with fallbacks
   const title = topicData?.metaTitle || topicData?.name || 'Premium Collection';
   const paragraph1 = topicData?.p1 || '';
   const paragraph2 = topicData?.p2 || '';

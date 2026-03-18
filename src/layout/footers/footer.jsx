@@ -29,13 +29,16 @@ const TEXT_SOFT = "rgba(233,241,250,.78)";
 const BORDER_SOFT = "rgba(255,255,255,.12)";
 
 /* Trusted badges (served from /public) */
+// Neutral 1x1 white pixel as blur placeholder — prevents raw image color flashing on load
+const BLUR_PLACEHOLDER = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwADhQGAWjR9awAAAABJRU5ErkJggg==";
+
 const trustedLogos = [
   { src: "/assets/img/logo/BCI.png", alt: "BCI Better Cotton Initiative" },
   { src: "/assets/img/logo/confidence_Textiles.png", alt: "OEKO-TEX Standard" },
   { src: "/assets/img/logo/ecovero.png", alt: "Lenzing EcoVero" },
   { src: "/assets/img/logo/global.png", alt: "Global Recycled Standard" },
   { src: "/assets/img/logo/organic.png", alt: "Organic 100 Content Standard" },
-  { src: "/assets/img/logo/gold.png", alt: "Organic 100 Content Standard" },
+  { src: "/assets/img/logo/gold.png", alt: "Gold Standard" },
 ];
 
 const PhoneIcon = () => (
@@ -560,6 +563,8 @@ const Footer = () => {
                           fill
                           sizes="(max-width: 575px) 30px, 36px"
                           className="age-trustImage"
+                          placeholder="blur"
+                          blurDataURL={BLUR_PLACEHOLDER}
                         />
                       </span>
                     </div>
@@ -698,7 +703,7 @@ const Footer = () => {
           transition:transform .16s ease, box-shadow .16s ease, filter .16s ease;
         }
         .age-trustCard:hover{ transform:translateY(-2px); box-shadow:0 10px 22px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.85); }
-        .age-trustImageWrap{ position:relative; width:36px; height:36px; flex:0 0 36px; }
+        .age-trustImageWrap{ position:relative; width:36px; height:36px; flex:0 0 36px; background:#fff; border-radius:4px; }
         .age-trustImage{ object-fit:contain; filter:grayscale(.05) saturate(.95) contrast(1.05); }
         .age-trustCard:hover .age-trustImage{ filter:grayscale(0) saturate(1.2) contrast(1.1); }
 

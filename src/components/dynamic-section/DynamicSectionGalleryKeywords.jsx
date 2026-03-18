@@ -3,9 +3,6 @@
 import Image from 'next/image';
 
 const DynamicSectionGalleryKeywords = ({ sectionSlug, topicData }) => {
-  // Don't render if no data
-  if (!topicData) return null;
-
   // Get paragraph 2 and image 2
   const paragraph2 = topicData?.p2 || '';
   const image2Url = topicData.image2CloudUrlHero || topicData.image2CloudUrlWeb || topicData.image2CloudUrl;
