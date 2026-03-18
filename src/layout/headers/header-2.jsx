@@ -784,13 +784,6 @@ useEffect(() => {
     padding: 0 !important;
   }
   
-  .signin-btn{
-    width: 40px !important;
-    min-width: 40px;
-    padding: 0 !important;
-    background: #2C4C97 !important;
-  }
-  
   .profile-avatar{
     width: 28px !important;
     height: 28px !important;
@@ -1276,6 +1269,17 @@ useEffect(() => {
     width: 18px;
     height: 18px;
   }
+  :global(.signin-btn.signin-btn){
+    width: auto !important;
+    min-width: 44px !important;
+    height: 38px !important;
+    padding: 0 14px !important;
+    gap: 7px !important;
+  }
+  :global(.signin-text){
+    display: inline-block !important;
+    font-size: 13px !important;
+  }
 }
 
 /* Tablet portrait (768px - 1023px) */
@@ -1316,6 +1320,17 @@ useEffect(() => {
   .tp-header-action-btn :global(svg){
     width: 17px;
     height: 17px;
+  }
+  :global(.signin-btn.signin-btn){
+    width: auto !important;
+    min-width: 44px !important;
+    height: 38px !important;
+    padding: 0 14px !important;
+    gap: 7px !important;
+  }
+  :global(.signin-text){
+    display: inline-block !important;
+    font-size: 13px !important;
   }
 }
 

@@ -9,7 +9,6 @@ import { toast } from 'react-toastify';
 import { formatProductForCart, formatProductForWishlist } from '@/utils/authUtils';
 import { addCartItem } from '@/lib/cart-client';
 import { toggleWishlistItem, useWishlistItems } from '@/lib/wishlist-store';
-import { getCollectionMediaForProduct } from '@/utils/collectionUtils';
 import { getProductImageUrl } from '@/utils/imageContract';
 
 import { openProductModal } from '@/lib/ui-state-store';
@@ -54,22 +53,6 @@ const uniq = (arr) => {
   });
 };
 const stripHtml = (s) => String(s || '').replace(/<[^>]*>/g, ' ');
-
-// Helper function to convert YouTube URL to embed URL
-const getYouTubeEmbedUrl = (url) => {
-  if (!url) return '';
-  
-  // Handle YouTube URLs
-  const youtubeRegex = /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/;
-  const match = url.match(youtubeRegex);
-  
-  if (match) {
-    return `https://www.youtube.com/embed/${match[1]}`;
-  }
-  
-  // Return original URL if it's already an embed URL or other video service
-  return url;
-};
 
 /* safely extract a comparable id */
 const getAnyId = (obj) => getComparableEntityId(obj);
@@ -132,32 +115,12 @@ const ProductItem = ({ product, index = 0 }) => {
   const [showActions, setShowActions] = useState(false);
   const [supportsHover, setSupportsHover] = useState(true);
   const [addingCart, setAddingCart] = useState(false);
-  const [collectionMedia, setCollectionMedia] = useState(null);
-  const [showCollectionMedia, setShowCollectionMedia] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setSupportsHover(window.matchMedia('(hover: hover) and (pointer: fine)').matches);
     }
   }, []);
-
-  // Load collection media
-  useEffect(() => {
-    const loadCollectionMedia = async () => {
-      try {
-        const media = await getCollectionMediaForProduct(product);
-        if (media.image || media.video) {
-          setCollectionMedia(media);
-          } else {/*  */
-          }
-      } catch (error) {/*  */
-        }
-    };
-
-    if (product) {
-      loadCollectionMedia();
-    }
-  }, [product]);
 
   const userId = useAuthUserId();
 
@@ -545,9 +508,8 @@ const ProductItem = ({ product, index = 0 }) => {
                   src={imageUrl}
                   alt={titleText}
                   title={titleText}
-                  width={420}
-                  height={420}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 420px"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 420px"
                   className="img-main"
                   {...(isAboveFold ? { priority: true } : { loading: 'lazy' })}
                   onError={(e) => {
@@ -707,62 +669,6 @@ const ProductItem = ({ product, index = 0 }) => {
               </div>
             ) : null}
 
-            {/* Collection Media Section */}
-            {(() => {
-              return null;
-            })()}
-            {collectionMedia && (collectionMedia.image || collectionMedia.video) && (
-              <div className="collection-media-section">
-                <div className="collection-media-header">
-                  <h4 className="collection-media-title">
-                    {collectionMedia.collectionName}
-                  </h4>
-                  <button
-                    type="button"
-                    className="collection-media-toggle"
-                    onClick={() => setShowCollectionMedia(!showCollectionMedia)}
-                    aria-label={showCollectionMedia ? 'Hide collection media' : 'Show collection media'}
-                  >
-                    {showCollectionMedia ? '−' : '+'}
-                  </button>
-                </div>
-                
-                {showCollectionMedia && (
-                  <div className="collection-media-content">
-                    {collectionMedia.image && (
-                      <div className="collection-image">
-                        <Image
-                          src={collectionMedia.image}
-                          alt={collectionMedia.altText || `${collectionMedia.collectionName} collection`}
-                          width={300}
-                          height={200}
-                          className="collection-img"
-                          loading="lazy"
-                          onError={(e) => {
-                            e.currentTarget.style.display = 'none';
-                          }}
-                        />
-                      </div>
-                    )}
-                    
-                    {collectionMedia.video && (
-                      <div className="collection-video">
-                        <iframe
-                          src={getYouTubeEmbedUrl(collectionMedia.video)}
-                          title={collectionMedia.videoAltText || `${collectionMedia.collectionName} video`}
-                          width="300"
-                          height="169"
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          loading="lazy"
-                        />
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            )}
           </div>
         </div>
       </div>
@@ -851,79 +757,39 @@ const ProductItem = ({ product, index = 0 }) => {
           width: 100%;
           overflow: hidden;
           background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          height: 280px; /* mobile - original container size */
-        }
-        @media (min-width: 480px) {
-          .product-image-container {
-            height: 280px; /* larger mobile - same size */
-          }
-        }
-        @media (min-width: 640px) {
-          .product-image-container {
-            height: 280px; /* small tablet */
-          }
-        }
-        @media (min-width: 768px) {
-          .product-image-container {
-            height: 300px; /* tablet/desktop */
-          }
-        }
-        @media (min-width: 1200px) {
-          .product-image-container {
-            height: 320px; /* large desktop */
-          }
         }
 
         .image-link {
           display: block;
           width: 100%;
-          height: 100%;
         }
 
-        /* Enhanced image styling with MAXIMUM size images */
+        /* image-wrapper drives the aspect ratio; fill Image fills it */
         .image-wrapper {
           position: relative;
           width: 100%;
-          height: 100%;
-          padding: 0px; /* mobile - NO padding for MAXIMUM image size */
+          aspect-ratio: 1 / 1; /* square on mobile */
+          overflow: hidden;
         }
-        @media (min-width: 480px) {
+        @media (min-width: 640px) {
           .image-wrapper {
-            padding: 0px; /* larger mobile - no padding */
+            aspect-ratio: 4 / 3;
           }
         }
         @media (min-width: 768px) {
           .image-wrapper {
-            padding: 4px; /* desktop - minimal padding */
-          }
-        }
-        @media (min-width: 1200px) {
-          .image-wrapper {
-            padding: 6px; /* large desktop - minimal padding */
+            aspect-ratio: 1 / 1;
           }
         }
 
         :global(.img-main) {
-          width: 100% !important;
-          height: 100% !important;
-          object-position: center;
-          display: block;
-          background: #fff;
-          border-radius: 8px; /* Smaller border radius for bigger appearance */
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-
-          /* Use cover for maximum image fill */
           object-fit: cover !important;
+          object-position: center;
+          transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .fashion-product-card:hover :global(.img-main) {
           transform: scale(1.05);
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
         }
 
         .image-overlay {
@@ -1109,9 +975,9 @@ const ProductItem = ({ product, index = 0 }) => {
         }
 
         .action-button {
-          width: 36px;
-          height: 36px;
-          border-radius: 10px;
+          width: 32px;
+          height: 32px;
+          border-radius: 8px;
           display: grid;
           place-items: center;
           background: rgba(255, 255, 255, 0.95);
@@ -1121,12 +987,25 @@ const ProductItem = ({ product, index = 0 }) => {
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           cursor: pointer;
         }
+        @media (min-width: 768px) {
+          .action-button {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+          }
+        }
 
         .action-button :global(svg) {
-          width: 18px;
-          height: 18px;
+          width: 16px;
+          height: 16px;
           color: var(--text-primary);
           transition: all 0.3s ease;
+        }
+        @media (min-width: 768px) {
+          .action-button :global(svg) {
+            width: 18px;
+            height: 18px;
+          }
         }
 
         .action-button:hover {
@@ -1164,13 +1043,19 @@ const ProductItem = ({ product, index = 0 }) => {
         }
 
         .product-info {
-          padding: 18px;
+          padding: 12px;
           border-top: 1px solid rgba(44, 76, 151, 0.08);
           background: var(--bg-white);
           flex-grow: 1;
           display: flex;
           flex-direction: column;
-          min-height: 170px;
+          min-height: 0;
+        }
+        @media (min-width: 768px) {
+          .product-info {
+            padding: 18px;
+            min-height: 170px;
+          }
         }
 
         .product-category {
@@ -1179,17 +1064,23 @@ const ProductItem = ({ product, index = 0 }) => {
 
         .product-title {
           font-family: var(--tp-ff-jost, 'Poppins', sans-serif);
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
           line-height: 1.4;
           color: var(--text-primary);
-          margin: 0 0 14px;
+          margin: 0 0 10px;
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
           min-height: 2.8em;
           flex-shrink: 0;
+        }
+        @media (min-width: 768px) {
+          .product-title {
+            font-size: 16px;
+            margin: 0 0 14px;
+          }
         }
 
         .product-title :global(a) {

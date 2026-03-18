@@ -297,6 +297,45 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
                   <span style={styles.subtitle}>Refine your results</span>
                 </div>
               )}
+
+              {/* Clear All button — always visible in header when filters are active */}
+              {!singleKey && (() => {
+                const activeCount = Object.values(selectedFilters || {}).reduce(
+                  (sum, v) => sum + (Array.isArray(v) ? v.length : 0), 0
+                );
+                if (activeCount === 0) return null;
+                return (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      handleFilterChange({});
+                      closeShopFilter();
+                    }}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      padding: '8px 14px',
+                      background: '#fee2e2',
+                      border: '1px solid #fca5a5',
+                      borderRadius: '999px',
+                      color: '#dc2626',
+                      fontFamily: 'var(--tp-ff-roboto)',
+                      fontSize: '13px',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      flexShrink: 0,
+                      transition: 'all 0.2s ease',
+                      whiteSpace: 'nowrap',
+                    }}
+                    aria-label="Remove all filters"
+                    title="Remove all filters"
+                  >
+                    <i className="fa-solid fa-xmark" style={{ fontSize: '12px' }} />
+                    Remove ({activeCount})
+                  </button>
+                );
+              })()}
             </div>
           </div>
 
