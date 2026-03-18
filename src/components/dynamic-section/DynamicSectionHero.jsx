@@ -7,7 +7,7 @@ const DynamicSectionHero = ({ sectionSlug, topicData }) => {
   const title = topicData?.metaTitle || topicData?.name || 'Premium Collection';
   const paragraph1 = topicData?.p1 || '';
   const paragraph2 = topicData?.p2 || '';
-  const imageUrl = topicData?.image1CloudUrlHero || topicData?.image1CloudUrlWeb || topicData?.image1CloudUrl;
+  const imageUrl = topicData?.image1CloudUrl;
 
   // Always render the hero section with at least the title
   const hasImage = imageUrl && imageUrl.trim() !== '';

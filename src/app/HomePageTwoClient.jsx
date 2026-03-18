@@ -122,7 +122,7 @@ export default function HomePageTwoClient({ office = null, homeProducts = [], ho
               sectionId={section.id}
               sectionTitle={section.title}
               products={section.products}
-              sectionPath={`/collection/${section.id}`}
+              sectionPath={`/dynamicsection/${section.id}`}
               showViewAll={true}
             />
           </DeferredSection>

@@ -3,14 +3,17 @@
 import Image from 'next/image';
 
 const DynamicSectionGalleryKeywords = ({ sectionSlug, topicData }) => {
+  // Guard: nothing to render if topicData is missing
+  if (!topicData) return null;
+
   // Get paragraph 2 and image 2
   const paragraph2 = topicData?.p2 || '';
-  const image2Url = topicData.image2CloudUrlHero || topicData.image2CloudUrlWeb || topicData.image2CloudUrl;
+  const image2Url = topicData?.image2CloudUrl;
   
   // Get images for gallery (image 3 and 4)
   const images = [
-    topicData.image3CloudUrlHero || topicData.image3CloudUrlWeb || topicData.image3CloudUrl,
-    topicData.image4CloudUrlHero || topicData.image4CloudUrlWeb || topicData.image4CloudUrl,
+    topicData?.image3CloudUrl,
+    topicData?.image4CloudUrl,
   ];
 
   // Get keywords from API

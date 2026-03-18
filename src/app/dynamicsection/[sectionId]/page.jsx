@@ -34,9 +34,10 @@ async function fetchDynamicSectionData(sectionId) {
     
     if (!data.success) {
       console.error(`[DynamicSection] API success=false for ${sectionId}:`, data);
+      return null;
     }
-    
-    return data.success ? data.data : null;
+
+    return data.data;
   } catch (error) {
     console.error(`[DynamicSection] Fetch failed for ${url}:`, error);
     return null;
