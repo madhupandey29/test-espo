@@ -127,11 +127,11 @@ export default async function DynamicSectionPage({ params }) {
           shopRight: false,
           hiddenSidebar: false,
         }}
-        customHeroContent={<DynamicSectionHero sectionSlug={sectionId} topicData={topicPage} />}
+        customHeroContent={<DynamicSectionHero sectionSlug={sectionId} topicData={topicPage} products={products} />}
         customFooterContent={
           <>
-            <DynamicSectionGalleryKeywords sectionSlug={sectionId} topicData={topicPage} />
-            <DynamicSectionKeywordsFAQ sectionSlug={sectionId} topicData={topicPage} />
+            <DynamicSectionGalleryKeywords sectionSlug={sectionId} topicData={topicPage} products={products} />
+            <DynamicSectionKeywordsFAQ sectionSlug={sectionId} topicData={topicPage} products={products} />
           </>
         }
       />
