@@ -5,7 +5,7 @@ Updated the profile system to use your EspoCRM backend API (`https://espobackend
 
 ---
 
-## Files Modified
+## Files Modifiy
 
 ### 1. `src/components/profile/UserProfile.jsx`
 
