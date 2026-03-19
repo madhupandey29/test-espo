@@ -6,6 +6,7 @@ import ProductListingPage from "@/components/product-listing/ProductListingPage"
 import DynamicSectionHero from "@/components/dynamic-section/DynamicSectionHero";
 import DynamicSectionGalleryKeywords from "@/components/dynamic-section/DynamicSectionGalleryKeywords";
 import DynamicSectionKeywordsFAQ from "@/components/dynamic-section/DynamicSectionKeywordsFAQ";
+import ScrollToTop from "@/components/common/ScrollToTop";
 
 export const revalidate = 60;
 
@@ -110,6 +111,7 @@ export default async function DynamicSectionPage({ params }) {
 
   return (
     <>
+      <ScrollToTop />
       <ProductListingPage
         category="dynamicsection"
         pageTitle={`${sectionTitle} Collection`}
