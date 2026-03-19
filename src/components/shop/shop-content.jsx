@@ -13,6 +13,7 @@ const ShopContent = ({
   otherProps,
   shop_right,
   hidden_sidebar,
+  categoryPath = null,
 }) => {
   const uniqueProducts = useMemo(() => {
     const seen = new Set();
@@ -328,7 +329,8 @@ const ShopContent = ({
                           <ProductItem 
                             key={uniqueKey} 
                             product={item} 
-                            index={i} 
+                            index={i}
+                            basePath={categoryPath}
                           />
                         );
                       })}

@@ -107,6 +107,7 @@ export default function ProductListingPage({
               totalProducts={totalProducts}
               shop_right={shopRight}
               hidden_sidebar={hiddenSidebar}
+              categoryPath={categoryPath}
             />
           </Suspense>
         </div>

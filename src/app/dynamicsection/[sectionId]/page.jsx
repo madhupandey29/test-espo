@@ -127,6 +127,7 @@ export default async function DynamicSectionPage({ params }) {
           shopRight: false,
           hiddenSidebar: false,
         }}
+        categoryPath={`/dynamicsection/${sectionId}`}
         customHeroContent={<DynamicSectionHero sectionSlug={sectionId} topicData={topicPage} products={products} />}
         customFooterContent={
           <>

@@ -257,7 +257,7 @@ export default function ProductDetailsContent({ productItem }) {
 
       <DetailsTabNav product={p} />
       <DetailsSuitableKeywords product={p} />
-      <RelatedProducts collectionId={collectionId} />
+      <RelatedProducts collectionId={collectionId} currentProductId={_id} />
 
       <style jsx>{`
         .tp-product-details-area {

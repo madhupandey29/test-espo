@@ -28,7 +28,8 @@ export default function ShopArea({
   shop_right = false, 
   hidden_sidebar = false, 
   initialProducts = [], 
-  totalProducts = 0
+  totalProducts = 0,
+  categoryPath = null,
 }) {
   // ────── URL params ─────────────────────────
   const p = useSearchParams();
@@ -230,6 +231,7 @@ export default function ShopArea({
         all_products={products}
         products={filteredProducts}
         otherProps={otherProps}
+        categoryPath={categoryPath}
       />
     );
   } else {
@@ -240,6 +242,7 @@ export default function ShopArea({
         otherProps={otherProps}
         shop_right={shop_right}
         hidden_sidebar={hidden_sidebar}
+        categoryPath={categoryPath}
       />
     );
   }

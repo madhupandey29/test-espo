@@ -97,7 +97,7 @@ const dedupeProducts = (products = []) => {
   });
 };
 
-const RelatedProducts = ({ collectionId }) => {
+const RelatedProducts = ({ collectionId, currentProductId = null }) => {
   const shouldSkip = !collectionId || String(collectionId).trim() === '';
 
   // 1) Try related-by-collection (if we have a collection)
@@ -109,7 +109,11 @@ const RelatedProducts = ({ collectionId }) => {
     isSuccess: relSuccess,
   } = useGetProductsByCollectionQuery(shouldSkip ? '' : collectionId, { skip: shouldSkip });
 
-  const relList = dedupeProducts((relData?.data ?? relData ?? []).map(normalizeRelationToProduct).filter(Boolean));
+  const filterSelf = (list) => currentProductId
+    ? list.filter(p => String(p?.id || p?._id) !== String(currentProductId))
+    : list;
+
+  const relList = filterSelf(dedupeProducts((relData?.data ?? relData ?? []).map(normalizeRelationToProduct).filter(Boolean)));
   const relDone = !relLoading && !relFetching;
   const relEmpty = relDone && relSuccess && relList.length === 0;
 
@@ -126,7 +130,7 @@ const RelatedProducts = ({ collectionId }) => {
   } = useGetTopRatedQuery(undefined, { skip: !wantTopRated });
 
   const topList =
-    dedupeProducts((topData?.data ?? topData ?? []).map(normalizeRelationToProduct).filter(Boolean));
+    filterSelf(dedupeProducts((topData?.data ?? topData ?? []).map(normalizeRelationToProduct).filter(Boolean)));
 
   // 4) Loading states
   if (!wantTopRated && (relLoading || relFetching)) return <HomeNewArrivalPrdLoader loading />;

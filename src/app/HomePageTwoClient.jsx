@@ -116,17 +116,21 @@ export default function HomePageTwoClient({ office = null, homeProducts = [], ho
       <HeaderTwo />
       <FashionBanner />
       {dynamicSectionsData.length > 0 ? (
-        dynamicSectionsData.map((section) => (
-          <DeferredSection key={section.id} minHeight={500}>
-            <DynamicProductSection
-              sectionId={section.id}
-              sectionTitle={section.title}
-              products={section.products}
-              sectionPath={`/dynamicsection/${section.id}`}
-              showViewAll={true}
-            />
-          </DeferredSection>
-        ))
+        <div className="home-sections-wrap">
+          {dynamicSectionsData.map((section, idx) => (
+            <div key={section.id} className={idx === 0 ? 'ds-first-section' : ''}>
+              <DeferredSection minHeight={500}>
+                <DynamicProductSection
+                  sectionId={section.id}
+                  sectionTitle={section.title}
+                  products={section.products}
+                  sectionPath={`/dynamicsection/${section.id}`}
+                  showViewAll={true}
+                />
+              </DeferredSection>
+            </div>
+          ))}
+        </div>
       ) : (
         <>
           <HomeCategorySection categorySummaries={categorySummaries} />
@@ -303,6 +307,28 @@ export default function HomePageTwoClient({ office = null, homeProducts = [], ho
             animation: none !important;
             opacity: 1;
             transform: none;
+          }
+        }
+
+        /* ── Section spacing ── */
+        .home-sections-wrap {
+          margin-top: 40px;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+          .home-sections-wrap {
+            margin-top: 28px;
+            gap: 28px;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .home-sections-wrap {
+            margin-top: 20px;
+            gap: 20px;
           }
         }
       `}</style>

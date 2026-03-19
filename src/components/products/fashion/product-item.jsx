@@ -106,7 +106,7 @@ const buildCartItem = (prd, opts = {}) => {
  * Pass `index` from the map in Shop page:
  * products.map((p, i) => <ProductItem key={...} product={p} index={i} />)
  */
-const ProductItem = ({ product, index = 0 }) => {
+const ProductItem = ({ product, index = 0, basePath = null }) => {
   const router = useRouter();
   const rainbowId = useId();
 
@@ -158,6 +158,7 @@ const ProductItem = ({ product, index = 0 }) => {
 
   // Clean the slug by removing trailing hash character
   const cleanSlug = slug ? String(slug).replace(/#$/, '') : slug;
+  const productPath = `${basePath || '/fabric'}/${cleanSlug}`;
 
   const categoryLabel =
     pick(product?.category?.name, product?.category, product?.product?.category?.name, product?.categoryName, seoDoc?.category) || '';
@@ -493,7 +494,7 @@ const ProductItem = ({ product, index = 0 }) => {
         <div className="card-wrapper">
           <div className="product-image-container">
             <Link
-              href={`/fabric/${cleanSlug}`}
+              href={productPath}
               aria-label={`View ${titleText}`}
               className="image-link"
               onClick={(e) => {
@@ -525,7 +526,7 @@ const ProductItem = ({ product, index = 0 }) => {
               <button
                 type="button"
                 className="options-ribbon"
-                onClick={() => router.push(`/fabric/${cleanSlug}`)}
+                onClick={() => router.push(productPath)}
                 aria-label={`${optionCount} options for ${titleText}`}
                 title={`${optionCount} options`}
               >
@@ -552,7 +553,7 @@ const ProductItem = ({ product, index = 0 }) => {
               <button
                 type="button"
                 className="collection-ribbon"
-                onClick={() => router.push(`/fabric/${cleanSlug}`)}
+                onClick={() => router.push(productPath)}
                 aria-label={`${collectionCount} items in collection for ${titleText}`}
                 title={`${collectionCount} items in collection`}
               >
@@ -605,7 +606,7 @@ const ProductItem = ({ product, index = 0 }) => {
                   e?.stopPropagation?.();
                   e?.preventDefault?.();
                   const url =
-                    typeof window !== 'undefined' ? `${window.location.origin}/fabric/${cleanSlug}` : `/fabric/${cleanSlug}`;
+                    typeof window !== 'undefined' ? `${window.location.origin}${productPath}` : productPath;
                   const title = titleText;
                   const text = 'Check out this fabric on Amrita Global Enterprises';
                   (async () => {
@@ -645,7 +646,7 @@ const ProductItem = ({ product, index = 0 }) => {
             {showCategory ? <div className="product-category">{categoryLabel}</div> : null}
 
             <h3 className="product-title">
-              <Link href={`/fabric/${cleanSlug}`} title={titleText}>
+              <Link href={productPath} title={titleText}>
                 <span dangerouslySetInnerHTML={{ __html: titleHtml }} />
               </Link>
             </h3>
