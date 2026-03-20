@@ -17,6 +17,7 @@ const SitemapPageClient = () => {
   const [sitemapData, setSitemapData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showAllProducts, setShowAllProducts] = useState(false);
+  const [showAllBlogs, setShowAllBlogs] = useState(false);
 
   useEffect(() => {
     fetchSitemapData();
@@ -26,17 +27,18 @@ const SitemapPageClient = () => {
     try {
       setLoading(true);
       
-      // Fetch sitemap data from your sitemap manager
-      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
-      const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+      // Fetch sitemap data from server-side API route (avoids client-side API issues)
+      const response = await fetch('/api/sitemap-data');
       
-      // Import the SitemapManager dynamically
-      const { SitemapManager } = await import('@/utils/sitemap-manager');
-      const sitemapManager = new SitemapManager(baseUrl, apiBaseUrl);
+      if (!response.ok) throw new Error('Failed to fetch sitemap data');
       
-      const data = await sitemapManager.generateSitemap();
+      const result = await response.json();
       
-      setSitemapData(data);
+      if (result.success && Array.isArray(result.data)) {
+        setSitemapData(result.data);
+      } else {
+        throw new Error(result.error || 'Invalid response');
+      }
     } catch (error) {
       // Log error for debugging and use fallback data
       console.error('Failed to fetch sitemap data:', error);
@@ -180,10 +182,13 @@ const SitemapPageClient = () => {
   };
 
   const getPageCategory = (url) => {
+    if (url.includes('/collections/')) return 'dynamicSections';
+    if (url.includes('/dynamicsection/')) return 'dynamicSections';
     if (url === '/' || url.endsWith('/')) return 'home';
     if (url.includes('/about')) return 'about';
     if (url.includes('/contact')) return 'contact';
     if (url.includes('/capabilities')) return 'capabilities';
+    if (url.includes('/careers')) return 'careers';
     if (url.includes('/fabric/') || url.includes('/product/')) return 'products';
     if (url.includes('/blog')) return 'blog';
     if (url.includes('/cart') || url.includes('/wishlist') || url.includes('/checkout')) return 'products';
@@ -212,6 +217,11 @@ const SitemapPageClient = () => {
         pages: [],
         mainUrl: '/capabilities'
       },
+      careers: {
+        title: 'Careers',
+        pages: [],
+        mainUrl: '/careers'
+      },
       products: {
         title: 'Products',
         pages: [],
@@ -221,6 +231,11 @@ const SitemapPageClient = () => {
         title: 'Blog',
         pages: [],
         mainUrl: '/blog'
+      },
+      dynamicSections: {
+        title: 'Collections',
+        pages: [],
+        mainUrl: '/'
       }
     };
 
@@ -229,37 +244,29 @@ const SitemapPageClient = () => {
 
     pages.forEach(page => {
       const category = getPageCategory(page.url);
-      const cleanUrl = page.url.replace(process.env.NEXT_PUBLIC_SITE_URL || '', '') || '/';
+      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || '';
+      const cleanUrl = page.url.replace(siteUrl, '') || '/';
       const pageTitle = page.title || getPageTitle(page.url);
       
-      // Skip duplicates
-      if (seenUrls.has(cleanUrl)) {
+      // Skip duplicates (use full url as key to avoid hash collisions)
+      if (seenUrls.has(page.url)) {
         return;
       }
-      seenUrls.add(cleanUrl);
+      seenUrls.add(page.url);
       
       // Skip main section URLs - they will be shown as section headers only
-      const mainUrls = ['/', '/about', '/contact', '/capabilities', '/fabric', '/blog'];
+      const mainUrls = ['/', '/about', '/contact', '/capabilities', '/careers', '/fabric', '/blog'];
       if (mainUrls.includes(cleanUrl)) {
         return;
       }
       
       // Skip entries that have the same title as their section (duplicates)
-      if (category === 'about' && (pageTitle === 'About' || pageTitle === 'About Us')) {
-        return;
-      }
-      if (category === 'contact' && (pageTitle === 'Contact' || pageTitle === 'Contact Us')) {
-        return;
-      }
-      if (category === 'capabilities' && (pageTitle === 'Capabilities' || pageTitle === 'Our Capabilities')) {
-        return;
-      }
-      if (category === 'products' && (pageTitle === 'Fabric' || pageTitle === 'Fabric Collection')) {
-        return;
-      }
-      if (category === 'blog' && (pageTitle === 'Blog')) {
-        return;
-      }
+      if (category === 'about' && (pageTitle === 'About' || pageTitle === 'About Us')) return;
+      if (category === 'contact' && (pageTitle === 'Contact' || pageTitle === 'Contact Us')) return;
+      if (category === 'capabilities' && (pageTitle === 'Capabilities' || pageTitle === 'Our Capabilities')) return;
+      if (category === 'careers' && (pageTitle === 'Careers' || pageTitle === 'Career')) return;
+      if (category === 'products' && (pageTitle === 'Fabric' || pageTitle === 'Fabric Collection')) return;
+      if (category === 'blog' && (pageTitle === 'Blog')) return;
       
       if (sections[category]) {
         sections[category].pages.push(page);
@@ -275,8 +282,10 @@ const SitemapPageClient = () => {
       about: '/about',
       contact: '/contact',
       capabilities: '/capabilities',
+      careers: '/careers',
       products: '/fabric',
-      blog: '/blog'
+      blog: '/blog',
+      dynamicSections: '/'
     };
     return sectionUrls[sectionKey] || '/';
   };
@@ -303,17 +312,32 @@ const SitemapPageClient = () => {
     
     if (path.includes('/fabric/')) {
       const slug = path.split('/fabric/')[1];
-      // Remove "Fabric/" prefix and format the title
       return slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
     }
     
     if (path.includes('/blog-details/')) {
       const slug = path.split('/blog-details/')[1];
-      // Remove "Blog Details/" prefix and format the title
       return slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    }
+
+    if (path.includes('/collections/') || path.includes('/dynamicsection/')) {
+      const sectionId = (path.split('/collections/')[1] || path.split('/dynamicsection/')[1] || '').split('/')[0];
+      return sectionId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    }
+
+    if (path.includes('/#')) {
+      const sectionId = path.split('/#')[1] || '';
+      return sectionId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
     }
     
     return path.replace(/^\//, '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'Home';
+  };
+
+  // Get the href for a page — rewrite dynamicsection to collections
+  const getPageHref = (page) => {
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || '';
+    const path = page.url.replace(siteUrl, '') || '/';
+    return path.replace('/dynamicsection/', '/collections/');
   };
 
   const getFileSize = (pages) => {
@@ -381,24 +405,22 @@ const SitemapPageClient = () => {
                   </Link>
                   {filteredPages.length > 0 && (
                     <ul className={styles.linksList}>
-                      {sectionKey === 'products' ? (
+                      {(sectionKey === 'products' || sectionKey === 'blog') ? (
                         <>
-                          {filteredPages.slice(0, showAllProducts ? filteredPages.length : 5).map((page, index) => (
+                          {filteredPages.slice(0, 
+                            sectionKey === 'products' 
+                              ? (showAllProducts ? filteredPages.length : 5)
+                              : (showAllBlogs ? filteredPages.length : 5)
+                          ).map((page, index) => (
                             <li key={index} className={styles.linkItem}>
                               <Link
-                                href={page.url.replace(process.env.NEXT_PUBLIC_SITE_URL, '') || '/'}
+                                href={getPageHref(page)}
                                 className={styles.sitemapLink}
                               >
                                 {(() => {
                                   let title = page.title || getPageTitle(page.url);
-                                  // Remove "Fabric/" prefix from product titles
-                                  if (title.startsWith('Fabric/')) {
-                                    title = title.replace('Fabric/', '');
-                                  }
-                                  // Remove "Blog Details/" prefix from blog titles
-                                  if (title.startsWith('Blog Details/')) {
-                                    title = title.replace('Blog Details/', '');
-                                  }
+                                  if (title.startsWith('Fabric/')) title = title.replace('Fabric/', '');
+                                  if (title.startsWith('Blog Details/')) title = title.replace('Blog Details/', '');
                                   return title;
                                 })()}
                               </Link>
@@ -407,32 +429,31 @@ const SitemapPageClient = () => {
                           {filteredPages.length > 5 && (
                             <li className={styles.linkItem}>
                               <button 
-                                onClick={() => setShowAllProducts(!showAllProducts)}
+                                onClick={() => sectionKey === 'products' 
+                                  ? setShowAllProducts(!showAllProducts) 
+                                  : setShowAllBlogs(!showAllBlogs)
+                                }
                                 className={styles.showMoreBtn}
                               >
-                                {showAllProducts ? 'Show Less' : `Show More (${filteredPages.length - 5} more)`}
+                                {(sectionKey === 'products' ? showAllProducts : showAllBlogs)
+                                  ? 'Show Less' 
+                                  : `Show More (${filteredPages.length - 5} more)`}
                               </button>
                             </li>
                           )}
                         </>
                       ) : (
-                        // Show all links for all other sections including Blog
+                        // Show all links for all other sections (careers, dynamicSections, etc.)
                         filteredPages.map((page, index) => (
                           <li key={index} className={styles.linkItem}>
                             <Link
-                              href={page.url.replace(process.env.NEXT_PUBLIC_SITE_URL, '') || '/'}
+                              href={getPageHref(page)}
                               className={styles.sitemapLink}
                             >
                               {(() => {
                                 let title = page.title || getPageTitle(page.url);
-                                // Remove "Fabric/" prefix from product titles
-                                if (title.startsWith('Fabric/')) {
-                                  title = title.replace('Fabric/', '');
-                                }
-                                // Remove "Blog Details/" prefix from blog titles
-                                if (title.startsWith('Blog Details/')) {
-                                  title = title.replace('Blog Details/', '');
-                                }
+                                if (title.startsWith('Fabric/')) title = title.replace('Fabric/', '');
+                                if (title.startsWith('Blog Details/')) title = title.replace('Blog Details/', '');
                                 return title;
                               })()}
                             </Link>

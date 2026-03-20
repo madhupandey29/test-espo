@@ -7,6 +7,7 @@ const DynamicSectionFAQ = ({ sectionSlug, topicData }) => {
   // Build FAQs array from q1-q5 and a1-a5 fields
   const faqs = [];
   for (let i = 1; i <= 5; i++) {
+    
     const question = topicData[`q${i}`];
     const answer = topicData[`a${i}`];
     if (question && answer) {

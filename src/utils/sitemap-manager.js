@@ -25,6 +25,7 @@ export class SitemapManager {
       { path: '/fabric', priority: 0.9, changeFreq: 'daily' }, // Main shop page
       { path: '/capabilities', priority: 0.8, changeFreq: 'monthly' }, // Capabilities page
       { path: '/blog', priority: 0.8, changeFreq: 'weekly' }, // Main blog page
+      { path: '/careers', priority: 0.7, changeFreq: 'monthly' }, // Careers page
       { path: '/contact', priority: 0.7, changeFreq: 'monthly' },
       { path: '/about', priority: 0.6, changeFreq: 'monthly' },
       // ❌ REMOVED: /shop-category, /shop-right-sidebar, /shop-hidden-sidebar, /blog-grid (not in use)
@@ -170,14 +171,44 @@ export class SitemapManager {
   }
 
   /**
+   * Fetch dynamic section pages from API
+   * Each section links to /collections/<sectionId>
+   */
+  async getDynamicSectionPages() {
+    try {
+      const response = await fetch('https://espobackend.vercel.app/api/dynamicsection', {
+        next: { revalidate: 3600 },
+        headers: { 'Content-Type': 'application/json' },
+      });
+
+      if (!response.ok) return [];
+
+      const json = await response.json();
+      const sections = Array.isArray(json?.sections) ? json.sections : [];
+
+      return sections.map(sectionId => ({
+        url: `${this.baseUrl}/collections/${sectionId}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.7,
+        sectionId,
+        title: sectionId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+      }));
+    } catch (error) {
+      return [];
+    }
+  }
+
+  /**
    * Generate complete sitemap
    */
   async generateSitemap() {
-    const [staticPages, productPages, blogPages, categoryPages] = await Promise.all([
+    const [staticPages, productPages, blogPages, categoryPages, dynamicSectionPages] = await Promise.all([
       this.getStaticRoutes(),
       this.getProductPages(),
       this.getBlogPages(),
       this.getCategoryPages(),
+      this.getDynamicSectionPages(),
     ]);
 
     const allPages = [
@@ -185,6 +216,7 @@ export class SitemapManager {
       ...productPages,
       ...blogPages,
       ...categoryPages,
+      ...dynamicSectionPages,
     ];
 
     // Remove duplicates
@@ -225,6 +257,7 @@ export class SitemapManager {
       products: pages.filter(p => p.url.includes('/fabric/')).length,
       blogs: pages.filter(p => p.url.includes('/blog-details')).length,
       categories: pages.filter(p => p.url.includes('category=')).length,
+      dynamicSections: pages.filter(p => p.url.includes('/collections/')).length,
     };
   }
 

@@ -1,4 +1,4 @@
-// app/dynamicsection/[sectionId]/[slug]/page.jsx - Dynamic Section Product Detail Page
+// app/collections/[sectionId]/[slug]/page.jsx - Dynamic Section Product Detail Page
 import { generateMetadata as generateSEOMetadata } from '@/utils/seo';
 import { getProductImageUrl } from '@/utils/imageContract';
 import { fetchProductBySlug, fetchWebsiteFaqs, fetchCollectionProducts } from '@/utils/productFetcher';
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }) {
     title: `${title} - ${sectionTitle}`,
     description,
     keywords: keywordsString,
-    path: `/dynamicsection/${sectionId}/${slug}`,
+    path: `/collections/${sectionId}/${slug}`,
     ogImage: ogImageUrl,
     robots: robotsTag
   });

@@ -1,4 +1,4 @@
-// app/dynamicsection/[sectionId]/page.jsx - Dynamic Section Listing Page
+// app/collections/[sectionId]/page.jsx - Dynamic Section Listing Page
 import { generateMetadata as generateSEOMetadata, getOptimizedLogoUrl } from "@/utils/seo";
 import { fetchHomePageData, formatSectionTitle } from "@/utils/homeSectionFetcher";
 import { getApiBaseUrl } from "@/utils/runtimeConfig";
@@ -72,7 +72,7 @@ export async function generateMetadata({ params }) {
     title,
     description: excerpt,
     keywords,
-    path: `/dynamicsection/${sectionId}`,
+    path: `/collections/${sectionId}`,
     ogImage,
     ogLogo: logoUrl,
     ogType,
@@ -129,7 +129,7 @@ export default async function DynamicSectionPage({ params }) {
           shopRight: false,
           hiddenSidebar: false,
         }}
-        categoryPath={`/dynamicsection/${sectionId}`}
+        categoryPath={`/collections/${sectionId}`}
         customHeroContent={<DynamicSectionHero sectionSlug={sectionId} topicData={topicPage} products={products} />}
         customFooterContent={
           <>
