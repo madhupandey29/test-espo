@@ -129,7 +129,7 @@ export default function RegisterForm() {
           <form onSubmit={handleSubmit(onFormSubmit)} className="space-y-4">
             {/* First Name */}
             <div className="tp-input-box">
-              <label className="tp-label" htmlFor="rf-firstname">First Name <span style={{color: 'red'}}>*</span></label>
+              <label className="tp-label" htmlFor="rf-firstname">First Name <span className="tp-error-text">*</span></label>
               <input
                 id="rf-firstname"
                 autoFocus
@@ -156,7 +156,7 @@ export default function RegisterForm() {
 
             {/* Email */}
             <div className="tp-input-box">
-              <label className="tp-label" htmlFor="rf-email">Email <span style={{color: 'red'}}>*</span></label>
+              <label className="tp-label" htmlFor="rf-email">Email <span className="tp-error-text">*</span></label>
               <input
                 id="rf-email"
                 {...register('email')}

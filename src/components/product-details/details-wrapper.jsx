@@ -65,16 +65,15 @@ const Stars = ({ value }) => {
   const full = Math.floor(v);
   const half = v - full >= 0.5 ? 1 : 0;
   const empty = 5 - full - half;
-  const iconStyle = { marginRight: 4, color: '#f59e0b' };
 
   return (
     <span aria-label={`Rating ${v} out of 5`} className="stars-only">
       {Array.from({ length: full }).map((_, i) => (
-        <FaStar key={`f${i}`} style={iconStyle} />
+        <FaStar key={`f${i}`} className="dw-star-icon" />
       ))}
-      {half === 1 && <FaStarHalfAlt style={iconStyle} />}
+      {half === 1 && <FaStarHalfAlt className="dw-star-icon" />}
       {Array.from({ length: empty }).map((_, i) => (
-        <AiOutlineStar key={`e${i}`} style={iconStyle} />
+        <AiOutlineStar key={`e${i}`} className="dw-star-icon" />
       ))}
     </span>
   );
@@ -595,8 +594,8 @@ const DetailsWrapper = ({ productItem = {} }) => {
             <span className="btn-text">Catalogue</span>
           </button>
 
-          <Link href="/contact" style={{ flex: 1, textDecoration: 'none' }}>
-            <button className="action-btn secondary" type="button" style={{ width: '100%' }}>
+          <Link href="/contact" className="dw-contact-link">
+            <button className="action-btn secondary dw-btn-full" type="button">
               <FaCommentDots />
               <span className="btn-text">Request Quote</span>
             </button>
@@ -1223,6 +1222,21 @@ const DetailsWrapper = ({ productItem = {} }) => {
             height: 38px;
             font-size: 13px;
           }
+        }
+
+        /* dw-* utility classes replacing inline styles */
+        .dw-star-icon {
+          margin-right: 4px;
+          color: #f59e0b;
+        }
+
+        .dw-contact-link {
+          flex: 1;
+          text-decoration: none;
+        }
+
+        .dw-btn-full {
+          width: 100%;
         }
       `}</style>
     </div>

@@ -239,19 +239,18 @@ useEffect(() => {
   return (
     <>
       <header>
-        <div className={`tp-header-area tp-header-style-${style_2 ? 'primary' : 'darkRed'} tp-header-height`} style={{ overflow: 'visible' }}>
+        <div className={`tp-header-area tp-header-style-${style_2 ? 'primary' : 'darkRed'} tp-header-height tp-header-overflow-visible`}>
           <div
             id="header-sticky"
-            className={`tp-header-bottom-2 tp-header-sticky ${sticky ? 'header-sticky' : ''}`}
-            style={{ overflow: 'visible' }}
+            className={`tp-header-bottom-2 tp-header-sticky tp-header-overflow-visible ${sticky ? 'header-sticky' : ''}`}
           >
-            <div className="container" style={{ overflow: 'visible' }}>
-              <div className="tp-mega-menu-wrapper p-relative" style={{ overflow: 'visible' }}>
+            <div className="container tp-header-overflow-visible">
+              <div className="tp-mega-menu-wrapper p-relative tp-header-overflow-visible">
                 <div className="row align-items-center mobile-header-row">
                   
                   {/* Mobile: Hamburger + Logo on Left */}
                   <div className="col-xl-2 col-lg-2 col-md-3 col-6 d-xl-none mobile-left-section">
-                    <div className="d-flex align-items-center" style={{ gap: '12px' }}>
+                    <div className="d-flex align-items-center tp-header-gap-12">
                       {/* Mobile hamburger - LEFT SIDE */}
                       <button 
                         onClick={() => setIsCanvasOpen(true)} 
@@ -272,8 +271,7 @@ useEffect(() => {
                             preload
                             quality={75}
                             sizes="(max-width: 575px) 67px, 77px"
-                            className="header-logo mobile-logo"
-                            style={{ objectFit: 'contain' }}
+                            className="header-logo mobile-logo tp-obj-contain"
                           />
                         </span>
                       </Link>
@@ -292,8 +290,7 @@ useEffect(() => {
                             preload
                             quality={75}
                             sizes="92px"
-                            className="header-logo"
-                            style={{ objectFit: 'contain' }}
+                            className="header-logo tp-obj-contain"
                           />
                         </span>
                       </Link>
@@ -428,7 +425,7 @@ useEffect(() => {
                         )}
 
                         {/* User / Auth - WITH USERNAME */}
-                        <div className="tp-header-action-item position-relative" style={{ overflow: 'visible' }}>
+                        <div className="tp-header-action-item position-relative tp-header-overflow-visible">
                           {hasSession ? (
                             <>
                               <button

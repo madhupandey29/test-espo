@@ -55,9 +55,8 @@ export default function EmailVerifyArea({ token }) {
 
   return (
     <Wrapper>
-      <div
-        className="d-flex align-items-center justify-content-center"
-        style={{ height: "100vh" }}
+        <div
+        className="d-flex align-items-center justify-content-center tp-full-vh"
       >
         {isLoading ? (
           <h3>Loading ....</h3>

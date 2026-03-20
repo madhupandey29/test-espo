@@ -181,7 +181,7 @@ const RelatedProducts = ({ collectionId, currentProductId = null }) => {
                     width={200}
                     height={200}
                     sizes="(max-width: 576px) 50vw, (max-width: 992px) 33vw, 200px"
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    className="rp-thumb-img"
                   />
                   <span className="thumb-gloss" />
                 </div>
@@ -267,6 +267,11 @@ const RelatedProducts = ({ collectionId, currentProductId = null }) => {
         .thumb :global(img) {
           transform: scale(1);
           transition: transform 220ms ease;
+        }
+        .thumb :global(.rp-thumb-img) {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
         .card-mini:hover .thumb :global(img) {
           transform: scale(1.04);

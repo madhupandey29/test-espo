@@ -349,3 +349,20 @@
 .tp-header-sticky.header-sticky {
   --tp-header-height: 72px;
 }
+
+
+/* ============================================
+   Header-2 – replaces inline JS styles
+   ============================================ */
+
+.tp-header-overflow-visible {
+  overflow: visible;
+}
+
+.tp-header-gap-12 {
+  gap: 12px;
+}
+
+.tp-obj-contain {
+  object-fit: contain;
+}

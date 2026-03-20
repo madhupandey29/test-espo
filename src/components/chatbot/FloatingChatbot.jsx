@@ -24,7 +24,7 @@ function linkify(text) {
           href={href}
           target="_blank"
           rel="noreferrer"
-          style={{ textDecoration: "underline", color: "#0ea5e9" }}
+          className="tp-link-underline"
         >
           {s}
         </a>

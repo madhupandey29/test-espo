@@ -204,11 +204,11 @@ const BlogDetailsArea = ({ blog }) => {
               <h3 className={styles.cardTitle}>Popular Tags</h3>
               <div className={styles.tagsList}>
                 {blogsLoading ? (
-                  <div style={{ textAlign: 'center', color: '#666', padding: '10px' }}>
+                  <div className="tp-state-loading">
                     Loading tags...
                   </div>
                 ) : blogsError ? (
-                  <div style={{ textAlign: 'center', color: '#dc2626', padding: '10px' }}>
+                  <div className="tp-state-error">
                     Error loading tags: {blogsError?.message || 'Unknown error'}
                   </div>
                 ) : popularTags.length > 0 ? (
@@ -222,7 +222,7 @@ const BlogDetailsArea = ({ blog }) => {
                     </Link>
                   ))
                 ) : (
-                  <div style={{ textAlign: 'center', color: '#666', padding: '10px' }}>
+                  <div className="tp-state-loading">
                     No tags available (Blogs: {allBlogs.length})
                   </div>
                 )}

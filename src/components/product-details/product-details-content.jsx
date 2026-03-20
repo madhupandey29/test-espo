@@ -203,7 +203,7 @@ export default function ProductDetailsContent({ productItem }) {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div style={{ padding: 24, background: '#fff', borderRadius: 12, border: '1px solid #eee' }}>
+              <div className="pdc-not-found">
                 No product found!
               </div>
             </div>
@@ -262,6 +262,13 @@ export default function ProductDetailsContent({ productItem }) {
       <style jsx>{`
         .tp-product-details-area {
           padding: 40px 0;
+        }
+
+        .pdc-not-found {
+          padding: 24px;
+          background: #fff;
+          border-radius: 12px;
+          border: 1px solid #eee;
         }
 
         .product-details-sticky-wrapper {

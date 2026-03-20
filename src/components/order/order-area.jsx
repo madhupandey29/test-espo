@@ -322,27 +322,26 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
 
           <div
             ref={printRef}
-            className="invoice__wrapper grey-bg-2 pt-40 pb-40 pl-40 pr-40 tp-invoice-print-wrapper"
-            style={{ borderRadius: 14, background: '#f8fafc' }}
+            className="invoice__wrapper grey-bg-2 pt-40 pb-40 pl-40 pr-40 tp-invoice-print-wrapper inv-wrapper"
           >
             {/* Header with LOGO (screen) */}
             <div className="invoice__header-wrapper border-2 border-bottom border-white mb-20">
               <div className="row align-items-center">
                 <div className="col-md-7 col-sm-12">
-                  <div className="d-flex align-items-center" style={{ gap: 12 }}>
+                  <div className="d-flex align-items-center inv-header-gap">
                     <img
                       src="https://amritafashions.com/wp-content/uploads/amrita-fashions-small-logo-india.webp"
                       alt="Amrita Global Enterprises"
                       width={140}
                       height={44}
-                      style={{ height: 'auto', width: 'auto', maxWidth: '140px', maxHeight: '44px' }}
+                      className="inv-logo"
                       sizes="(max-width: 600px) 110px, 140px"
                     />
                     <div>
-                      <h3 className="mb-5" style={{ color: BRAND_BLUE, marginBottom: 0 }}>
+                      <h3 className="mb-5 inv-brand-title">
                         Amrita Global Enterprises
                       </h3>
-                      <p className="mb-0" style={{ color: TEXT_MUTED }}>
+                      <p className="mb-0 inv-brand-sub">
                         Textiles & Fabrics • B2B
                       </p>
                     </div>
@@ -353,7 +352,7 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
 
             {/* Title BELOW header */}
             <div className="mb-20">
-              <h2 className="text-uppercase" style={{ fontWeight: 800, letterSpacing: 1, color: BRAND_BLUE, textAlign: 'center' }}>
+              <h2 className="text-uppercase inv-invoice-title">
                 INVOICE
               </h2>
             </div>
@@ -361,11 +360,11 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
             {/* Bill To / From */}
             <div className="row g-3 mb-20">
               <div className="col-md-6">
-                <div className="p-3 rounded" style={{ border: '1px solid #e5e7eb', background: '#fff' }}>
-                  <div className="text-uppercase" style={{ fontSize: 12, color: '#64748b' }}>
+                <div className="p-3 rounded inv-card">
+                  <div className="text-uppercase inv-label">
                     Bill To
                   </div>
-                  <div style={{ fontWeight: 600 }}>{fullName}</div>
+                  <div className="inv-value">{fullName}</div>
                   {(order?.phone || order?.userId?.phone || user?.phone) && (
                     <div>{order?.phone || order?.userId?.phone || user?.phone}</div>
                   )}
@@ -378,11 +377,11 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="p-3 rounded" style={{ border: '1px solid #e5e7eb', background: '#fff' }}>
-                  <div className="text-uppercase" style={{ fontSize: 12, color: '#64748b' }}>
+                <div className="p-3 rounded inv-card">
+                  <div className="text-uppercase inv-label">
                     From
                   </div>
-                  <div style={{ fontWeight: 600 }}>Amrita Global Enterprises</div>
+                  <div className="inv-value">Amrita Global Enterprises</div>
                   <div>4th Floor, Safal Prelude, 404 Corporate Road, Near YMCA Club,</div>
                   <div>Prahlad Nagar, Ahmedabad, Gujarat, India - 380015</div>
                   <div>info@amritafashions.com • +91 98240 03484</div>
@@ -393,62 +392,61 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
             {/* Meta row */}
             <div className="row g-3 mb-30">
               <div className="col-md-3">
-                <div className="p-3 rounded" style={{ border: '1px solid #e5e7eb', background: '#fff' }}>
-                  <div className="text-uppercase" style={{ fontSize: 12, color: '#64748b' }}>Invoice Number</div>
-                  <div style={{ fontWeight: 600 }}>{order?._id || '—'}</div>
+                <div className="p-3 rounded inv-card">
+                  <div className="text-uppercase inv-label">Invoice Number</div>
+                  <div className="inv-value">{order?._id || '—'}</div>
                 </div>
               </div>
               <div className="col-md-3">
-                <div className="p-3 rounded" style={{ border: '1px solid #e5e7eb', background: '#fff' }}>
-                  <div className="text-uppercase" style={{ fontSize: 12, color: '#64748b' }}>Invoice Date</div>
-                  <div style={{ fontWeight: 600 }}>
+                <div className="p-3 rounded inv-card">
+                  <div className="text-uppercase inv-label">Invoice Date</div>
+                  <div className="inv-value">
                     {order?.createdAt ? dayjs(order.createdAt).format('MMMM D, YYYY') : dayjs().format('MMMM D, YYYY')}
                   </div>
                 </div>
               </div>
               <div className="col-md-3">
-                <div className="p-3 rounded" style={{ border: '1px solid #e5e7eb', background: '#fff' }}>
-                  <div className="text-uppercase" style={{ fontSize: 12, color: '#64748b' }}>Payment</div>
-                  <div style={{ fontWeight: 600 }}>{String(order?.payment || '—').toUpperCase()}</div>
+                <div className="p-3 rounded inv-card">
+                  <div className="text-uppercase inv-label">Payment</div>
+                  <div className="inv-value">{String(order?.payment || '—').toUpperCase()}</div>
                 </div>
               </div>
               <div className="col-md-3">
-                <div className="p-3 rounded" style={{ border: '1px solid #e5e7eb', background: '#fff' }}>
-                  <div className="text-uppercase" style={{ fontSize: 12, color: '#64748b' }}>Shipping</div>
-                  <div style={{ fontWeight: 600 }}>{String(order?.shipping || '—').toUpperCase()}</div>
+                <div className="p-3 rounded inv-card">
+                  <div className="text-uppercase inv-label">Shipping</div>
+                  <div className="inv-value">{String(order?.shipping || '—').toUpperCase()}</div>
                 </div>
               </div>
             </div>
 
             {/* Items (uses product names) */}
             <div
-              className="pt-20 pb-20 pl-40 pr-40 bg-white mb-30"
-              style={{ border: '1px solid #e5e7eb', borderRadius: 12 }}
+              className="pt-20 pb-20 pl-40 pr-40 bg-white mb-30 inv-items-wrap"
             >
-              <table className="table" style={{ marginBottom: 0 }}>
+              <table className="table inv-table">
                 <thead className="table-light">
                   <tr>
-                    <th style={{ width: 40, textAlign: 'center' }}>#</th>
+                    <th className="inv-th-center">#</th>
                     <th>Product</th>
-                    <th style={{ width: 80, textAlign: 'right' }}>Qty</th>
-                    <th style={{ width: 110, textAlign: 'right' }}>Price</th>
-                    <th style={{ width: 120, textAlign: 'right' }}>Amount</th>
+                    <th className="inv-th-right-sm">Qty</th>
+                    <th className="inv-th-right-md">Price</th>
+                    <th className="inv-th-right-lg">Amount</th>
                   </tr>
                 </thead>
                 <tbody className="table-group-divider">
                   {lineItems.length ? (
                     lineItems.map((li, i) => (
                       <tr key={i}>
-                        <td style={{ textAlign: 'center' }}>{i + 1}</td>
+                        <td className="inv-td-center">{i + 1}</td>
                         <td>{li.title}</td>
-                        <td style={{ textAlign: 'right' }}>{li.qty}</td>
-                        <td style={{ textAlign: 'right' }}>${Number(li.price).toFixed(2)}</td>
-                        <td style={{ textAlign: 'right' }}>${(Number(li.price) * Number(li.qty)).toFixed(2)}</td>
+                        <td className="inv-td-right">{li.qty}</td>
+                        <td className="inv-td-right">${Number(li.price).toFixed(2)}</td>
+                        <td className="inv-td-right">${(Number(li.price) * Number(li.qty)).toFixed(2)}</td>
                       </tr>
                     ))
                   ) : (
                     <tr>
-                      <td colSpan={5} style={{ textAlign: 'center' }}>No items</td>
+                      <td colSpan={5} className="inv-td-center">No items</td>
                     </tr>
                   )}
                 </tbody>
@@ -460,8 +458,8 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
               <div className="row">
                 <div className="col-lg-7"></div>
                 <div className="col-lg-5">
-                  <div className="p-3 rounded" style={{ border: '1px solid #e5e7eb', background: '#fff', borderRadius: 12 }}>
-                    <div className="d-flex justify-content-between mb-2" style={{ color: '#64748b' }}>
+                  <div className="p-3 rounded inv-totals-card">
+                    <div className="d-flex justify-content-between mb-2 inv-totals-row">
                       <span>Subtotal</span>
                       <span>
                         $
@@ -470,15 +468,15 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
                           .toFixed(2)}
                       </span>
                     </div>
-                    <div className="d-flex justify-content-between mb-2" style={{ color: '#64748b' }}>
+                    <div className="d-flex justify-content-between mb-2 inv-totals-row">
                       <span>Shipping</span>
                       <span>${Number(order?.shippingCost || 0).toFixed(2)}</span>
                     </div>
-                    <div className="d-flex justify-content-between mb-2" style={{ color: '#64748b' }}>
+                    <div className="d-flex justify-content-between mb-2 inv-totals-row">
                       <span>Discount</span>
                       <span>${Number(order?.discount || 0).toFixed(2)}</span>
                     </div>
-                    <div className="d-flex justify-content-between pt-2 mt-2" style={{ borderTop: '1px solid #e5e7eb', fontWeight: 700 }}>
+                    <div className="d-flex justify-content-between pt-2 mt-2 inv-totals-grand">
                       <span>Total</span>
                       <span>
                         $

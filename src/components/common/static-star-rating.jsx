@@ -16,10 +16,9 @@ export default function StaticStarRating({
 
   return (
     <span
-      className={className}
+      className={`tp-inline-flex-center${className ? ` ${className}` : ''}`}
       role="img"
       aria-label={label || `${safeValue} out of ${total} stars`}
-      style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}
     >
       {Array.from({ length: total }).map((_, index) => {
         const fill = clamp(safeValue - index, 0, 1) * 100;

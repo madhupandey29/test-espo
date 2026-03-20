@@ -20,163 +20,6 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
   const [isHovered, setIsHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // ---------- Design (calm + clean) ----------
-  const styles = {
-    offcanvas: {
-      position: 'fixed',
-      inset: 0,
-      zIndex: 1000,
-      pointerEvents: 'none',
-      transition: 'opacity 0.25s ease-out',
-    },
-    offcanvasOpened: {
-      pointerEvents: 'all',
-    },
-    wrapper: {
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      width: '100%',
-      maxWidth: '420px',
-      height: '100vh',
-      background: 'var(--tp-common-white)',
-      boxShadow: '0 18px 40px rgba(15, 23, 42, 0.16)',
-      transform: 'translateX(-100%)',
-      transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-      display: 'flex',
-      flexDirection: 'column',
-      zIndex: 1001,
-      overflow: 'hidden',
-      borderRadius: '0 18px 18px 0',
-    },
-    wrapperOpen: {
-      transform: 'translateX(0)',
-    },
-    header: {
-      background: 'var(--tp-common-white)',
-      borderBottom: '1px solid var(--tp-grey-2)',
-      padding: 0,
-      position: 'sticky',
-      top: 0,
-      zIndex: 10,
-    },
-    headerContent: {
-      padding: '18px 22px',
-      display: 'flex',
-      alignItems: 'center',
-      gap: '14px',
-    },
-    closeBtn: {
-      display: 'inline-flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '8px',
-      padding: '8px 14px',
-      background: 'var(--tp-grey-1)',
-      border: '1px solid var(--tp-grey-3)',
-      borderRadius: '999px',
-      color: 'var(--tp-text-1)',
-      fontFamily: 'var(--tp-ff-roboto)',
-      fontSize: '13px',
-      fontWeight: 600,
-      cursor: 'pointer',
-      transition: 'all 0.2s ease-out',
-      flexShrink: 0,
-      boxShadow: '0 1px 4px rgba(15, 23, 42, 0.04)',
-    },
-    closeBtnHover: {
-      background: 'var(--tp-theme-primary)',
-      borderColor: 'var(--tp-theme-primary)',
-      color: 'var(--tp-common-white)',
-      boxShadow: '0 8px 18px rgba(44, 76, 151, 0.25)',
-    },
-    titleSection: {
-      flex: 1,
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      textAlign: 'center',
-      paddingRight: '24px',
-    },
-    title: {
-      margin: 0,
-      fontFamily: 'var(--tp-ff-jost)',
-      fontSize: '22px',
-      fontWeight: 700,
-      color: 'var(--tp-text-1)',
-      lineHeight: 1.25,
-      letterSpacing: '0.01em',
-    },
-    subtitle: {
-      marginTop: '4px',
-      fontFamily: 'var(--tp-ff-roboto)',
-      fontSize: '14px',
-      color: 'var(--tp-text-2)',
-      lineHeight: 1.4,
-    },
-    content: {
-      flex: 1,
-      display: 'flex',
-      flexDirection: 'column',
-      overflow: 'hidden',
-      background: 'var(--tp-grey-1)',
-    },
-    scroll: {
-      flex: 1,
-      overflowY: 'auto',
-      padding: '22px',
-      scrollbarWidth: 'thin',
-      scrollbarColor: 'var(--tp-grey-7) transparent',
-    },
-    filterSection: {
-      background: 'var(--tp-common-white)',
-      borderRadius: '18px',
-      border: '1px solid var(--tp-grey-2)',
-      boxShadow: '0 2px 10px rgba(15, 23, 42, 0.04)',
-    },
-    footer: {
-      background: 'var(--tp-common-white)',
-      borderTop: '1px solid var(--tp-grey-2)',
-      padding: '18px 22px',
-      position: 'sticky',
-      bottom: 0,
-      zIndex: 10,
-    },
-    overlay: {
-      position: 'fixed',
-      inset: 0,
-      background: 'rgba(15, 23, 42, 0.45)',
-      backdropFilter: 'blur(4px)',
-      zIndex: 999,
-      opacity: 0,
-      visibility: 'hidden',
-      transition: 'opacity 0.25s ease-out, visibility 0.25s ease-out',
-    },
-    overlayOpened: {
-      opacity: 1,
-      visibility: 'visible',
-    },
-    // mobile tweaks
-    mobileWrapper: {
-      maxWidth: '100%',
-      borderRadius: 0,
-      boxShadow: '0 -6px 24px rgba(15, 23, 42, 0.22)',
-    },
-    mobileHeaderContent: {
-      padding: '16px 18px',
-    },
-    mobileScroll: {
-      padding: '18px',
-    },
-    mobileFooter: {
-      padding: '16px 18px 20px',
-    },
-    mobileTitle: {
-      fontSize: '20px',
-    },
-  };
-
   const maxPrice = all_products.reduce((max, product) => {
     const val = Number(product?.price ?? 0);
     return val > max ? val : max;
@@ -188,36 +31,22 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
   };
 
   useEffect(() => {
-    if (typeof window === 'undefined') {
-      return undefined;
-    }
-
-    const syncViewport = () => {
-      setIsMobile(window.innerWidth <= 480);
-    };
-
+    if (typeof window === 'undefined') return undefined;
+    const syncViewport = () => setIsMobile(window.innerWidth <= 480);
     syncViewport();
     window.addEventListener('resize', syncViewport);
-
-    return () => {
-      window.removeEventListener('resize', syncViewport);
-    };
+    return () => window.removeEventListener('resize', syncViewport);
   }, []);
 
-  // ESC close + lock scroll
   useEffect(() => {
     if (!filterSidebar) return;
-
     const handleKey = (e) => {
       if (e.keyCode === KEYCODES.ESC) {
         if (singleKey) setSingleKey(null);
         else closeShopFilter();
       }
     };
-
-    const firstFocusable = drawerRef.current;
-    firstFocusable?.focus();
-
+    drawerRef.current?.focus();
     document.addEventListener('keydown', handleKey);
     document.body.style.overflow = 'hidden';
     return () => {
@@ -226,51 +55,31 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
     };
   }, [filterSidebar, singleKey]);
 
-  if (!filterSidebar) {
-    return null;
-  }
+  if (!filterSidebar) return null;
 
   return (
     <>
       <div
-        style={{
-          ...styles.offcanvas,
-          ...(filterSidebar && styles.offcanvasOpened),
-        }}
+        className={`sfo-offcanvas${filterSidebar ? ' sfo-offcanvas--open' : ''}`}
         aria-hidden={!filterSidebar}
         aria-modal="true"
         role="dialog"
       >
         <div
-          style={{
-            ...styles.wrapper,
-            ...(filterSidebar && styles.wrapperOpen),
-            ...(isMobile && styles.mobileWrapper),
-          }}
+          className={`sfo-wrapper${filterSidebar ? ' sfo-wrapper--open' : ''}${isMobile ? ' sfo-wrapper--mobile' : ''}`}
           ref={wrapperRef}
           data-state={filterSidebar ? 'open' : 'closed'}
         >
           {/* Header */}
-          <div style={styles.header}>
-            <div
-              style={{
-                ...styles.headerContent,
-                ...(isMobile && styles.mobileHeaderContent),
-              }}
-            >
+          <div className="sfo-header">
+            <div className={`sfo-header-content${isMobile ? ' sfo-header-content--mobile' : ''}`}>
               <button
                 type="button"
                 onClick={() => {
-                  if (singleKey) {
-                    setSingleKey(null);
-                    return;
-                  }
+                  if (singleKey) { setSingleKey(null); return; }
                   closeShopFilter();
                 }}
-                style={{
-                  ...styles.closeBtn,
-                  ...(isHovered && styles.closeBtnHover),
-                }}
+                className={`sfo-close-btn${isHovered ? ' sfo-close-btn--hover' : ''}`}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 aria-label={singleKey ? 'Back to all filters' : 'Close filters'}
@@ -278,27 +87,21 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
                 ref={drawerRef}
               >
                 <i
-                  className={`fa-solid ${singleKey ? 'fa-arrow-left' : 'fa-xmark'}`}
-                  style={{ fontSize: '14px', width: '14px', height: '14px' }}
+                  className={`fa-solid ${singleKey ? 'fa-arrow-left' : 'fa-xmark'} sfo-close-icon`}
                 />
                 <span>{singleKey ? 'Back' : 'Close'}</span>
               </button>
 
               {!singleKey && (
-                <div style={styles.titleSection}>
-                  <h3
-                    style={{
-                      ...styles.title,
-                      ...(isMobile && styles.mobileTitle),
-                    }}
-                  >
+                <div className="sfo-title-section">
+                  <h3 className={`sfo-title${isMobile ? ' sfo-title--mobile' : ''}`}>
                     Filters
                   </h3>
-                  <span style={styles.subtitle}>Refine your results</span>
+                  <span className="sfo-subtitle">Refine your results</span>
                 </div>
               )}
 
-              {/* Clear All button — always visible in header when filters are active */}
+              {/* Clear All button */}
               {!singleKey && (() => {
                 const activeCount = Object.values(selectedFilters || {}).reduce(
                   (sum, v) => sum + (Array.isArray(v) ? v.length : 0), 0
@@ -307,31 +110,12 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
                 return (
                   <button
                     type="button"
-                    onClick={() => {
-                      handleFilterChange({});
-                      closeShopFilter();
-                    }}
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '6px',
-                      padding: '8px 14px',
-                      background: '#fee2e2',
-                      border: '1px solid #fca5a5',
-                      borderRadius: '999px',
-                      color: '#dc2626',
-                      fontFamily: 'var(--tp-ff-roboto)',
-                      fontSize: '13px',
-                      fontWeight: 700,
-                      cursor: 'pointer',
-                      flexShrink: 0,
-                      transition: 'all 0.2s ease',
-                      whiteSpace: 'nowrap',
-                    }}
+                    onClick={() => { handleFilterChange({}); closeShopFilter(); }}
+                    className="sfo-clear-btn"
                     aria-label="Remove all filters"
                     title="Remove all filters"
                   >
-                    <i className="fa-solid fa-xmark" style={{ fontSize: '12px' }} />
+                    <i className="fa-solid fa-xmark sfo-clear-icon" />
                     Remove ({activeCount})
                   </button>
                 );
@@ -340,26 +124,18 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
           </div>
 
           {/* Body */}
-          <div style={styles.content}>
+          <div className="sfo-content">
             {singleKey ? (
               <FilterOnly
                 filter={FILTERS_MAP[singleKey]}
                 selected={selectedFilters}
-                onApply={(nextSelected) => {
-                  applyAndClose(nextSelected);
-                  setSingleKey(null);
-                }}
+                onApply={(nextSelected) => { applyAndClose(nextSelected); setSingleKey(null); }}
                 onCancel={() => setSingleKey(null)}
               />
             ) : (
               <>
-                <div
-                  style={{
-                    ...styles.scroll,
-                    ...(isMobile && styles.mobileScroll),
-                  }}
-                >
-                  <div style={styles.filterSection}>
+                <div className={`sfo-scroll${isMobile ? ' sfo-scroll--mobile' : ''}`}>
+                  <div className="sfo-filter-section">
                     <EnhancedShopSidebarFilters
                       selected={selectedFilters}
                       onFilterChange={applyAndClose}
@@ -372,12 +148,7 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
                 </div>
 
                 {/* Footer */}
-                <div
-                  style={{
-                    ...styles.footer,
-                    ...(isMobile && styles.mobileFooter),
-                  }}
-                >
+                <div className={`sfo-footer${isMobile ? ' sfo-footer--mobile' : ''}`}>
                   <ResetButton
                     shop_right={right_side}
                     setPriceValues={priceFilterValues?.setPriceValue}
@@ -394,10 +165,7 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
       {/* Overlay */}
       <div
         onClick={closeShopFilter}
-        style={{
-          ...styles.overlay,
-          ...(filterSidebar && styles.overlayOpened),
-        }}
+        className={`sfo-overlay${filterSidebar ? ' sfo-overlay--open' : ''}`}
         aria-hidden
       />
     </>
@@ -405,5 +173,3 @@ const ShopFilterOffCanvas = ({ all_products, otherProps, right_side = false }) =
 };
 
 export default ShopFilterOffCanvas;
-
-

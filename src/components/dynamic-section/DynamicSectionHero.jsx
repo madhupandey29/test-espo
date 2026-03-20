@@ -22,8 +22,6 @@ const DynamicSectionHero = ({ sectionSlug, topicData, products = [] }) => {
 
   const imageUrl =
     topicData?.image1CloudUrl ||
-    collection?.collectionImage1CloudUrl ||
-    firstProduct?.image1CloudUrl ||
     null;
 
   const hasImage = imageUrl && imageUrl.trim() !== '';

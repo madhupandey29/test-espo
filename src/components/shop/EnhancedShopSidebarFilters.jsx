@@ -631,6 +631,23 @@ export default function EnhancedShopSidebarFilters({ onFilterChange, selected = 
           border-color: #2c4c97;
         }
 
+        .mMoreRow {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          margin-top: 12px;
+        }
+
+        .mMore--small {
+          font-size: 12px;
+          opacity: 0.7;
+        }
+
+        .mMore--block {
+          margin-top: 12px;
+          display: block;
+        }
+
         .mState {
           color: #6b7280;
           font-size: 13px;
@@ -808,18 +825,17 @@ function FilterSection({
               </div>
 
               {remaining > 0 && (
-                <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginTop: '12px' }}>
+                <div className="mMoreRow">
                   <span className="mMore" onClick={() => setShowAll(true)}>
                     + {remaining} more
                   </span>
                   {filter.searchable && (
-                    <span 
-                      className="mMore" 
+                    <span
+                      className="mMore mMore--small"
                       onClick={(e) => {
                         e.stopPropagation();
                         setOpenSearch(true);
                       }}
-                      style={{ fontSize: '12px', opacity: 0.7 }}
                     >
                       or search
                     </span>
@@ -828,7 +844,7 @@ function FilterSection({
               )}
 
               {showAll && options.length > (filter.limit ?? 8) && (
-                <span className="mMore" onClick={() => setShowAll(false)} style={{ marginTop: '12px', display: 'block' }}>
+                <span className="mMore mMore--block" onClick={() => setShowAll(false)}>
                   Show less
                 </span>
               )}

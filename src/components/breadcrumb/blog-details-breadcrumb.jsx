@@ -15,7 +15,7 @@ const BlogDetailsBreadcrumb = ({ blogTitle }) => {
                 </span>
                 <span><Link href="/">Home</Link></span>
                 <span><Link href="/blog">Blog</Link></span>
-                <span style={{ wordBreak: 'break-word', whiteSpace: 'normal' }}>
+                <span className="tp-word-break">
                   {blogTitle || 'Article'}
                 </span>
               </div>

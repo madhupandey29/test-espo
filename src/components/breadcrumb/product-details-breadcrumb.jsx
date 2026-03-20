@@ -15,7 +15,7 @@ const ProductDetailsBreadcrumb = ({title}) => {
                    </span>
                    <span><Link href="/">Home</Link></span>
                    <span><Link href="/fabric">Fabric</Link></span>
-                   <span style={{wordBreak: 'break-word', whiteSpace: 'normal'}}>{title}</span>
+                   <span className="tp-word-break">{title}</span>
                 </div>
              </div>
           </div>

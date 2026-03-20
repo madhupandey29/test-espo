@@ -27,7 +27,7 @@ const ContactMap = () => {
               src={gmapSrc}
               width="100%"
               height="100%"
-              style={{ border: 0 }}
+              className="tp-iframe-no-border"
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"

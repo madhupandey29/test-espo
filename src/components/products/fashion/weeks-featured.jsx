@@ -189,12 +189,12 @@ const WeeksFeatured = ({ products: homeProducts = [] }) => {
   if (isLoading) content = <HomeTwoFeaturedPrdLoader loading />;
   else if (error) {
     content = (
-      <div style={{ padding: '40px 20px', textAlign: 'center' }}>
-        <h4 style={{ color: '#ef4444', marginBottom: '16px' }}>Unable to Load Top Rated Products</h4>
-        <p style={{ color: '#6b7280', marginBottom: '16px' }}>
+      <div className="wf-error-wrap">
+        <h4 className="wf-error-title">Unable to Load Top Rated Products</h4>
+        <p className="wf-error-msg">
           {error?.data?.message || error?.data?.error || error?.message || 'There was an error loading top rated products'}
         </p>
-        <p style={{ fontSize: '14px', color: '#9ca3af' }}>
+        <p className="wf-error-hint">
           Please check your internet connection and try again.
         </p>
       </div>
@@ -203,12 +203,12 @@ const WeeksFeatured = ({ products: homeProducts = [] }) => {
   // Check if data has an error (API returned error response but RTK Query didn't treat it as error)
   else if (products && products.success === false) {
     content = (
-      <div style={{ padding: '40px 20px', textAlign: 'center' }}>
-        <h4 style={{ color: '#ef4444', marginBottom: '16px' }}>Unable to Load Top Rated Products</h4>
-        <p style={{ color: '#6b7280', marginBottom: '16px' }}>
+      <div className="wf-error-wrap">
+        <h4 className="wf-error-title">Unable to Load Top Rated Products</h4>
+        <p className="wf-error-msg">
           API Error: {products.error || products.message || 'API returned an error'}
         </p>
-        <p style={{ fontSize: '14px', color: '#9ca3af' }}>
+        <p className="wf-error-hint">
           The server is experiencing issues. Please try again later.
         </p>
       </div>
@@ -931,6 +931,24 @@ const WeeksFeatured = ({ products: homeProducts = [] }) => {
       font-size: 13px;
       min-height: 42px;
     }
+  }
+
+  /* Error state */
+  .wf-error-wrap {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .wf-error-title {
+    color: #ef4444;
+    margin-bottom: 16px;
+  }
+  .wf-error-msg {
+    color: #6b7280;
+    margin-bottom: 16px;
+  }
+  .wf-error-hint {
+    font-size: 14px;
+    color: #9ca3af;
   }
 `}</style>
 

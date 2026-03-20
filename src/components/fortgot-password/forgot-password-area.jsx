@@ -43,7 +43,7 @@ export default function ForgotPasswordArea ({ token }) {
 
   return (
     <Wrapper>
-      <section className="tp-login-area d-flex align-items-center justify-content-center" style={{ height: "100vh" }}>
+      <section className="tp-login-area d-flex align-items-center justify-content-center tp-full-vh">
         <LoginShapes />
         <div className="container">
           <div className="row justify-content-center">
