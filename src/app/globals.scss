@@ -22,16 +22,6 @@
 @import '~bootstrap/scss/images';
 @import '~bootstrap/scss/containers';
 @import '~bootstrap/scss/grid';
-@import '~bootstrap/scss/tables';
-@import '~bootstrap/scss/forms';
-@import '~bootstrap/scss/buttons';
-@import '~bootstrap/scss/transitions';
-@import '~bootstrap/scss/nav';
-@import '~bootstrap/scss/card';
-@import '~bootstrap/scss/pagination';
-@import '~bootstrap/scss/badge';
-@import '~bootstrap/scss/alert';
-@import '~bootstrap/scss/progress';
 @import '~bootstrap/scss/helpers';
 @import '~bootstrap/scss/utilities';
 @import '~bootstrap/scss/utilities/api';
@@ -139,6 +129,14 @@ html {
   overflow-x: hidden; /* Prevent horizontal scroll on html */
   width: 100%;
   max-width: 100vw;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
 }
 
 body {
@@ -150,10 +148,22 @@ body {
   margin: 0;
   padding: 0;
   background: var(--tp-common-white);
-  margin: 0;
-  padding: 0;
   min-height: 100vh;
   overflow-x: hidden; /* Prevent horizontal scroll */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+}
+
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
 }
 
 /* ===========================
@@ -231,6 +241,13 @@ html, body {
   .container-fluid,
   .container {
     overflow-x: hidden;
+  }
+
+  /* Keep header container visible on mobile too */
+  .tp-header-area .container,
+  .tp-header-bottom-2 .container,
+  #header-sticky .container {
+    overflow: visible !important;
   }
 }
 
@@ -339,6 +356,13 @@ h1,h2,h3,h4,h5,h6{
   padding-left: var(--page-xpad);
   padding-right: var(--page-xpad);
   overflow-x: hidden;
+}
+
+/* Header container must stay visible for dropdowns */
+.tp-header-area .container,
+.tp-header-bottom-2 .container,
+#header-sticky .container {
+  overflow: visible !important;
 }
 
 .container-fluid {
@@ -590,7 +614,8 @@ img, video, iframe, embed, object {
 
 /* Enhanced scrollbar styling */
 .sticky-filter::-webkit-scrollbar { 
-  width: 6px; 
+  width: 6px !important;
+  display: block !important;
 }
 
 .sticky-filter::-webkit-scrollbar-track { 
