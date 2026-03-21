@@ -50,7 +50,7 @@ const ForgotForm = () => {
         </div>
       </div>
       <div className="tp-login-bottom mb-15">
-        <button type="submit" className="tp-login-btn w-100">
+        <button type="submit" className="tp-login-btn tp-login-btn--full">
           Send Mail
         </button>
       </div>

@@ -69,7 +69,7 @@ const BlogGridArea = ({ tagname = null }) => {
         <div className="container">
           <div className="text-center py-5">
             <div className={styles.loadingSpinner} aria-hidden="true">
-              <span className="visually-hidden">Loading...</span>
+              <span className="sr-only">Loading...</span>
             </div>
             <p className={`mt-3 ${styles.loadingText}`}>Loading latest articles...</p>
           </div>
@@ -83,8 +83,8 @@ const BlogGridArea = ({ tagname = null }) => {
       <section className={`${styles.modernBlogArea} py-5`}>
         <div className="container">
           <div className="text-center py-5">
-            <div className="alert alert-danger" role="alert">
-              <h4 className="alert-heading">Oops! Something went wrong</h4>
+            <div className="blog-error-box" role="alert">
+              <h4 className="blog-error-title">Oops! Something went wrong</h4>
               <p>{err}</p>
             </div>
           </div>
@@ -100,10 +100,10 @@ const BlogGridArea = ({ tagname = null }) => {
         {selectedTag && (
           <div className="mb-4">
             <div className="d-flex align-items-center justify-content-between">
-              <h5 className="mb-0">
-                Showing blogs tagged with: <span className="badge bg-primary">{selectedTag}</span>
+              <h5 className="blog-tag-heading">
+                Showing blogs tagged with: <span className="blog-tag-pill">{selectedTag}</span>
               </h5>
-              <a href="/blog" className="btn btn-sm btn-outline-secondary">
+              <a href="/blog" className="blog-clear-filter-btn">
                 Clear Filter
               </a>
             </div>
@@ -126,13 +126,13 @@ const BlogGridArea = ({ tagname = null }) => {
           <div className="text-center py-5">
             {selectedTag ? (
               <>
-                <p className="text-muted">No blog posts found with tag &quot;{selectedTag}&quot;.</p>
-                <a href="/blog" className="btn btn-primary mt-3">
+                <p className="blog-empty-text">No blog posts found with tag &quot;{selectedTag}&quot;.</p>
+                <a href="/blog" className="blog-view-all-btn">
                   View All Blogs
                 </a>
               </>
             ) : (
-              <p className="text-muted">No blog posts found.</p>
+              <p className="blog-empty-text">No blog posts found.</p>
             )}
           </div>
         )}

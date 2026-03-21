@@ -312,7 +312,7 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
             <div className="row">
               <div className="col-xl-12">
                 <div className="invoice_msg mb-40">
-                  <p className="text-black alert alert-success">
+                  <p className="inv-success-msg">
                     Thank you <strong>{fullName}</strong>! Your order has been received.
                   </p>
                 </div>
@@ -352,7 +352,7 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
 
             {/* Title BELOW header */}
             <div className="mb-20">
-              <h2 className="text-uppercase inv-invoice-title">
+              <h2 className="inv-invoice-title">
                 INVOICE
               </h2>
             </div>
@@ -361,7 +361,7 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
             <div className="row g-3 mb-20">
               <div className="col-md-6">
                 <div className="p-3 rounded inv-card">
-                  <div className="text-uppercase inv-label">
+                  <div className="inv-label">
                     Bill To
                   </div>
                   <div className="inv-value">{fullName}</div>
@@ -378,7 +378,7 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
               </div>
               <div className="col-md-6">
                 <div className="p-3 rounded inv-card">
-                  <div className="text-uppercase inv-label">
+                  <div className="inv-label">
                     From
                   </div>
                   <div className="inv-value">Amrita Global Enterprises</div>
@@ -393,13 +393,13 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
             <div className="row g-3 mb-30">
               <div className="col-md-3">
                 <div className="p-3 rounded inv-card">
-                  <div className="text-uppercase inv-label">Invoice Number</div>
+                  <div className="inv-label">Invoice Number</div>
                   <div className="inv-value">{order?._id || '—'}</div>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="p-3 rounded inv-card">
-                  <div className="text-uppercase inv-label">Invoice Date</div>
+                  <div className="inv-label">Invoice Date</div>
                   <div className="inv-value">
                     {order?.createdAt ? dayjs(order.createdAt).format('MMMM D, YYYY') : dayjs().format('MMMM D, YYYY')}
                   </div>
@@ -407,13 +407,13 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
               </div>
               <div className="col-md-3">
                 <div className="p-3 rounded inv-card">
-                  <div className="text-uppercase inv-label">Payment</div>
+                  <div className="inv-label">Payment</div>
                   <div className="inv-value">{String(order?.payment || '—').toUpperCase()}</div>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="p-3 rounded inv-card">
-                  <div className="text-uppercase inv-label">Shipping</div>
+                  <div className="inv-label">Shipping</div>
                   <div className="inv-value">{String(order?.shipping || '—').toUpperCase()}</div>
                 </div>
               </div>
@@ -500,7 +500,7 @@ const OrderArea = ({ orderId, userId: userIdProp }) => {
             ) : null}
           </div>
 
-          <div className="invoice__print text-end mt-3">
+          <div className="invoice__print inv-print-row mt-3">
             <div className="row">
               <div className="col-xl-12">
                 <button

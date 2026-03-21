@@ -108,7 +108,7 @@ export default function ForgotPasswordArea ({ token }) {
                     </div>
 
                     <div className="tp-login-bottom">
-                      <button type="submit" className="tp-login-btn w-100">
+                      <button type="submit" className="tp-login-btn tp-login-btn--full">
                         Confirm password
                       </button>
                     </div>

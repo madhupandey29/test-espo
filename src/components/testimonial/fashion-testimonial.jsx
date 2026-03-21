@@ -108,7 +108,7 @@ function FashionTestimonial() {
                             fillColor="var(--tp-theme-secondary)"
                           />
                         </div>
-                        <span className="visually-hidden">{`${item.review} out of 5 stars`}</span>
+                        <span className="sr-only">{`${item.review} out of 5 stars`}</span>
                         <span className="age-verified">
                           <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--tp-theme-secondary)" aria-hidden>
                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.85L18.18 22 12 18.77 5.82 22 7 14.12l-5-4.85 6.91-1.01L12 2z" />
