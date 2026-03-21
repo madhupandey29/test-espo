@@ -1,13 +1,10 @@
 // ecommerce index
-@forward 'ecommerce';
 @forward 'category';
-@forward 'tooltip';
 @forward 'product';
 @forward 'productDetails';
 @forward 'shop';
 @forward 'filterOffcanvas';
-@forward 'quantity';
 @forward 'cart';
 @forward 'order';
 @forward 'checkout';
-/* REMOVED (zero usage): widget, collection, deal, coupon, sideBanner, trending, featured-product, product-2/3/4/5 */
+/* REMOVED (zero usage): ecommerce, tooltip, quantity, widget, collection, deal, coupon, sideBanner, trending, featured-product, product-2/3/4/5 */
